@@ -90,7 +90,7 @@ hr {
 }
 
 input, select {
-    vertical-align:middle;
+    vertical-align: middle;
 }
      
      
@@ -100,7 +100,7 @@ input, select {
      
      
      .School {
-         font-family: arial, "Times New Roman";
+        font-family: arial, "Times New Roman";
         color:rgb(218, 20, 20);
         font-size: 30px;
         margin: 0px; 
@@ -113,10 +113,28 @@ input, select {
         color:rgb(69, 194, 96);
          text-align: center;
     }
-    .safety_heading_box {
+    .heading {
         background-color: cornflowerblue;
         font-size: 35px;
         text-align: center;
+    }
+
+    .Social_Media {
+
+        background-color: rgb(29, 28, 28);
+        font-size: 20px;
+        text-align: right;
+        color: white;
+        padding-right: 25%;
+        
+    }
+
+    .social-padding {
+        vertical-align: right;
+        width: 35px;
+        height: 35px;
+        padding-left: 5px;
+
     }
 
     .Writing_size {
@@ -124,6 +142,8 @@ input, select {
         padding-right: 25%;
         line-height: 30px;
         font-size: 18px;
+        
+     
     }
 
     .citi {
@@ -132,43 +152,81 @@ input, select {
         margin-right: 25%;
     }
 
-    nav {
-        width: 100%;
-        height: 80px;
+    .navbar {
+        overflow: hidden;
         background-color: white;
+        font-family: arial;
         padding-left: 30%;
+    }
+    /* links in the navbar */
+    .navbar a {
+       
+        float: left;
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        padding: 16px 16px; /* first number is vertical padding, second is padding between words */
+        text-decoration: none;
+     
+        /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1); */
+        
+    }
+    /* style the dropdown container*/
+    .dropdown {
+
+        float: left;
+        overflow: hidden;
+    }
+    /* style the dropdown buttons themselves*/
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 0px 0px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0; /* the last 3 lines are important for smartphone viewing, apparently */
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        color: rgb(23, 235, 23);
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+        z-index: 1;
+    }
+
+    /* links inside the dropdown */
+    .dropdown-content a{
+        float:none;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* adding a gray background to dropdown on hover */
+    .dropdown-content a:hover {
+        background-color:rgba(128,128,128, 0.15);
+    }
+
+    /* Show the dropdown menu on hover: */
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
 
     body {
         background-color: white ;
     }
-    ul {
-        /* styling the navigation itself */
-    }
-
-    ul li {
-        /* working on the link in a specific list */
-        list-style: none;
-        display: inline-block;
-        float: left; /* makes sure there's no unlinkable gap between links */
-        line-height: 80px; /* Puts links in the middle of their box */
-
-    }
-
-    ul li a {
-        /* styling text in a link */ 
-        display: block; /* Makes it so you can click a link even when above or below it */
-        text-decoration: none;
-        font-size: 14px;
-        font-family: arial;
-        color: #1e1e1e;
-        padding: 0 20px; /* 0px padding for height since we did it already, 20 px padding between words */
-    }
-
-    ul li a:hover {
-        color: rgb(23, 235, 23);
-
-    }
-    /* It's good to use line-height: Xpx; to aid readabil;oity of paragraphs
+   
+    /* It's good to use line-height: Xpx; to aid readability of paragraphs
     */
     
