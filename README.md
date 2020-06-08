@@ -4,3 +4,16 @@ This is the Stony Brook iGEM Team Wiki for the 2020 Project. Our team chose to l
 | Team Member | Contact |
 | --- | --- |
 | Adit Anand | [adit.anand@stonybrook.edu](adit.anand@stonybrook.edu) |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
