@@ -3,17 +3,17 @@ This is the Stony Brook iGEM Team Wiki for the 2020 Project. Our team chose to l
 
 | Team Member | Contact |
 | --- | --- |
+| Laiba Ahmed (Team Leader) | []() |
+| AJ Sillato (Team Leader) | []() |
 | Adit Anand | [adit.anand@stonybrook.edu](adit.anand@stonybrook.edu) |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
+| Yashasvi Bajaj | []() |
+| Justin Beutel | []() |
+| Abhishek Cherath | []() |
+| Alexis Choi | []() |
+| Simranjeet Kaur | []() |
+| Aaliyah Kaushal | []() |
+| Maheen Kahn | []() |
+| Melissa King | []() |
+| Chiu Yin Lee | []() |
+| Aneeqa Majid | []() |
+| Julia Petreczky | []() |
