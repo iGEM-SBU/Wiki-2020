@@ -17,3 +17,5 @@ This is the Stony Brook iGEM Team Wiki for the 2020 Project. Our team chose to l
 | Chiu Yin Lee | []() |
 | Aneeqa Majid | []() |
 | Julia Petreczky | []() |
+
+Research Supervisor: Dr. John Peter Gergen
