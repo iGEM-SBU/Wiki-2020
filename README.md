@@ -1,7 +1,7 @@
 # Wiki-2020
 Welcome to the GitHub page for the Stony Brook iGEM Team Wiki for the 2020 iGEM Competition. Our team chose to look at how optogenetics can be utilized to regulate the growth of genetically-modified crops. Below is some more information about our project.
 
-| Team Member | Contact | Professional Links |
+| Team Member | E-Mail | Other |
 | --- | --- | --- |
 | Laiba Ahmed (Team Leader) |  | []() |
 | AJ Sillato (Team Leader) |  | []() |
