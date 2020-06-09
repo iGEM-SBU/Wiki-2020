@@ -12,7 +12,7 @@ Welcome to the GitHub page for the Stony Brook iGEM Team Wiki for the 2020 iGEM 
 | Alexis Choi | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
 | Simranjeet Kaur | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
 | Aaliyah Kaushal | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
-| Maheen Kahn | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
+| Maheen Khan | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
 | Melissa King | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
 | Chiu Yin Lee | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
 | Aneeqa Majid | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
