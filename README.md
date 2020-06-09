@@ -1,21 +1,21 @@
 # Wiki-2020
 This is the Stony Brook iGEM Team Wiki for the 2020 Project. Our team chose to look at how optogenetics can be utilized to regulate the growth of genetically-modified crops. Below is some more information about our project.
 
-| Team Member | Contact |
-| --- | --- |
-| Laiba Ahmed (Team Leader) | []() |
-| AJ Sillato (Team Leader) | []() |
-| Adit Anand | [adit.anand@stonybrook.edu](adit.anand@stonybrook.edu) |
-| Yashasvi Bajaj | []() |
-| Justin Beutel | []() |
-| Abhishek Cherath | []() |
-| Alexis Choi | []() |
-| Simranjeet Kaur | []() |
-| Aaliyah Kaushal | []() |
-| Maheen Kahn | []() |
-| Melissa King | []() |
-| Chiu Yin Lee | []() |
-| Aneeqa Majid | []() |
-| Julia Petreczky | []() |
+| Team Member | Contact | Other |
+| --- | --- | --- |
+| Laiba Ahmed (Team Leader) |  | []() |
+| AJ Sillato (Team Leader) |  | []() |
+| Adit Anand | adit.anand@stonybrook.edu | [LinkedIn](https://www.linkedin.com/in/adit-anand-b55348193/) |
+| Yashasvi Bajaj | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
+| Justin Beutel | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
+| Abhishek Cherath | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
+| Alexis Choi | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
+| Simranjeet Kaur | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
+| Aaliyah Kaushal | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
+| Maheen Kahn | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
+| Melissa King | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
+| Chiu Yin Lee | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
+| Aneeqa Majid | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
+| Julia Petreczky | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
 
 Research Supervisor: Dr. John Peter Gergen
