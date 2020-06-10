@@ -3,7 +3,7 @@ Welcome to the GitHub page for the Stony Brook iGEM Team Wiki for the 2020 iGEM 
 
 | Team Member | E-Mail | Other |
 | --- | --- | --- |
-| Laiba Ahmed (Team Leader) |  | []() |
+| Laiba Ahmed (Team Leader) | laiba.ahmed@stonybrook.edu  | []() |
 | AJ Sillato (Team Leader) |  | []() |
 | Adit Anand | adit.anand@stonybrook.edu | [LinkedIn](https://www.linkedin.com/in/adit-anand-b55348193/) |
 | Yashasvi Bajaj | yashasvi.bajaj@stonybrook.edu | [LinkedIn](https://www.linkedin.com/in/yashasvi-bajaj-98412a1a8/) |
