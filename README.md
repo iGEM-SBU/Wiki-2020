@@ -15,7 +15,7 @@ Welcome to the GitHub page for the Stony Brook iGEM Team Wiki for the 2020 iGEM 
 | Maheen Khan | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
 | Melissa King | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
 | Chiu Yin Lee | chiuyin.lee@stonybrook.edu | [LinkedIn](https://www.linkedin.com/in/chiu-yin-lee-289a9b12b) |
-| Aneeqa Majid | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
+| Aneeqa Majid | aneeqa.majid@stonybrook.edu | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
 | Julia Petreczky | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
 
 Research Supervisor: Dr. John Peter Gergen
