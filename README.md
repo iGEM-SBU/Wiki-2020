@@ -9,8 +9,8 @@ Welcome to the GitHub page for the Stony Brook iGEM Team Wiki for the 2020 iGEM 
 | Yashasvi Bajaj | yashasvi.bajaj@stonybrook.edu | [LinkedIn](https://www.linkedin.com/in/yashasvi-bajaj-98412a1a8/) |
 | Justin Beutel | justin.beutel@stonybrook.edu | [LinkedIn](linkedin.com/in/justin-beutel-09795b19b ) |
 | Abhishek Cherath | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
-| Alexis Choi | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
-| Simranjeet Kaur | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
+| Alexis Choi | alexis.choi@stonybrook.edu | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
+| Simranjeet Kaur | simranjeet.kaur@stonybrook.edu | [LinkedIn](https://www.linkedin.com/in/simranjeet-kaur-1a0a331a1/) |
 | Aaliyah Kaushal | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
 | Maheen Khan | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
 | Melissa King | <!--Email address --> | [<!-- Text displayed in the table. Insert link to LinkedIn, etc. in parentheses -->]() |
