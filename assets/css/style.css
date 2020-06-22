@@ -226,7 +226,29 @@ input, select {
     body {
         background-color: white ;
     }
+
+    .projectDescription h1
+    {
+        margin: 10px 240px;
+        font-size: 30px;
+    }
    
+    .projectDescription p
+    {
+        margin: 10px 240px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .projectDescription button
+    {
+        border-radius: 7px;
+        position: relative;
+        left:45%;
+        background-color: chartreuse;
+        font-size: 20px;
+    }
+
     /* It's good to use line-height: Xpx; to aid readability of paragraphs
     */
     
