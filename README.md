@@ -18,11 +18,12 @@ Welcome to the GitHub page for the Stony Brook iGEM Team Wiki for the 2020 iGEM 
 | Aneeqa Majid | aneeqa.majid@stonybrook.edu |
 | Julia Petreczky | julia.petreczky@stonybrook.edu |
 
+<br/>
 
-Primary PI: Dr. John Peter Gergen
+**Primary PI**: Dr. John Peter Gergen
 
-Secondary PI: Dr. Gabor Balazsi
+**Secondary PI**: Dr. Gabor Balazsi
 
-Instructors: Dr. Steven Glynn, Dr. Joshua Rest
+**Instructors**: Dr. Steven Glynn, Dr. Joshua Rest
 
-Advisors: Priya Aggarwal, Parisa Boukani, Christopher Helenek, Ayesha Kamran, Matthew Mullin
+**Advisors**: Priya Aggarwal, Parisa Boukani, Christopher Helenek, Ayesha Kamran, Matthew Mullin
