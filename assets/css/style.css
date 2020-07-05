@@ -83,7 +83,7 @@ table {
 hr {
     display:block;
     height:1px;
-    border:0;  
+    border:0;
     border-top:1px solid #cccccc;
     margin:1em 0;
     padding:0;
@@ -92,20 +92,20 @@ hr {
 input, select {
     vertical-align: middle;
 }
-     
-     
-  /* This is my css code */   
-     
+
+
+  /* This is my css code */
+
   /* Use font-family: font; to change the font of text in a section */
-     
-     
+
+
      .School {
         font-family: arial, "Times New Roman";
         color:rgb(218, 20, 20);
         font-size: 30px;
-        margin: 0px; 
+        margin: 0px;
         text-align: center;
-        background-color: 
+        background-color:
     }
 
     .project {
@@ -127,7 +127,7 @@ input, select {
         text-align: right;
         color: white;
         padding-right: 25%;
-        
+
     }
 
    /* .card{
@@ -137,14 +137,14 @@ input, select {
        float: left;
        padding: 20px 20px;
        text-align: center;
-      
+
     }
     */
 
     * {
         box-sizing: border-box;
       }
-      
+
       /* Float four columns side by side */
       .column {
         float: left;
@@ -152,18 +152,18 @@ input, select {
         padding: 5px 10px;
         border: solid 20px;
         border-color: white;
-        
+
       }
 
       .column2 {
-         float: left; 
+         float: left;
         width: 50%;
         padding: 5px 10px;
         border: solid 20px;
         border-color: white;
-        
+
       }
-      
+
       /* Remove extra left and right margins, due to padding in columns */
       .row {margin: 0 -5px;
             padding-left: 6.5%;
@@ -179,7 +179,7 @@ input, select {
       /* Remove extra left and right margins, due to padding in columns */
       .row2 {margin: 0 -5px;
         padding-left: 17%;
-       
+
       }
 
       /* Clear floats after the columns */
@@ -188,7 +188,7 @@ input, select {
        display: table;
        clear: both;
       }
-      
+
       /* Style the counter cards */
       .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); /* this adds the "card" effect */
@@ -198,10 +198,10 @@ input, select {
         float: left;
         text-align: center;
         background-color: cornflowerblue;
-        
-        
+
+
       }
-   
+
       /* Responsive columns - one column layout (vertical) on small screens */
       @media screen and (max-width: 600px) {
         .column {
@@ -216,8 +216,8 @@ input, select {
         font-size: 16px;
     }
 
-  
-  
+
+
 
     .social-padding {
         vertical-align: right;
@@ -232,7 +232,7 @@ input, select {
         padding-right: 25%;
         line-height: 30px;
         font-size: 18px;
-      
+
     }
 
     .Writing_header {
@@ -260,16 +260,16 @@ input, select {
     }
     /* links in the navbar */
     .navbar a {
-       
+
         float: left;
         font-size: 16px;
         color: black;
         text-align: center;
         padding: 16px 16px; /* first number is vertical padding, second is padding between words */
         text-decoration: none;
-     
+
         /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1); */
-        
+
     }
     /* style the dropdown container*/
     .dropdown {
@@ -292,13 +292,13 @@ input, select {
 
     .navbar a:hover, .dropdown:hover .dropbtn {
         color: rgb(23, 235, 23);
-        
+
         transform: scale(1.15);
     }
 
     /* Dropdown content (hidden by default) */
     .dropdown-content {
-        
+
         display: none;
         position: absolute;
         background-color: #f9f9f9;
@@ -315,7 +315,7 @@ input, select {
         text-decoration: none;
         display: block;
         text-align: left;
-        
+
     }
 
     /* adding a gray background to dropdown on hover */
@@ -340,7 +340,7 @@ input, select {
         background-position: center; /* centers image to the  dimensions of  the div box */
     }
 
-    
+
 
 /* CSS for base slideshow */
 
@@ -580,7 +580,8 @@ input, select {
     /*
      It's good to use line-height: Xpx; to aid readabil;oity of paragraphs
     */
-    
-    
+
+
+
 
     
