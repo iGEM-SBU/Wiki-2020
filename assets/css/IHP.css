@@ -1,0 +1,265 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* background things */
+.main-header {
+  background-color: rgba(0, 0, 0, .6);
+  background-image: url(https://pbs.twimg.com/media/Dpy6u6vXUAUXBgC.jpg);
+  background-size: contain;
+  padding-bottom: 40px;
+}
+.body{
+  background-color: #2B072A;
+}
+/* Add a black background color to the top navigation */
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    font-family: arial;
+    padding-left: 30%;
+}
+/* links in the navbar */
+.navbar a {
+
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 16px 16px; /* first number is vertical padding, second is padding between words */
+    text-decoration: none;
+
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1); */
+
+}
+/* style the dropdown container*/
+.dropdown {
+
+    float: left;
+    overflow: hidden;
+}
+/* style the dropdown buttons themselves*/
+.dropdown .dropbtn {
+    transition: transform .2s;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0px 0px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0; /* the last 3 lines are important for smartphone viewing, apparently */
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: rgb(23, 235, 23);
+
+    transform: scale(1.15);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+/* links inside the dropdown */
+.dropdown-content a{
+    float:none;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+
+/* adding a gray background to dropdown on hover */
+.dropdown-content a:hover {
+    background-color:rgba(128,128,128, 0.15);
+    transform: scale(1);
+}
+
+/* Show the dropdown menu on hover: */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Disss where the magic begins/
+/* header things*/
+.h1 {
+  text-align: right;
+  font-family: sans-serif;
+  font-size: 70px;
+  padding: 85px;
+  color: black;
+}
+.h2 {
+  color:  #9823A9;
+  padding: 20px;
+  font-family: sans-serif;
+  font-size: 40px;
+}
+.h3 {
+  color: #9823A9;
+  padding: 20px;
+  font-family: sans-serif;
+  font-size: 40px;
+
+/* paragraph things*/
+.p {
+  padding: 10px;
+  font-family: sans-serif;
+  spacing: 10px;
+  color: white;
+}
+/* container stuff */
+.container{
+  max-width: 1170px;
+  width: 33.33%;
+  margin-top: 50px;
+  margin-left: 210px;
+  display: flex;
+}
+/*column and row stuff*/
+.column{
+  margin: 0 15px 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+  0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #3C1F3B;
+  border-radius: 10px;
+}
+.card{
+  padding: 25px 40px;
+}
+/* Clear floats after the columns */
+.row:after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.Social_Media {
+
+    background-color: rgb(51, 50, 50);
+    font-size: 20px;
+    text-align: right;
+    color: white;
+    padding-right: 25%;
+
+}
+
+.social-padding {
+    vertical-align: right;
+    width: 40px;
+    height: 35px;
+    padding-left: 5px;
+
+}
+
+* {
+    box-sizing: border-box;
+  }
