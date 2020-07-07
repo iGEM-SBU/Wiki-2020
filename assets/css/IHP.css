@@ -209,10 +209,10 @@ input, select {
   padding: 20px;
   font-family: sans-serif;
   font-size: 50px;
-  ;
+}
 
 /* paragraph things*/
-.p {
+.p{
   padding: 10px;
   font-family: sans-serif;
   spacing: 10px;
@@ -220,6 +220,9 @@ input, select {
   background-color:#FBE2CE;
   font-size: 30px;
 }
+
+
+
 /* container stuff
 .container{
   max-width: 1170px;
