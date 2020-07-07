@@ -209,7 +209,7 @@ input, select {
   padding: 20px;
   font-family: sans-serif;
   font-size: 50px;
-  line-height: 35px;
+  ;
 
 /* paragraph things*/
 .p {
@@ -217,6 +217,8 @@ input, select {
   font-family: sans-serif;
   spacing: 10px;
   color: #43AE4C;
+  background-color:#FBE2CE;
+  font-size: 30px;
 }
 /* container stuff
 .container{
