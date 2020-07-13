@@ -226,26 +226,26 @@ input, select {
 
 
 
-/* container stuff
+/* container stuff */
 .container{
   max-width: 1170px;
   width: 33.33%;
   margin-top: 50px;
   margin-left: 210px;
-  display: flex; */
+  display: flex;
 }
-/*column and row stuff
+/*column and row stuff */
 .column{
   margin: 0 15px 25px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
   0 1px 2px rgba(0, 0, 0, 0.24);
   background: #3C1F3B;
-  border-radius: 10px;  */
+  border-radius: 10px;
 }
-/*card stuff
+/*card stuff*/
 .card{
   padding: 25px 40px;
-} */
+}
 
 /* Clear floats after the columns */
 .row:after{
