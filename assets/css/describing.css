@@ -152,7 +152,6 @@ input, select {
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
     color: rgb(23, 235, 23);
-
     transform: scale(1.15);
 }
 /* Dropdown content (hidden by default) */
@@ -246,6 +245,7 @@ input, select {
   font-family: sans-serif;
   spacing: 10px;
   color: black;
+  font-size: 20px;
 }
 /* TABLE CONTENT FORMATTING */
 .table {
