@@ -100,15 +100,17 @@ hr {
 input, select {
     vertical-align:middle;
 }
-/* background things */
+/* HEADER IMAGE FORMATTING */
 .main-header {
-  background-color: rgba(0, 0, 0, .6);
-  background-image: url(https://pbs.twimg.com/media/Dpy6u6vXUAUXBgC.jpg);
-  background-size: contain;
-  padding-bottom: 40px;
+  background-color: #d8bfd8;
+  background-size: cover;
+  padding: 100px;
 }
+/* SETTING BACKGROUND COLOR SO IT GETS DARKER AS YOU MOVE DOWN */
 .body{
-  background-color: #2B072A;
+  height: 3000px; /* Used to enable scrolling */
+  background: linear-gradient(0deg, #ba8cd7 0%, #d2b2e5 51%, #e9d8f2 85%);
+                                    /* DARKEST COLOR       LIGHTEST COLOR */
 }
 /* Add a black background color to the top navigation */
 .navbar {
@@ -188,28 +190,29 @@ input, select {
     display: block;
 }
 
-/* header things*/
+/* HEADER FORMATTING*/
 .h1 {
-  text-align: right;
+  text-align: center;
   font-family: sans-serif;
-  font-size: 70px;
+  font-size: 90px;
   padding: 85px;
-  color: white;
+  color: black;
 }
+
 .h2 {
-  color:  palevioletred;
+  color:  black;
   padding: 20px;
   font-family: sans-serif;
   font-size: 40px;
 }
 .h3 {
-  color: 	palevioletred;
+  color: 	black;
   padding: 20px;
   font-family: sans-serif;
   font-size: 40px;
 }
 .h4 {
-  color: palevioletred;
+  color: black;
   padding: 20px;
   font-family: sans-serif;
   font-size: 30px;
@@ -219,7 +222,10 @@ input, select {
   padding: 10px;
   font-family: sans-serif;
   spacing: 10px;
-  color: white;
+  color: black;
+}
+.hr {
+  border: 1px solid black;
 }
 /* container stuff */
 .container{
@@ -234,7 +240,7 @@ input, select {
   margin: 0 15px 25px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
   0 1px 2px rgba(0, 0, 0, 0.24);
-  background: #3C1F3B;
+  background: white;
   border-radius: 10px;
 }
 .card{
@@ -246,6 +252,7 @@ input, select {
   display: table;
   clear: both;
 }
+
 
 .Social_Media {
 
