@@ -112,83 +112,26 @@ input, select {
   background: linear-gradient(0deg, #ba8cd7 0%, #d2b2e5 51%, #e9d8f2 85%);
                                     /* DARKEST COLOR       LIGHTEST COLOR */
 }
-/* Add a black background color to the top navigation */
-.navbar {
-    overflow: hidden;
-    background-color: white;
-    font-family: arial;
-    padding-left: 24%;
-}
-/* links in the navbar */
-.navbar a {
 
-    float: left;
-    font-size: 16px;
-    color: black;
-    text-align: center;
-    padding: 16px 16px; /* first number is vertical padding, second is padding between words */
-    text-decoration: none;
+    nav a
+    {
+        color:black;
+    }
 
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1); */
+    nav a
+    {
+      color: white;
+    }
 
-}
-/* style the dropdown container*/
-.dropdown {
+    nav a:hover
+    {
+        color: #229D05;
+    }
 
-    float: left;
-    overflow: hidden;
-}
-/* style the dropdown buttons themselves*/
-.dropdown .dropbtn {
-    transition: transform .2s;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 0px 0px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0; /* the last 3 lines are important for smartphone viewing, apparently */
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-    color: rgb(23, 235, 23);
-
-    transform: scale(1.15);
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
-    z-index: 1;
-}
-
-/* links inside the dropdown */
-.dropdown-content a{
-    float:none;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-
-}
-
-/* adding a gray background to dropdown on hover */
-.dropdown-content a:hover {
-    background-color:rgba(128,128,128, 0.15);
-    transform: scale(1);
-}
-
-/* Show the dropdown menu on hover: */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+    .navbar-purple
+    {
+      background-color: #760E73;
+    }
 
 /* HEADER FORMATTING*/
 .h1 {

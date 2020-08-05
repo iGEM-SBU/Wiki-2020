@@ -1,0 +1,395 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body 
+{
+    line-height:1;
+    /*background: linear-gradient(#FFBCB7 , #FFC3A0, #E8CD96);*/
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,section {
+    display:block;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+
+  /* This is my css code */
+
+  /* Use font-family: font; to change the font of text in a section */
+
+
+     .School {
+        font-family: arial, "Times New Roman";
+        color:rgb(218, 20, 20);
+        font-size: 30px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .project {
+        font-family: arial, "Times New Roman";
+        font-size: 30px;
+        color:rgb(69, 194, 96);
+         text-align: center;
+    }
+    .heading {
+        background-color: cornflowerblue;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .Social_Media {
+
+        background-color: rgb(51, 50, 50);
+        font-size: 20px;
+        text-align: right;
+        color: white;
+        padding-right: 25%;
+
+    }
+
+   /* .card{
+       box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.3);
+       max-width: 300px;
+
+       float: left;
+       padding: 20px 20px;
+       text-align: center;
+
+    }
+    */
+
+    * {
+        box-sizing: border-box;
+      }
+
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px 10px;
+        border: solid 20px;
+        border-color: white;
+
+      }
+
+      .column2 {
+         float: left;
+        width: 50%;
+        padding: 5px 10px;
+        border: solid 20px;
+        border-color: white;
+
+      }
+
+      /* Remove extra left and right margins, due to padding in columns */
+      .row {margin: 0 -5px;
+            padding-left: 6.5%;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Remove extra left and right margins, due to padding in columns */
+      .row2 {margin: 0 -5px;
+        padding-left: 17%;
+
+      }
+
+      /* Clear floats after the columns */
+      .row2:after {
+       content: "";
+       display: table;
+       clear: both;
+      }
+
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); /* this adds the "card" effect */
+        padding: 16px;
+        max-width: 300px;
+        color: black;
+        float: left;
+        text-align: center;
+        background-color: cornflowerblue;
+
+
+      }
+
+      /* Responsive columns - one column layout (vertical) on small screens */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+
+    .Bio{
+        color: black;
+        font-size: 16px;
+    }
+
+
+
+
+    .social-padding {
+        vertical-align: right;
+        width: 40px;
+        height: 35px;
+        padding-left: 5px;
+
+    }
+
+   .Writing_size {
+        padding-left: 25%;
+        padding-right: 25%;
+        line-height: 30px;
+        font-size: 18px;
+        color: white;
+        text-shadow: /* adds drop shadow-like thing to text */
+        -1px -1px 0 #8f1a8f,
+        1px -1px 0 #8f1a8f,
+        -1px 1px 0 #8f1a8f,
+        1px 1px 0 #8f1a8f;
+      
+    }
+
+    .Writing_header {
+
+      color: black;
+      font-size: 22px;
+      line-height: 30px;
+      vertical-align: center;
+      padding-right: 16%;
+      padding-left: 16%;
+
+    }
+
+    .citi {
+        vertical-align: middle;
+        margin-left: 30%;
+        margin-right: 25%;
+    }
+
+    .logo {
+        background-image: url(logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; /* centers image to the  dimensions of  the div box */
+    }
+
+    nav a
+    {
+      color: white;
+    }
+
+    nav a:hover
+    {
+        color: #229D05;
+    }
+
+    .navbar-purple
+    {
+      background-color: #760E73;
+    }
+
+#projectDescription h1
+{
+    margin: 10px 240px;
+    font-size: 30px;
+}
+
+#projectDescription p
+{
+    margin: 10px 240px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#projectDescription button
+{
+    border-radius: 7px;
+    position: relative;
+    left:45%;
+    background-color: chartreuse;
+    font-size: 20px;
+}
+    /*
+     It's good to use line-height: Xpx; to aid readabil;oity of paragraphs
+    */
+
+.lightTheme
+{
+    background: linear-gradient(#ff80ea , #FFBCB7, #FFC3A0);
+    color: #000000;
+}
+
+.darkTheme
+{
+    background: #333232;
+    color: #ffffff;
+}
+
+.switch 
+{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input 
+{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider 
+{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before 
+{
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  left: 0px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  box-shadow: 0 0px 15px #2020203d;
+  background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input:checked + .slider 
+{
+  background-color: #2196f3;
+}
+
+input:focus + .slider 
+{
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before 
+{
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+  background: white url('https://i.ibb.co/FxzBYR9/night.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Rounded sliders */
+.slider.round 
+{
+  border-radius: 34px;
+}
+
+.slider.round:before 
+{
+  border-radius: 50%;
+}
