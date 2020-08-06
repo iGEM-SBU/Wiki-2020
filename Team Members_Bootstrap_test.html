@@ -7,85 +7,108 @@
     <title>
         Team:Stony_Brook/Team_Members - 2020.igem.org
     </title>
+    <link rel="stylesheet" href="assets/css/team.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="navbar">
-        <!-- code for the navigation bar -->
-        <a href="index.html"> Home </a>
+    <nav class="navbar navbar-purple navbar-expand-md py-4" style="margin-bottom: 0px; border-radius: 0px;">
 
-        <div class="dropdown">
-            <!-- making dropdown menu-->
-            <button class="dropbtn">
-                <a href="Team.html"> Team </a>
+        <a class="navbar-brand">Light Switch</a>
 
-            </button>
-            <div class="dropdown-content">
-                <a href="Team Members.html"> Team Members </a>
-                <a href="Collaborations.html"> Collaborations </a>
-                <a href="Attributions.html"> Attributions</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <!-- making dropdown menu-->
-            <button class="dropbtn">
-                <a href="Project.html"> Project </a>
+        <ul class="nav navbar-nav navbar-right" style="padding-right: 15px; font-size: large;">
+            <li><a href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+                <a href="Team.html" role="button" aria-haspopup="true">
+                    Team
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="Team Members.html">Team Members</a></li>
+                    <li><a href="Team Members_Bootstrap_test.html">Team Members Test</a></li>
+                    <li><a href="Collaborations.html">Collaborations</a></li>
+                    <li><a href="Attributions.html">Attributions</a></li>
+                </ul>
+            </li>
 
-            </button>
-            <div class="dropdown-content">
-                <a href="Description.html"> Description </a>
-                <a href="Design.html"> Design </a>
-                <a href="Experiments.html"> Experiments </a>
-                <a href="Notebook.html"> Notebook</a>
-                <a href="Modeling.html"> Modeling </a>
-                <a href="Characterization.html"> Characterization </a>
-                <a href="Results.html"> Results </a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <!-- making dropdown menu-->
-            <button class="dropbtn">
-                <a href="Parts.html"> Parts </a>
-            </button>
-            <div class="dropdown-content">
-                <a href="Basic Parts.html"> Basic Parts </a>
-            </div>
-        </div>
-        <a href="safety.html"> Safety </a>
-        <div class="dropdown">
-            <!-- making dropdown menu-->
-            <button class="dropbtn">
-                <a href="Human Practices.html"> Human Practices </a>
-            </button>
-            <div class="dropdown-content">
-                <a href="Education and Engagement.html"> Education and Engagement </a>
-                <a href="Integrated.html"> Integrated Human Practices </a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <!-- making dropdown menu-->
-            <button class="dropbtn">
-                <a href="Awards.html"> Awards </a>
-            </button>
-            <div class="dropdown-content">
-                <a href="Programmed Cell Death.html"> Programmed Cell Death </a>
-                <a href="Wiki.html"> Wiki </a>
-            </div>
-        </div>
-    </div>
+            <li class="nav-item dropdown">
+                <a href="Project.html" role="button" aria-haspopup="true">
+                    Project
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="Description.html">Description</a></li>
+                    <li><a href="Design.html"> Design</a></li>
+                    <li><a href="Experiments.html"> Experiments</a></li>
+                    <li><a href="Notebook.html"> Notebook</a></li>
+                    <li><a href="Modeling.html"> Modeling</a></li>
+                    <li><a href="Engineering.html">Engineering</a></li>
+                    <li><a href="Characterization.html"> Characterization</a></li>
+                    <li><a href="Results.html"> Results</a></li>
+                    <li><a href="Implementation.html">Implementation</a></li>
+                    <li><a href="Contributions.html">Contribution</a></li>
+                </ul>
+            </li>
 
-    <div class="heading">
+            <li class="nav-item dropdown">
+                <a href="Parts.html" role="button" aria-haspopup="true">
+                    Parts
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="Basic Parts.html">Basic Parts</a></li>
+                </ul>
+            </li>
+
+            <li><a href="Safety.html">Safety</a></li>
+
+            <li class="nav-item dropdown">
+                <a href="Human Practices.html" role="button" aria-haspopup="true">
+                    Human Practices
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="Education and Engagement.html">Education and Engagement</a></li>
+                    <li><a href="Integrated.html">Integrated Human Practices</a></li>
+                    <li><a href="Partnership.html">Partnership</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a href="Awards.html" role="button" aria-haspopup="true">
+                    Awards
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="Programmed Cell Death.html">Programmed Cell Death</a></li>
+                    <li><a href="Wiki.html">Wiki</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header-container">
+        <img src="assets/images/Group.jpg" alt="group_pic" style="width:100%;height:auto;opacity:0.5;">
         <!--CSS for the loading page -->
-        <br />
-        <h1> Team Members </h1>
-        <br />
+        <div class="centered">Team Member</div>
+        <!--<h1 class="h1">Team Member</h1>-->
+    </header>
+
+    <br>
+    <br>
+
+
+    <div class="brief-intro">
+        <p style="text-align:center">
+            Introducing Stony Brook 2019 iGEM team! Stony Brook iGEM was established in 2014. Throughout the years, the team has found several successes. <br />
+            This year brings a variety of disciplines across the spectrum together in order to tackle a real-world challenge. <br />
+            Starting from February, we worked together as a team despite our differences and the challenges, especially that of COVID-19, in order to create a solution that each one of us is proud of.
+        </p>
     </div>
-    <br>
-    <br>
 
 
-    <p> Introducing Stony Brook 2019 iGEM team! Stony Brook iGEM was established in 2014. Throughout the years, the team has found several successes. This year brings a variety of disciplines across the spectrum together in order to tackle a real-world challenge. Starting from February, we worked together as a team despite our differences and the challenges, especially that of COVID-19, in order to create a solution that each one of us is proud of. </p>
 
     <div class="row">
         <div class="column">
@@ -112,8 +135,19 @@
                                         <br />Sophomore
                                     </p>
                                     <p>
-
-
+                                        Adit loves to learn about the intersection
+                                        of Biology and Computations. In his spare time,
+                                        he watches basketball and all forms of Spiderman media.
+                                    </p>
+                                    <p>
+                                        Web Development, GitHub maintance, Modeling
+                                    </p>
+                                    <p>
+                                        <i>
+                                            "We can always be kind of average and
+                                            do what's normal. I'm not in this to be
+                                            normal." - Kobe Bryant
+                                        </i>
                                     </p>
                                 </div>
                             </div>
@@ -695,9 +729,11 @@
         <br>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/css/team.js"></script>
+    <!-- Optional JavaScript from Bootstrap -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="assets/js/hover.js"></script>
     <script>
         $('#myModal').on('shown.bs.modal', function () {
             $('#myInput').trigger('focus')
