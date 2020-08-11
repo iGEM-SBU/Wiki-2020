@@ -92,7 +92,7 @@
     <header class="header-container">
         <img src="assets/images/Group.jpg" alt="group_pic" style="width:100%;height:auto;opacity:0.5;">
         <!--CSS for the loading page -->
-        <div class="centered">Team Member</div>
+        <div class="centered">Meet the Team</div>
         <!--<h1 class="h1">Team Member</h1>-->
     </header>
 
@@ -102,7 +102,7 @@
 
     <div class="brief-intro">
         <p style="text-align:center">
-            Introducing Stony Brook 2019 iGEM team! Stony Brook iGEM was established in 2014. Throughout the years, the team has found several successes. <br />
+            Introducing Stony Brook 2020 iGEM team! Stony Brook iGEM was established in 2014. Throughout the years, the team has found several successes. <br />
             This year brings a variety of disciplines across the spectrum together in order to tackle a real-world challenge. <br />
             Starting from February, we worked together as a team despite our differences and the challenges, especially that of COVID-19, in order to create a solution that each one of us is proud of.
         </p>
@@ -111,11 +111,61 @@
 
 
     <div class="row">
+
+        <!-- Adit -->
         <div class="column">
-            <!-- Modal -->
             <!-- Button trigger modal -->
-            <input type="image" src="assets/images/aditt.png" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" width="400" height="300">
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!-- btn-success is a predefined button with color green; data-target is the location where the html pointer should point to -->
+            <input type="image" src="assets/images/aditt.png" onMouseOver="this.src='assets/images/Mahee.png'" onMouseOut="this.src='assets/images/aditt.png'" data-toggle="modal" data-target="#exampleModal" style="width:100%;height:auto;">
+            <div class="modal fade-scale" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/aditt.png" class="img-fluid" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            Adit
+                                            <br /> Computer Science
+                                            <br />Sophomore
+                                        </p>
+                                        <p>
+                                            Adit loves to learn about the intersection
+                                            of Biology and Computations. In his spare time,
+                                            he watches basketball and all forms of Spiderman media.
+                                        </p>
+                                        <p>
+                                            Web Development, GitHub maintance, Modeling
+                                        </p>
+                                        <p>
+                                            <i>
+                                                "We can always be kind of average and
+                                                do what's normal. I'm not in this to be
+                                                normal." - Kobe Bryant
+                                            </i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-backdroup fade in"></div>
+        </div>
+
+        <!-- Maheen -->
+        <div class="column">
+            <input type="image" src="assets/images/Mahee.png" data-toggle="modal" data-target="#exampleModal2" style="width:100%;height:auto;">
+            <div class="modal fade-scale" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -124,31 +174,32 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/aditt.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col">
-                                    <p>
-                                        Adit
-                                        <br /> Computer Science
-                                        <br />Sophomore
-                                    </p>
-                                    <p>
-                                        Adit loves to learn about the intersection
-                                        of Biology and Computations. In his spare time,
-                                        he watches basketball and all forms of Spiderman media.
-                                    </p>
-                                    <p>
-                                        Web Development, GitHub maintance, Modeling
-                                    </p>
-                                    <p>
-                                        <i>
-                                            "We can always be kind of average and
-                                            do what's normal. I'm not in this to be
-                                            normal." - Kobe Bryant
-                                        </i>
-                                    </p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/Mahee.png" class="img-fluid" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            Maheen Khan
+                                            <br />Health Science
+                                            <br />Sophomore
+                                        </p>
+                                        <p>
+                                            As you can clearly see, Maheen has a third degree black belt
+                                            in Jiu Jitsu. Recently, she seems to have gone through some strange cowboy
+                                            phase.
+                                        </p>
+                                        <p>
+                                            Project Development, Fundraising, Outreach
+                                        </p>
+                                        <p>
+                                            <i>
+                                                "Sometimes life is like this tunnel. You can't always see the light at the end of the tunnel, but if you keep moving, you will 
+                                                 come to a better place." - Iroh 
+                                            </i>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -157,10 +208,10 @@
             </div>
         </div>
 
-
+        <!-- Laiba -->
         <div class="column">
-            <input type="image" src="assets/images/Mahee.png" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2" width="400" height="300">
-            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <input type="image" src="assets/images/Laiba.png" onMouseOver="this.src='assets/images/goat_3.png'" onMouseOut="this.src='assets/images/Laiba.png'" data-toggle="modal" data-target="#exampleModal3" style="width:100%;height:auto;">
+            <div class="modal fade-scale" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -169,67 +220,29 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/Mahee.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col">
-                                    <p>
-                                        Maheen Khan
-                                        <br />Health Science
-                                        <br />Sophomore
-                                    </p>
-                                    <p>
-                                        As you can clearly see, Maheen has a third degree black belt
-                                        in Jiu Jitsu. Recently, she seems to have gone through some strange cowboy
-                                        phase.
-                                    </p>
-                                    <p>
-                                        Project Development, Fundraising, Outreach
-                                    </p>
-                                    <p>
-                                        <!--Qupte-->
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="column">
-            <input type="image" src="assets/images/Laiba.png" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3" width="400" height="300">
-            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/Laiba.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col">
-                                    <p>
-                                        Laiba Ahmed
-                                        <br />Biology & Psychology
-                                        <br />Junior
-                                    </p>
-                                    <p>
-                                        Laiba is an active skateboarder and tennis player, though she
-                                        isn't winning an award any time soon. She has a pet goat that eats leaves, I just hope he's fed
-                                        properly.
-                                    </p>
-                                    <p>
-                                        (Team Leader) Project Development, Outreach, Fundraising, Web Development, Modeling
-                                    </p>
-                                    <p>
-                                        <i> "Real g's move in silence like lasagna" - Lil Wayne </i>
-                                    </p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/Laiba.png" class="img-fluid" alt="" style="width:100%;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            Laiba Ahmed
+                                            <br />Biology & Psychology
+                                            <br />Junior
+                                        </p>
+                                        <p>
+                                            Laiba is an active skateboarder and tennis player, though she
+                                            isn't winning an award any time soon. She has a pet goat that eats leaves, I just hope he's fed
+                                            properly.
+                                        </p>
+                                        <p>
+                                            (Team Leader) Project Development, Outreach, Fundraising, Web Development, Modeling
+                                        </p>
+                                        <p>
+                                            <i> "Real g's move in silence like lasagna" - Lil Wayne </i>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -242,9 +255,10 @@
 
     <div class="row">
 
+        <!-- Avi  -->
         <div class="column">
-            <input type="image" src="assets/images/Avi.png" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4" width="400" height="300">
-            <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+            <input type="image" src="assets/images/Avi.png" data-toggle="modal" data-target="#exampleModal4" style="width:100%;height:auto;">
+            <div class="modal fade-scale" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -253,27 +267,29 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/Avi.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col">
-                                    <p>
-                                        Avi Bajaj
-                                        <br />Psychology
-                                        <br />Senior
-                                    </p>
-                                    <p>
-                                        Avi is a tennis addict going on 8 years, picking it up to play
-                                        with his father when they moved. After lab hours, him and Laiba can be seen training
-                                        together.
-                                    </p>
-                                    <p>
-                                        Project Development, Outreach, Fundraising, Modeling
-                                    </p>
-                                    <p>
-                                        <i> "The only constant in life is change." - Haraclitus </i>
-                                    </p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/Avi.png" class="img-fluid" alt="" style="width:100%;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            Avi Bajaj
+                                            <br />Psychology
+                                            <br />Senior
+                                        </p>
+                                        <p>
+                                            Avi is a tennis addict going on 8 years, picking it up to play
+                                            with his father when they moved. After lab hours, him and Laiba can be seen training
+                                            together.
+                                        </p>
+                                        <p>
+                                            Project Development, Outreach, Fundraising, Modeling
+                                        </p>
+                                        <p>
+                                            <i> "The only constant in life is change." - Haraclitus </i>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -282,9 +298,10 @@
             </div>
         </div>
 
+        <!-- Abhi -->
         <div class="column">
-            <input type="image" src="assets/images/Abhishek.png" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5" width="400" height="300">
-            <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+            <input type="image" src="assets/images/Abhishek.png" data-toggle="modal" data-target="#exampleModal5" style="width:100%;height:auto;">
+            <div class="modal fade-scale" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -293,27 +310,29 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/Abhishek.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col">
-                                    <p>
-                                        Abhishek Cherath
-                                        <br />Physics & Mathematics
-                                        <br />Junior
-                                    </p>
-                                    <p>
-                                        Abhishek likes to think about the 'behind the scenes' of things, espeically
-                                        when it comes to computer science and math. He likes to run on his days off, though apparently the faster he runs, the quicker he
-                                        can compile.
-                                    </p>
-                                    <p>
-                                        Modeling
-                                    </p>
-                                    <p>
-                                        <i> "When you die, you can't see sunsets." - Hayao Miyazaki </i>
-                                    </p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/Abhishek.png" class="img-fluid" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            Abhishek Cherath
+                                            <br />Physics & Mathematics
+                                            <br />Junior
+                                        </p>
+                                        <p>
+                                            Abhishek likes to think about the 'behind the scenes' of things, espeically
+                                            when it comes to computer science and math. He likes to run on his days off, though apparently the faster he runs, the quicker he
+                                            can compile.
+                                        </p>
+                                        <p>
+                                            Modeling
+                                        </p>
+                                        <p>
+                                            <i> "When you die, you can't see sunsets." - Hayao Miyazaki </i>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -322,9 +341,10 @@
             </div>
         </div>
 
+        <!-- Anneqa -->
         <div class="column">
-            <input type="image" src="assets/images/Aneeqa.png" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal6" width="400" height="300">
-            <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+            <input type="image" src="assets/images/Aneeqa.png" data-toggle="modal" data-target="#exampleModal6" style="width:100%;height:auto;">
+            <div class="modal fade-scale" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel6" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -333,26 +353,28 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/Aneeqa.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col">
-                                    <p>
-                                        Aneeqa Majid
-                                        <br />Chemical and Molecular Engineering
-                                        <br />Sophmore
-                                    </p>
-                                    <p>
-                                        Aneeqa likes sunsets... a bit too much. Her roommates had to thaw her out of the
-                                        snow when they couldn't find her in the morning. She's curbing the urge with YouTube compilations for now
-                                    </p>
-                                    <p>
-                                        Social Media, Web Development, Outreach, Human Practices
-                                    </p>
-                                    <p>
-                                        <i> "Life is like a chemical equation, you gotta keep it balanced" </i>
-                                    </p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/Aneeqa.png" class="img-fluid" alt="" style="width:100%;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            Aneeqa Majid
+                                            <br />Chemical and Molecular Engineering
+                                            <br />Sophmore
+                                        </p>
+                                        <p>
+                                            Aneeqa likes sunsets... a bit too much. Her roommates had to thaw her out of the
+                                            snow when they couldn't find her in the morning. She's curbing the urge with YouTube compilations for now
+                                        </p>
+                                        <p>
+                                            Social Media, Web Development, Outreach, Human Practices
+                                        </p>
+                                        <p>
+                                            <i> "Life is like a chemical equation, you gotta keep it balanced" </i>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -367,8 +389,8 @@
 
         <!-- Alexis -->
         <div class="column">
-            <input type="image" src="assets/images/Alexis.png" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal7" width="400" height="300">
-            <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+            <input type="image" src="assets/images/Alexis.png" data-toggle="modal" data-target="#exampleModal7" style="width:100%;height:auto;">
+            <div class="modal fade-scale" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel7" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -377,27 +399,29 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/Alexis.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col">
-                                    <p>
-                                        Alexis Choi
-                                        <br />Biochemistry
-                                        <br />Junior
-                                    </p>
-                                    <p>
-                                        An avid fan of rom-coms, much to Maheen's dismay, and lover of all things
-                                        Italy. She's a huge marvel fan, fighting for a spot  in her theater's Iron Man 2's premiere.
-                                        I hope she hasn't seen Endgame.
-                                    </p>
-                                    <p>
-                                        Projec Development, Outreach
-                                    </p>
-                                    <p>
-                                        <i> "Tiny and Fast" </i>
-                                    </p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/Alexis.png" class="img-fluid" alt="" style="width:100%;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            Alexis Choi
+                                            <br />Biochemistry
+                                            <br />Junior
+                                        </p>
+                                        <p>
+                                            An avid fan of rom-coms, much to Maheen's dismay, and lover of all things
+                                            Italy. She's a huge marvel fan, fighting for a spot  in her theater's Iron Man 2's premiere.
+                                            I hope she hasn't seen Endgame.
+                                        </p>
+                                        <p>
+                                            Projec Development, Outreach
+                                        </p>
+                                        <p>
+                                            <i> "Tiny and Fast" </i>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -408,8 +432,8 @@
 
         <!--Chiu -->
         <div class="column">
-            <input type="image" src="assets/images/Chiu.png" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal8" width="400" height="300">
-            <div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel8" aria-hidden="true">
+            <input type="image" src="assets/images/Chiu.png" data-toggle="modal" data-target="#exampleModal8" style="width:100%;height:auto;">
+            <div class="modal fade-scale" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel8" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -418,26 +442,28 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/Chiu.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col">
-                                    <p>
-                                        Chiu Yin Lee
-                                        <br />Electrical Engineering & Physics
-                                        <br />Senior
-                                    </p>
-                                    <p>
-                                        Despite his looks, Chiu spends most of his time at the local buffets to make the most of his
-                                        money. For some reason, the cafeteria never serves the daily special when he swipes in, how odd.
-                                    </p>
-                                    <p>
-                                        Web Development, Modelling
-                                    </p>
-                                    <p>
-                                        <i> "Every time I think I understand something, I realize I don't two minutes later" </i>
-                                    </p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/Chiu.png" class="img-fluid" alt="" style="width:100%;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            Chiu Yin Lee
+                                            <br />Electrical Engineering & Physics
+                                            <br />Senior
+                                        </p>
+                                        <p>
+                                            Despite his looks, Chiu spends most of his time at the local buffets to make the most of his
+                                            money. For some reason, the cafeteria never serves the daily special when he swipes in, how odd.
+                                        </p>
+                                        <p>
+                                            Web Development, Modelling
+                                        </p>
+                                        <p>
+                                            <i> "Every time I think I understand something, I realize I don't two minutes later" </i>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -448,8 +474,8 @@
 
         <!-- Julia -->
         <div class="column">
-            <input type="image" src="assets/images/Julia.jpeg" class="btn btn-primary" data-toggle="modal" data-target="#Julia" width="400" height="300">
-            <div class="modal fade" id="Julia" tabindex="-1" role="dialog" aria-labelledby="Julia" aria-hidden="true">
+            <input type="image" src="assets/images/Julia.jpeg" data-toggle="modal" data-target="#Julia" style="width:100%;height:auto;">
+            <div class="modal fade-scale" id="Julia" tabindex="-1" role="dialog" aria-labelledby="Julia" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -458,26 +484,28 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/Julia.jpeg" class="img-fluid" alt="">
-                                </div>
-                                <div class="col">
-                                    <p>
-                                        Julia Petreczky
-                                        <br />Biochemistry
-                                        <br />Sophmore
-                                    </p>
-                                    <p>
-                                        A dumb blonde in WISE honors, daycare worker and part-time skydiver, there isn't anything Julia
-                                        hasn't tried already. When she's not skiing on the Long Island Sound, she spends her time picking flowers on the Appalachian mountains.
-                                    </p>
-                                    <p>
-                                        Project Development, Phylogenetics, Outreach
-                                    </p>
-                                    <p>
-                                        <i> "Every Storm runs out of rain" - Maya Angelou </i>
-                                    </p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/Julia.jpeg" class="img-fluid" alt="" style="width:100%;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            Julia Petreczky
+                                            <br />Biochemistry
+                                            <br />Sophmore
+                                        </p>
+                                        <p>
+                                            A dumb blonde in WISE honors, daycare worker and part-time skydiver, there isn't anything Julia
+                                            hasn't tried already. When she's not skiing on the Long Island Sound, she spends her time picking flowers on the Appalachian mountains.
+                                        </p>
+                                        <p>
+                                            Project Development, Phylogenetics, Outreach
+                                        </p>
+                                        <p>
+                                            <i> "Every Storm runs out of rain" - Maya Angelou </i>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -491,8 +519,8 @@
     <div class="row">
         <!-- Simi  -->
         <div class="column">
-            <input type="image" src="assets/images/Simi.png" class="btn btn-primary" data-toggle="modal" data-target="#Simi" width="400" height="300">
-            <div class="modal fade" id="Simi" tabindex="-1" role="dialog" aria-labelledby="Simi" aria-hidden="true">
+            <input type="image" src="assets/images/Simi.png" data-toggle="modal" data-target="#Simi" style="width:100%;height:auto;">
+            <div class="modal fade-scale" id="Simi" tabindex="-1" role="dialog" aria-labelledby="Simi" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -501,26 +529,28 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/Simi.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col">
-                                    <p>
-                                        Simi Kaur
-                                        <br />Biology & Psychology
-                                        <br />Sophmore
-                                    </p>
-                                    <p>
-                                        For Simi, there's no such thing as a complete meal without ice cream. The last time she tried... didn't go
-                                        too well. Whenever we meet up now, there's always a tun of Ben & Jerry's lying around.
-                                    </p>
-                                    <p>
-                                        Project Development, Web Development, Modelling
-                                    </p>
-                                    <p>
-                                        <i> "Without ice cream, there would be darkness and chaos" - Don Kardong </i>
-                                    </p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/Simi.png" class="img-fluid" alt="" style="width:100%;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            Simi Kaur
+                                            <br />Biology & Psychology
+                                            <br />Sophmore
+                                        </p>
+                                        <p>
+                                            For Simi, there's no such thing as a complete meal without ice cream. The last time she tried... didn't go
+                                            too well. Whenever we meet up now, there's always a tun of Ben & Jerry's lying around.
+                                        </p>
+                                        <p>
+                                            Project Development, Web Development, Modelling
+                                        </p>
+                                        <p>
+                                            <i> "Without ice cream, there would be darkness and chaos" - Don Kardong </i>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -531,8 +561,8 @@
 
         <!-- Melissa  -->
         <div class="column">
-            <input type="image" src="assets/images/Melissa.png" class="btn btn-primary" data-toggle="modal" data-target="#Melissa" width="400" height="300">
-            <div class="modal fade" id="Melissa" tabindex="-1" role="dialog" aria-labelledby="Melissa" aria-hidden="true">
+            <input type="image" src="assets/images/Melissa.png" data-toggle="modal" data-target="#Melissa" style="width:100%;height:auto;">
+            <div class="modal fade-scale" id="Melissa" tabindex="-1" role="dialog" aria-labelledby="Melissa" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -541,26 +571,28 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/Melissa.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col">
-                                    <p>
-                                        Melissa King
-                                        <br />Biology
-                                        <br />Junior
-                                    </p>
-                                    <p>
-                                        In an attempt to pay off her college debt, Melissa works at Starbucks as a barista. The next
-                                        time your caramel macchiato isn't made as ordered, you know who to go to.
-                                    </p>
-                                    <p>
-                                        Project Development, Outreach
-                                    </p>
-                                    <p>
-                                        <i> "Insert something here" </i>
-                                    </p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/Melissa.png" class="img-fluid" alt="" style="width:100%;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            Melissa King
+                                            <br />Biology
+                                            <br />Junior
+                                        </p>
+                                        <p>
+                                            In an attempt to pay off her college debt, Melissa works at Starbucks as a barista. The next
+                                            time your caramel macchiato isn't made as ordered, you know who to go to.
+                                        </p>
+                                        <p>
+                                            Project Development, Outreach
+                                        </p>
+                                        <p>
+                                            <i> "Insert something here" </i>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -571,8 +603,8 @@
 
         <!-- AJ -->
         <div class="column">
-            <input type="image" src="assets/images/AJ.png" class="btn btn-primary" data-toggle="modal" data-target="#AJ" width="400" height="300">
-            <div class="modal fade" id="AJ" tabindex="-1" role="dialog" aria-labelledby="AJ" aria-hidden="true">
+            <input type="image" src="assets/images/AJ.png" data-toggle="modal" data-target="#AJ" style="width:100%;height:auto;">
+            <div class="modal fade-scale" id="AJ" tabindex="-1" role="dialog" aria-labelledby="AJ" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -581,27 +613,29 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/AJ.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col">
-                                    <p>
-                                        AJ Sillato
-                                        <br />Biochemistry
-                                        <br />Senior
-                                    </p>
-                                    <p>
-                                        Fan of all things optogenetics, AJ's all about the biochemical
-                                        process behind life. As the only one who knew how to GEM for iGEM from the start, he's our colleague and boss at the
-                                        same time. You can never tell what's going on behind that devious smile.
-                                    </p>
-                                    <p>
-                                        (Team Leader) Project Development, Modelling
-                                    </p>
-                                    <p>
-                                        <i> "I use arch btw" </i>
-                                    </p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/AJ.png" class="img-fluid" alt="" style="width:100%;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            AJ Sillato
+                                            <br />Biochemistry
+                                            <br />Senior
+                                        </p>
+                                        <p>
+                                            Fan of all things optogenetics, AJ's all about the biochemical
+                                            process behind life. As the only one who knew how to GEM for iGEM from the start, he's our colleague and boss at the
+                                            same time. You can never tell what's going on behind that devious smile.
+                                        </p>
+                                        <p>
+                                            (Team Leader) Project Development, Modelling
+                                        </p>
+                                        <p>
+                                            <i> "I use arch btw" </i>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -614,8 +648,8 @@
     <div class="row2">
         <!-- Aaliyah -->
         <div class="column2">
-            <input type="image" src="assets/images/Aaliyah.png" class="btn btn-primary" data-toggle="modal" data-target="#Aaliyah" width="400" height="300">
-            <div class="modal fade" id="Aaliyah" tabindex="-1" role="dialog" aria-labelledby="Aaliyah" aria-hidden="true">
+            <input type="image" src="assets/images/Aaliyah.png" data-toggle="modal" data-target="#Aaliyah" style="width:75%;height:auto;">
+            <div class="modal fade-scale" id="Aaliyah" tabindex="-1" role="dialog" aria-labelledby="Aaliyah" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -624,27 +658,29 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/Aayliah.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col">
-                                    <p>
-                                        Aaliyah Kaushal
-                                        <br />Chemical Engineering
-                                        <br />Sophmore
-                                    </p>
-                                    <p>
-                                        Aaliyah enjoys the finer things in life: the extra onion ring when ordering french fries, the flip of
-                                        a Dairy Queen Blizzard, and long visits to East Side Dining. She can normally be found laying on the turf, between the 10 spike
-                                        ball teams at noon.
-                                    </p>
-                                    <p>
-                                        Project Development, Modelling, Outreach, Fundraising
-                                    </p>
-                                    <p>
-                                        <i> "I like all things French: french fries, french toast" </i>
-                                    </p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/Aaliyah.png" class="img-fluid" alt="" style="width:100%;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            Aaliyah Kaushal
+                                            <br />Chemical Engineering
+                                            <br />Sophmore
+                                        </p>
+                                        <p>
+                                            Aaliyah enjoys the finer things in life: the extra onion ring when ordering french fries, the flip of
+                                            a Dairy Queen Blizzard, and long visits to East Side Dining. She can normally be found laying on the turf, between the 10 spike
+                                            ball teams at noon.
+                                        </p>
+                                        <p>
+                                            Project Development, Modelling, Outreach, Fundraising
+                                        </p>
+                                        <p>
+                                            <i> "I like all things French: french fries, french toast" </i>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -655,8 +691,8 @@
 
         <!-- Justin -->
         <div class="column2">
-            <input type="image" src="assets/images/Justin.png" class="btn btn-primary" data-toggle="modal" data-target="#Justin" width="400" height="300">
-            <div class="modal fade" id="Justin" tabindex="-1" role="dialog" aria-labelledby="Justin" aria-hidden="true">
+            <input type="image" src="assets/images/Justin.png" data-toggle="modal" data-target="#Justin" style="width:75%;height:auto;">
+            <div class="modal fade-scale" id="Justin" tabindex="-1" role="dialog" aria-labelledby="Justin" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -665,27 +701,29 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/images/Justin.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="col">
-                                    <p>
-                                        Justin Beutel
-                                        <br />Biology & Psychology
-                                        <br />Sophmore
-                                    </p>
-                                    <p>
-                                        A certified Burger King connoisseur and pro gamer, Justin spends his time slaving
-                                        away for the team website and being an absolute g. Tired of weighing the pos and cons, he decided his college on a coin flip, and now we're here.
-                                        Never get in the way of him and a coke zero.
-                                    </p>
-                                    <p>
-                                        Project Development, Modelling, Outreach, Web Development
-                                    </p>
-                                    <p>
-                                        <i> "There's no point if the dice is fixed" </i>
-                                    </p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/Justin.png" class="img-fluid" alt="" style="width:100%;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            Justin Beutel
+                                            <br />Biology & Psychology
+                                            <br />Sophmore
+                                        </p>
+                                        <p>
+                                            A certified Burger King connoisseur and pro gamer, Justin spends his time slaving
+                                            away for the team website and being an absolute g. Tired of weighing the pos and cons, he decided his college on a coin flip, and now we're here.
+                                            Never get in the way of him and a coke zero.
+                                        </p>
+                                        <p>
+                                            Project Development, Modelling, Outreach, Web Development
+                                        </p>
+                                        <p>
+                                            <i> "There's no point if the dice is fixed" </i>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -704,7 +742,6 @@
                 stony brook igem 2020
             </u>
         </h1>
-        </br>
 
         <a href="https://www.instagram.com/igem.stonybrook/?hl=en" target="_blank">
             <img src="assets/images/logos/instagram.png" class="social-padding" />

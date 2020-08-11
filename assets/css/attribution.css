@@ -1,0 +1,38 @@
+﻿/* Css for formatting the paragraph below the header image */
+.header-container {
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	color: darkblue;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.brief-intro {
+	font-size: 15px;
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	position: relative;
+}
+
+	.brief-intro::after {
+		/*I think this is essentially making an empty box*/
+		background-color: white;
+		bottom: 0;
+		content: '';
+		display: block;
+		height: 10px;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, 0);
+		width: 200px;
+		/*border for the empty box*/
+		border-bottom: 3px solid black;
+	}
+
+

@@ -1,3 +1,32 @@
+
+
+/* Block of code used for Modal fade in  */
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+
+.fade-scale {
+	transform: scale(0);					/* resize the modal box */
+	opacity: 0;								/* change the opacity of the background */
+	-o-transition: all .25s linear;
+	transition: all .25s linear;
+}
+
+	.fade-scale.in {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+.modal-body{
+	position: relative;
+	overflow-y: auto;
+	max-height: 400px;
+	padding: 15px;
+}
+.autoModal.modal .modal-body{
+	max-height: 100%;
+}
+
+
+/* Css for formatting the paragraph below the header image */
 .header-container {
 	position: relative;
 	text-align: center;
@@ -22,9 +51,9 @@
 	.brief-intro::after {
 		/*I think this is essentially making an empty box*/
 		background-color: white;
-		bottom 0;
+		bottom: 0;
 		content: '';
-		display block;
+		display: block;
 		height: 10px;
 		left: 50%;
 		position: absolute;
@@ -33,6 +62,7 @@
 		/*border for the empty box*/
 		border-bottom: 3px solid black;
 	}
+
 
 /* background things*/
 /*.main-header {
