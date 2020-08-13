@@ -211,6 +211,7 @@ body {
 
 /*creates small box/ heading*/
 .timeline ul li .content .container{
+  max-width: 410px;
   background: #6f8e34;
   position: relative;
   outline: 21px solid #6f8e34;
