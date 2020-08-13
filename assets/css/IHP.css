@@ -228,7 +228,7 @@ body {
 }
 
 /*what is inside small box / heading*/
-.timeline ul li .content h2 {
+.timeline ul li .content .container h2 {
   color: #fff;
   padding-bottom: 10px;
   text-align: center;
