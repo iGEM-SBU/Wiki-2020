@@ -1,3 +1,11 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -92,9 +100,10 @@ hr {
 input, select {
     vertical-align:middle;
 }
+/* HEADER IMAGE FORMATTING */
 .main-header {
   /*background-color: #d8bfd8;*/
-  background-image: url(https://images.squarespace-cdn.com/content/v1/59765fd317bffcafaf5ff75c/1589553727915-M0T5PUC6U9HZ8QCZGC9O/ke17ZwdGBToddI8pDm48kAA_Xg0IF0vU5FupoGFu3qEUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2djQs_mO6ssrCEXbjwAmxr-R8SAOuHbWK-zccN56U3HOiH3bqxw7fF48mhrq5Ulr0Hg/vertical+farming);
+  background-image: url(https://64.media.tumblr.com/0fa9a38f6b89978a70b32568d6502e23/161c6c6d7c9b2977-cf/s640x960/d16c9ae721661d95ae19d3adbd744f60deae5be6.jpg);
   background-size: cover;
   padding: 100px;
 }
@@ -182,12 +191,4 @@ nav a
 }
 .li {
   padding: 5px;
-}
-.Social_Media {
-
-    background-color: rgb(51, 50, 50);
-    font-size: 20px;
-    text-align: right;
-    color: white;
-    padding-right: 25%;
 }
