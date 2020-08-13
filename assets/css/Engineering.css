@@ -100,10 +100,17 @@ hr {
 input, select {
     vertical-align:middle;
 }
+/* HEADER IMAGE FORMATTING */
 .main-header {
-  background-image: url(https://external-preview.redd.it/JGT83YQC4qt1yt6s-DBWoEXUnyd4k9DofEW2FZoYJZE.png?auto=webp&s=08fff0b3c2f05d5c626dba54a2f896f70deb4e20);
+  background-image: url(https://cdn.shopify.com/s/files/1/0150/6262/articles/blog_the-sill_arrowhead.jpg?v=1565209292);
   background-size: cover;
   padding: 100px;
+}
+/* SETTING BACKGROUND COLOR SO IT GETS DARKER AS YOU MOVE DOWN */
+.body{
+  height: 2500px; /* Used to enable scrolling */
+  background: linear-gradient(0deg, #ba8cd7 0%, #d2b2e5 51%, #e9d8f2 85%);
+                                    /* DARKEST COLOR       LIGHTEST COLOR */
 }
 /* NAVBAR FORMATTING */
 /* Add a black background color to the top navigation */
@@ -179,8 +186,7 @@ input, select {
 .container{
   max-width: 1170px;
   width: 90%;
-  margin: 0 auto;
-  border-radius: 10px;
+  padding-top: 10px;
 }
 /* MORE HEADER FORMATTING */
 .h1 {
@@ -228,7 +234,6 @@ input, select {
 .hr {
   border: 1px solid black;
 }
-
 .Social_Media {
 
     background-color: rgb(51, 50, 50);
