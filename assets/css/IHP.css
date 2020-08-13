@@ -129,178 +129,179 @@ input, select {
 /*Disss where the magic begins/
 /* header things*/
 
-/*Disss where the magic begins/
-/* header things*/
-
-body {
-  height: 4000px; /* Used to enable scrolling */
-  background: linear-gradient(#FFBCB7 , #FFC3A0, #E8CD96);
-  background-repeat: no-repeat;
-} /*(55deg, #FF71B5 0%, #FF3898 51%, #FF087F 85%)*/
-
-
-
-
-
-/*- Screen Sizes*/
-/*import fonts*/
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Oswald");
-/*media queries*/
-html {
+@import url(https://fonts.googleapis.com/css?family=Lato);
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-
-
 body {
-  font-family: "Open Sans", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-  font-size: 0.875em;
-  color: black;
-  line-height: 1.5;
-
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
 }
 
-.wrapper {
-  margin: 3.125em auto;
-  padding: 1em 5em 1em;
-  max-width: 1000px;
-}
-
-h1 {
-  text-align: right;
-  font-family: sans-serif;
-  font-size: 50px;
-  padding: 85px;
-  color: white;
-  background: url(assets/images/iii.jpg);
-  repeat: no-repeat;
-
-}
-
-h2 {
-  color: #733B72;
-  font-family: "Open Sans", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-  text-align: center;
-  font-size:30px;
-}
-
-/* - &:nth-child(1) {
-			 grid-area: entry1;
-		 }
-   - useful timesaver if there is a lengthy list
-*/
+/*color of what is inside the textbox*/
 .timeline {
-  line-height: 1.5em;
-  font-size: 14px;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-  position: relative;
-  counter-reset: section;
-}
-.timeline:before {
-  content: "";
-  width: 10px;
-  height: 100%;
-  background: #87ceeb;
-  position: absolute;
-  top: 0;
-  left: -3.313em;
-  border-radius: 40px 40px;
+  color: black;
 }
 
-.timeline--entry {
-  position: relative;
-  background-color: #87ceeb;
+/*shadow quality of main header + each small heading*/
+.timeline h1,
+.timeline ul li .content h2 {
+  text-shadow: 1px 1px 1px rgba(56, 56, 56, 0.5);
 }
-.timeline--entry__title {
+
+/*main heading / title*/
+.timeline h1 {
+  background-image: url(assets/images/indd.jpg);
+  padding: 70px 0;
+  font-size: 2.5em;
+  text-align: right;
   color: white;
-  background-color: #ec407a;
-  font-family: "Oswald", Georgia, Cambria, "Times New Roman", Times, serif;
-  font-weight: 300;
-  font-size: 1rem;
-  padding: 1em;
 }
-.timeline--entry__title:before {
-  content: "";
-  display: inline-block;
-  width: 1em;
-  height: 1em;
+
+/*composure of timeline*/
+.timeline ul {
+  background:#F0EAF0;
+  padding: 50px 0;
+}
+
+/*line of the timeline*/
+.timeline ul li {
+  background: #946741;
+  position: relative;
+  margin: 0 auto;
+  width: 7px;
+  padding-bottom: 40px;
+  list-style-type: none;
+}
+
+/*no idea what this does LOL*/
+.timeline ul li:last-child {
+  padding-bottom: 7px;
+}
+
+/*inside the small lil circle*/
+.timeline ul li:before {
+  content: '';
+  background: #F0EAF0;
   position: absolute;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  left: -1em;
-  border-right: 10px solid #ec407a;
-}
-.timeline--entry__detail {
-  background-color: #F0F0F0;
-  padding: 1em;
-  margin: 0;
-}
-.timeline--entry:before {
-  content: "";
-  font-family: "Oswald", Georgia, Cambria, "Times New Roman", Times, serif;
-  color: purple;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  width: 3em;
-  height: 3em;
-  background-color: #87ceeb;
-  border: .2em solid white;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border: 3px solid #6f8e34;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
-  position: absolute;
-  counter-increment: section;
-  content: counter(section);
-  text-shadow: 0 1px 0 #424242;
-  left: -4.5em;
 }
 
-@supports (display: grid) {
-  @media (min-width: 768px) {
-    .timeline {
-      display: grid;
-      grid-gap: 4.75em;
-      grid-template-areas: ".  entry1" "entry2  ." ". entry3" "entry4 ." ". entry5";
-    }
-    .timeline:before {
-      left: 49.5%;
-    }
+/*no idea what this does LOL*/
+.timeline ul li .hidden {
+  opacity: 0;
+}
 
-    .timeline--entry:nth-child(1) {
-      grid-area: entry1;
-    }
-    .timeline--entry:nth-child(2) {
-      grid-area: entry2;
-    }
-    .timeline--entry:nth-child(3) {
-      grid-area: entry3;
-    }
-    .timeline--entry:nth-child(4) {
-      grid-area: entry4;
-    }
-    .timeline--entry:nth-child(5) {
-      grid-area: entry5;
-    }
-    .timeline--entry:nth-of-type(odd):before {
-      left: -3.8em;
-    }
-    .timeline--entry:nth-of-type(even):not(:nth-of-type(odd)) .timeline--entry__title:before {
-      left: 100%;
-      border-left: 10px solid #ec407a;
-      border-right: 0;
-    }
-    .timeline--entry:nth-of-type(even):before {
-      left: 103%;
-    }
+/*creates small box/ heading*/
+.timeline ul li .content .container{
+  background: #6f8e34;
+  position: relative;
+  outline: 21px solid #6f8e34;
+}
+
+/*creates each box*/
+.timeline ul li .content {
+  position: relative;
+  top: 7px;
+  width: 450px;
+  padding: 20px;
+}
+
+/*what is inside small box / heading*/
+.timeline ul li .content h2 {
+  color: #fff;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/*paragraph property of what is inside the main big box*/
+.timeline ul li .content p {
+  text-align: center;
+}
+
+/*little line that connects to the container*/
+.timeline ul li .content:before {
+  content: '';
+  background: #6f8e34;
+  position: absolute;
+  top: 0px;
+  width: 38px;
+  height: 5px;
+}
+
+/*odd box properties*/
+.timeline ul li:nth-child(odd) .content {
+  left: 50px;
+  background: #67CC8E;
+  outline: 7px solid #6f8e34;
+  background: white;
+  /*background: -webkit-linear-gradient(-45deg, #56BC83, #67CC8E);
+  background: linear-gradient(-45deg, #56BC83, #67CC8E);*/
+}
+
+.timeline ul li:nth-child(odd) .content:before {
+  left: -38px;
+}
+
+/*odd box properties*/
+.timeline ul li:nth-child(even) .content {
+  left: calc(-450px - 45px);
+  background: #67CC8E;
+  outline: 7px solid #6f8e34;
+  background: white;
+  /*background: -webkit-linear-gradient(-45deg, #56BC83, #67CC8E);
+  background: linear-gradient(-45deg, #56BC83, #67CC8E);*/
+}
+.timeline ul li:nth-child(even) .content:before {
+  right: -38px;
+}
+
+/* -------------------------
+   ----- Media Queries -----
+   ------------------------- */
+@media screen and (max-width: 1020px) {
+  .timeline ul li .content {
+    width: 41vw;
+  }
+
+  .timeline ul li:nth-child(even) .content {
+    left: calc(-41vw - 45px);
+  }
+}
+@media screen and (max-width: 700px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li .content {
+    width: calc(100vw - 100px);
+  }
+  .timeline ul li .content h2 {
+    text-align: initial;
+  }
+  .timeline ul li:nth-child(even) .content {
+    left: 45px;
+    background: #67CC8E;
+    background: -webkit-linear-gradient(-45deg, #56BC83, #67CC8E);
+    background: linear-gradient(-45deg, #56BC83, #67CC8E);
+  }
+  .timeline ul li:nth-child(even) .content:before {
+    left: -33px;
   }
 }
 
