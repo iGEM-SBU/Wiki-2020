@@ -158,7 +158,7 @@ body {
 
 /*main heading / title*/
 .timeline h1 {
-  background: black;
+  background: url(assets/images/indd.jpeg);
   padding: 70px 0;
   font-size: 2.5em;
   text-align: right;
@@ -212,7 +212,7 @@ body {
 .timeline ul li .content .container{
   background: #6f8e34;
   position: relative;
-  outline: 21px solid #6f8e34;
+  outline: 5px solid #6f8e34;
 }
 
 /*creates each box*/
