@@ -130,6 +130,7 @@ input, select {
 /* header things*/
 
 
+
 @import url(https://fonts.googleapis.com/css?family=Lato);
 *,
 *::before,
@@ -144,6 +145,7 @@ input, select {
 body {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
+
 }
 
 /*color of what is inside the textbox*/
@@ -159,14 +161,16 @@ body {
 
 /*main heading / title*/
 .timeline h1 {
-  background-image: url(assets/images/indd.jpg);
+  background: url(https://www.boldbusiness.com/wp-content/uploads/2019/03/inarticle-1-1.jpg);
+  background-position: left;
+  height: 200px;
   padding: 70px 0;
   font-size: 2.5em;
   text-align: right;
   color: white;
 }
 
-/*composure of timeline*/
+/*main page properties*/
 .timeline ul {
   background:#F0EAF0;
   padding: 50px 0;
@@ -174,7 +178,7 @@ body {
 
 /*line of the timeline*/
 .timeline ul li {
-  background: #946741;
+  background: #a67b5c;
   position: relative;
   margin: 0 auto;
   width: 7px;
@@ -198,7 +202,7 @@ body {
   -webkit-transform: translateX(-50%);
   width: 20px;
   height: 20px;
-  border: 3px solid #6f8e34;
+  border: 3px solid #417514;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -211,17 +215,18 @@ body {
 
 /*creates small box/ heading*/
 .timeline ul li .content .container{
-  max-width: 415px;
-  background: #6f8e34;
+  background: #417514;
   position: relative;
-  outline: 21px solid #6f8e34;
+  outline: 21px solid #417514;
+  width: 460px;
+
 }
 
 /*creates each box*/
 .timeline ul li .content {
   position: relative;
   top: 7px;
-  width: 450px;
+  width: 500px;
   padding: 20px;
 }
 
@@ -230,17 +235,20 @@ body {
   color: #fff;
   padding-bottom: 10px;
   text-align: center;
+  font-size: 20px;
 }
 
 /*paragraph property of what is inside the main big box*/
 .timeline ul li .content p {
   text-align: center;
+  font-size: 15px;
+  line-height: 25px;
 }
 
 /*little line that connects to the container*/
 .timeline ul li .content:before {
   content: '';
-  background: #6f8e34;
+  background: #417514;
   position: absolute;
   top: 0px;
   width: 38px;
@@ -251,27 +259,32 @@ body {
 .timeline ul li:nth-child(odd) .content {
   left: 50px;
   background: #67CC8E;
-  outline: 7px solid #6f8e34;
+  outline: 7px solid #417514;
   background: white;
   /*background: -webkit-linear-gradient(-45deg, #56BC83, #67CC8E);
   background: linear-gradient(-45deg, #56BC83, #67CC8E);*/
 }
 
+/*little line that connects to the container* odd ones*/
 .timeline ul li:nth-child(odd) .content:before {
   left: -38px;
+
 }
 
-/*odd box properties*/
+/*even box properties*/
 .timeline ul li:nth-child(even) .content {
-  left: calc(-450px - 45px);
+  left: calc(-500px - 45px);
   background: #67CC8E;
-  outline: 7px solid #6f8e34;
+  outline: 7px solid #417514;
   background: white;
   /*background: -webkit-linear-gradient(-45deg, #56BC83, #67CC8E);
   background: linear-gradient(-45deg, #56BC83, #67CC8E);*/
 }
+
+/*little line that connects to the container* even ones*/
 .timeline ul li:nth-child(even) .content:before {
-  right: -38px;
+  right: -40px;
+
 }
 
 /* -------------------------
