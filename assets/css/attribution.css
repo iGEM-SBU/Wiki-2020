@@ -1,4 +1,6 @@
 ﻿/* Css for formatting the paragraph below the header image */
+
+
 .header-container {
 	position: relative;
 	text-align: center;
@@ -16,7 +18,7 @@
 .brief-intro {
 	font-size: 15px;
 	margin: 0 0 10px;
-	padding: 0 0 10px;
+	padding: 0 50px 10px 50px;
 	position: relative;
 }
 
@@ -28,11 +30,40 @@
 		display: block;
 		height: 10px;
 		left: 50%;
-		position: absolute;
+		position: relative;
 		transform: translate(-50%, 0);
 		width: 200px;
 		/*border for the empty box*/
 		border-bottom: 3px solid black;
 	}
+
+.text-container{
+	padding: 20px 200px 0 200px;
+	width: 100%;
+	position: relative;
+	text-align: left;
+}
+
+.card{
+	margin: 0 0 0 8px;
+	width: 100%;
+	max-width: 250px;
+	height: auto;
+}
+
+/*.nopic_name{
+		margin-top: 0.5em;
+		margin-bottom: 0;
+		font-size: 1.3em;
+}
+
+nopic{
+		margin: 0;
+}
+
+.content > .bio {
+	font-size: 1.3em !important;
+	text-align: center;
+}*/
 
 
