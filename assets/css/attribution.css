@@ -38,8 +38,14 @@
 	}
 
 .text-container{
+	/*
 	padding: 20px 200px 0 200px;
+	*/
+	padding-top: 1%;
+	padding-right: 10%;
+	padding-left: 10%;
 	width: 100%;
+	height: auto;
 	position: relative;
 	text-align: left;
 }
