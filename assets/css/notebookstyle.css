@@ -132,7 +132,7 @@ nav a
 
 /* THIS MAKES A HORIZONTAL LINE UNDER THE MONTHS */
 .hr {
-  border: 1px solid black;
+  border: 1px solid #a67b5c;
 }
 /* HEADER FORMATTING */
 .h1 {
