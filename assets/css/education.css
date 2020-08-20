@@ -1,0 +1,345 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* background things */
+.main-header {
+  background-color: rgba(0, 0, 0, .6);
+  background-image: url(https://pbs.twimg.com/media/Dpy6u6vXUAUXBgC.jpg);
+  background-size: contain;
+  padding-bottom: 40px;
+}
+.body{
+  background-color: #2B072A;
+}
+
+    nav a
+    {
+      color: white;
+    }
+
+    nav a:hover
+    {
+        color: #229D05;
+    }
+
+    .navbar-purple
+    {
+      background-color: #760E73;
+    }
+
+/*Disss where the magic begins/
+/* header things*/
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+
+}
+
+/*color of what is inside the textbox*/
+.timeline {
+  color: black;
+}
+
+/*shadow quality of main header + each small heading*/
+.timeline h1,
+.timeline ul li .content h2 {
+  text-shadow: 1px 1px 1px rgba(56, 56, 56, 0.5);
+}
+
+/*main heading / title*/
+.timeline h1 {
+  background: url(https://www.boldbusiness.com/wp-content/uploads/2019/03/inarticle-1-1.jpg);
+  background-position: left;
+  height: 200px;
+  padding: 70px 0;
+  font-size: 2.5em;
+  text-align: right;
+  color: white;
+  margin: -20px;
+}
+
+/*main page properties*/
+.timeline ul {
+  background:#F0EAF0;
+  padding: 50px 0;
+}
+
+/*line of the timeline*/
+.timeline ul li {
+  background: #a67b5c;
+  position: relative;
+  margin: 0 auto;
+  width: 7px;
+  padding-bottom: 40px;
+  list-style-type: none;
+}
+
+/*no idea what this does LOL*/
+.timeline ul li:last-child {
+  padding-bottom: 7px;
+}
+
+/*inside the small lil circle*/
+.timeline ul li:before {
+  content: '';
+  background: #F0EAF0;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border: 3px solid #417514;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/*no idea what this does LOL*/
+.timeline ul li .hidden {
+  opacity: 0;
+}
+
+/*creates small box/ heading*/
+.timeline ul li .content .container{
+  background: #417514;
+  position: relative;
+  outline: 21px solid #417514;
+  width: 460px;
+
+}
+
+/*creates each box*/
+.timeline ul li .content {
+  position: relative;
+  top: 7px;
+  width: 500px;
+  padding: 20px;
+}
+
+/*what is inside small box / heading*/
+.timeline ul li .content h2 {
+  color: #fff;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/*paragraph property of what is inside the main big box*/
+.timeline ul li .content p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+/*little line that connects to the container*/
+.timeline ul li .content:before {
+  content: '';
+  background: #417514;
+  position: absolute;
+  top: 0px;
+  width: 38px;
+  height: 5px;
+}
+
+/*odd box properties*/
+.timeline ul li:nth-child(odd) .content {
+  left: 50px;
+  background: #67CC8E;
+  outline: 7px solid #417514;
+  background: white;
+  /*background: -webkit-linear-gradient(-45deg, #56BC83, #67CC8E);
+  background: linear-gradient(-45deg, #56BC83, #67CC8E);*/
+}
+
+/*little line that connects to the container* odd ones*/
+.timeline ul li:nth-child(odd) .content:before {
+  left: -38px;
+
+}
+
+/*even box properties*/
+.timeline ul li:nth-child(even) .content {
+  left: calc(-500px - 45px);
+  background: #67CC8E;
+  outline: 7px solid #417514;
+  background: white;
+  /*background: -webkit-linear-gradient(-45deg, #56BC83, #67CC8E);
+  background: linear-gradient(-45deg, #56BC83, #67CC8E);*/
+}
+
+/*little line that connects to the container* even ones*/
+.timeline ul li:nth-child(even) .content:before {
+  right: -40px;
+
+}
+
+/* -------------------------
+   ----- Media Queries -----
+   ------------------------- */
+@media screen and (max-width: 1020px) {
+  .timeline ul li .content {
+    width: 41vw;
+  }
+
+  .timeline ul li:nth-child(even) .content {
+    left: calc(-41vw - 45px);
+  }
+}
+@media screen and (max-width: 700px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li .content {
+    width: calc(100vw - 100px);
+  }
+  .timeline ul li .content h2 {
+    text-align: initial;
+  }
+  .timeline ul li:nth-child(even) .content {
+    left: 45px;
+    background: #67CC8E;
+    background: -webkit-linear-gradient(-45deg, #56BC83, #67CC8E);
+    background: linear-gradient(-45deg, #56BC83, #67CC8E);
+  }
+  .timeline ul li:nth-child(even) .content:before {
+    left: -33px;
+  }
+}
+
+
+.Social_Media {
+
+    background-color: rgb(51, 50, 50);
+    font-size: 20px;
+    text-align: right;
+    color: white;
+    padding-right: 25%;
+
+}
+
+.social-padding {
+    vertical-align: right;
+    width: 40px;
+    height: 35px;
+    padding-left: 5px;
+
+}
+
+* {
+    box-sizing: border-box;
+  }
