@@ -100,11 +100,13 @@ hr {
 input, select {
     vertical-align:middle;
 }
+/* HEADER IMAGE FORMATTING */
 .main-header {
-  background-image: url(https://external-preview.redd.it/JGT83YQC4qt1yt6s-DBWoEXUnyd4k9DofEW2FZoYJZE.png?auto=webp&s=08fff0b3c2f05d5c626dba54a2f896f70deb4e20);
+  background-image: url(https://jannaschreier.files.wordpress.com/2016/09/even-the-greenhouse-at-broughton-grange-was-an-aesthetic-delight.jpg);
   background-size: cover;
   padding: 100px;
 }
+
 /* NAVBAR FORMATTING */
 /* Add a black background color to the top navigation */
 .navbar {
