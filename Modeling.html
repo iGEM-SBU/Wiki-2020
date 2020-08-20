@@ -13,7 +13,7 @@
         <nav class = "navbar navbar-purple navbar-expand-md py-4" style = "margin-bottom: 0px; border-radius: 0px;">
 
             <a class = "navbar-brand">Light Switch</a>
-            
+
             <ul class = "nav navbar-nav navbar-right" style = "padding-right: 15px; font-size: large;">
                 <li><a href = "index.html">Home</a></li>
                 <li class = "nav-item dropdown">
@@ -78,48 +78,88 @@
                 </li>
             </ul>
         </nav>
-         <header class="main-header">
-           <hr>
-           <h1 class="h1"> Modeling </h1>
-         </header>
+        <header class="main-header">
+          <h1 class="h1" style="font-size: 70px; color: black;"> Modeling </h1>
+        </header>
+<br>
+<br>
+<br>
+     <div class="container">
+          <h2 class="h2"> GROMACS </h2>
+          <hr class="hr">
+       <p style="font-size: 18px;">
+        Simulative modeling allows researchers to determine the prospective effects of their proposed system(s) without having to conduct live wet lab experiments. Throughout the course of the summer, we looked into modeling molecular dynamics (MD) to observe how the different components of our proposed kill switch would interact with one another. One program that  allowed us to go through with MD is called GROMACS. Mainly designed for biochemical molecules like proteins, lipids, and nucleic acids that are often involved in a series of complex  interactions, GROMACS allowed us to simulate and determine the interaction kinetics of the COP1-UVR8 system in both the active and inactive states. The main idea of these simulations was to observe what changes occurred in our model and gauge whether they would actually occur in a wet lab setting.
+      </p>
+      <h3 class="h3"> UVR8 dimer in water </h3>
+      <p style="font-size: 18px;">
+        When first starting out, we decided that the best approach to MD was to simulate a UVR8 dimer alone in water. [how long was the simulation, give pics, other simulations???]. Furthermore, we set off to simulate some important amino acid residues, specifically Trp233/285. These two residues play important roles in dimer dissociation [did we simulate any others?].
+      </p>
+      </div>
+      </div>
 
-         <div class="container">
-       <div class="column">
-         <div class="card">
-           <h2 class="h2"> Describing </h2>
-           <hr class="hr">
-       <p class="p"> We hope that the modeling approaches mentioned in this section
-       provide a better understanding of describing the mechanisms behind our
-       biological system and what it hopes to accomplish. This section may also shed
-       light (heh) on some aspects of apoptosis that have been unknown or not
-       well-characterized in literature.
-       </p>
-       </div>
-       </div>
+<br>
+<br>
+<br>
 
-       <div class="column">
-         <div class="card">
-           <h2 class="h2"> Justifying </h2>
-           <hr class="hr">
-           <p class="p"> Given that gene flow is a real-world concern that our project hopes to
-              mitigate, we found it essential to track the efficiency of LightSwitch.
-              This was accomplished by modeling how much our apoptosis-inducing pathway
-              would limit gene flow when, and if transgenic crops were to escape to the
-              wild.
-           </p>
-       </div>
-       </div>
+   <div class="container">
+          <h2 class="h2"> I-TASSER </h2>
+          <hr class="hr">
+          <p style="font-size: 18px;">
+           To reinforce our predictive modeling approach, we began using a server for protein structure known as I-TASSER. Provided to us by the Zhang Lab from the University of Michigan, I-TASSER allows users to input primary structure strings of their proteins of interest and predicts both a secondary and tertiary structure for them.
+          </p>
+          <h3 class="h3"> Monomeric UVR8 </h3>
+          <p style="font-size: 18px;">
+            Using I-TASSER, we were able to determine a predicted structure for monomeric UVR8. [why did we do this, where is dimeric UVR8, are we going to do the same for COP1].
+          </p>
+          <br>
+          <div align="center">
+          <img src="assets/images/monomericuvr8.png" class="img-fluid" alt="" style="width: 30%;">
+         </div>
+      </div>
+      </div>
+<br>
+<br>
+<br>
+      <div class="container">
+          <h2 class="h2"> MEGAx </h2>
+          <hr class="hr">
+            <p style="font-size: 18px;">
+              Another question we wanted to answer: how well conserved is the WUS gene in organisms other than Arabidopsis thaliana? To answer this question, we decided to use MEGAx, a free downloadable software that allows users to create phylogenetic trees based on the FASTA files  they have downloaded. After recording the DNA sequences of the WUS orthologs found in the Brassicaceae, Solanaceae, and Cereal family targets, we determined that [ what did we determine, pictures of the tree pls].
+            </p>
+      </div>
+      </div>
+<br>
+<br>
+<br>
+      <div class="container">
+          <h2 class="h2"> BagelBot </h2>
+          <hr class="hr">
+            <p style="font-size: 18px;">
+              Our iGEM team communicates primarily through an application known as Discord which allows users to implement bots, programs that allow users in a server to maximize productivity, obtain data, moderate conversations, or whatever the users would like! Our team member, Justin, established a python-based Discord bot that allows its users to do a myriad of fundamental biological analyses and tasks. To date, BagelBot is capable of the following:
+              <ul>
+                <li style="margin-left: 40px;font-size: 18px;"> Telling us rudimentary data about our FASTA file </li>
+                <li style="margin-left: 40px;font-size: 18px;"> Determining the percentage of GC content in a DNA strand </li>
+                <li style="margin-left: 40px;font-size: 18px;"> Pair-Alignment </li>
+                <li style="margin-left: 40px;font-size: 18px;"> Make a phylogenetic tree based on a downloaded file and Pair-Alignment </li>
+                <li style="margin-left: 40px;font-size: 18px;"> Find reverse complement of a DNA strand </li>
+                <li style="margin-left: 40px;font-size: 18px;"> Find the complementary strand of a DNA strand </li>
+                <li style="margin-left: 40px;font-size: 18px;"> Print RNA and DNA standard codon tables </li>
+                <li style="margin-left: 40px;font-size: 18px;"> Download files from Discord </li>
+                <li style="margin-left: 40px;font-size: 18px;"> Error reporting to improve user experience </li>
+                <li style="margin-left: 40px;font-size: 18px;"> Mathematical calculations such as exponents and logarithmic functions </li>
+               </ul>
+               <p style="font-size: 18px;">
+              BagelBot’s capabilities are constantly being improved with hopes to make it live and allow future iGEM teams to make use of its many functions!
+            </p>
+          </p>
+      </div>
+      </div>
+      </div>
+<br>
+<br>
+<br>
 
-       <div class="column">
-         <div class="card">
-           <h2 class="h2"> Applying </h2>
-           <hr class="hr">
-             <p class="p"> applying things is good </p>
-       </div>
-       </div>
-       </div>
 
-       
         <div class = "Social_Media">
         </br>
         </br>
