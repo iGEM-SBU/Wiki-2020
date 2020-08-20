@@ -102,7 +102,7 @@ input, select {
 }
 /* HEADER IMAGE FORMATTING */
 .main-header {
-  background-color: #d8bfd8;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5bfb50a87106999abcd2f7f2/1550174257677-LXQ00OHIS94Q0NWEMSRM/ke17ZwdGBToddI8pDm48kIgKsZfsxacz8qHBzbiXgId7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0lCYWGxfdB_uf1_ERfebHZ6ax5kLxgs6gJ2wTCJfOuEPVc9HbgMAZW1ERPUnd9CDhw/vertical-farming-banner.jpg?format=2500w);
   background-size: cover;
   padding: 100px;
 }
@@ -171,14 +171,12 @@ input, select {
   border: 1px solid black;
 }
 /* container stuff */
-.container{
-	
-  max-width: 1170px;
-  width: 33.33%;
-  margin-top: 50px;
-  margin-left: 80px;
-  text-align: justify;
-  display: flex;
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  border: 3px solid #000000;
 }
 /*column and row stuff*/
 .column{
