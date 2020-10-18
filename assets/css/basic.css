@@ -192,3 +192,16 @@ nav a
 .li {
   padding: 5px;
 }
+.Social_Media {
+    background-color: rgb(51, 50, 50);
+    font-size: 20px;
+    text-align: right;
+    color: white;
+    padding-right: 25%;
+}
+.social-padding {
+    vertical-align: right;
+    width: 40px;
+    height: 35px;
+    padding-left: 5px;
+}

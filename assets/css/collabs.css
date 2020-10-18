@@ -100,38 +100,33 @@ hr {
 input, select {
     vertical-align:middle;
 }
+nav a
+{
+    color:black;
+}
+
+nav a
+{
+  color: white;
+}
+
+nav a:hover
+{
+    color: #229D05;
+}
+
+.navbar-purple
+{
+  background-color: #760E73;
+}
 /* HEADER IMAGE FORMATTING */
 .main-header {
   background-image: url(https://www.freshfruitportal.com/assets/uploads/2019/12/Stadsodling-4-1024x683.jpg);
   background-size: cover;
   padding: 100px;
 }
-/* SETTING BACKGROUND COLOR SO IT GETS DARKER AS YOU MOVE DOWN */
-.body{
-  height: 2500px; /* Used to enable scrolling */
-  background: linear-gradient(0deg, #ba8cd7 0%, #d2b2e5 51%, #e9d8f2 85%);
-                                    /* DARKEST COLOR       LIGHTEST COLOR */
-}
 
-    nav a
-    {
-        color:black;
-    }
 
-    nav a
-    {
-      color: white;
-    }
-
-    nav a:hover
-    {
-        color: #229D05;
-    }
-
-    .navbar-purple
-    {
-      background-color: #760E73;
-    }
 
 /* HEADER FORMATTING*/
 
