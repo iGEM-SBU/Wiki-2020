@@ -100,25 +100,59 @@ hr {
 input, select {
     vertical-align:middle;
 }
-/* HEADER IMAGE FORMATTING */
-.main-header {
-  /*background-color: #d8bfd8;*/
-  background-image: url(https://64.media.tumblr.com/0fa9a38f6b89978a70b32568d6502e23/161c6c6d7c9b2977-cf/s640x960/d16c9ae721661d95ae19d3adbd744f60deae5be6.jpg);
-  background-size: cover;
-  padding: 100px;
-}
-* {
-  box-sizing: border-box;
+.header-container {
+	position: relative;
+	text-align: center;
+	font-size: 90px;
+	color: black;
 }
 
-/* SETTING BACKGROUND COLOR SO IT GETS DARKER AS YOU MOVE DOWN */
-.body{
-  height: 4500px; /* Used to enable scrolling */
-  background: linear-gradient(0deg, #ba8cd7 , #d2b2e5 , #e9d8f2 );
-                                    /* DARKEST COLOR       LIGHTEST COLOR */
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
-/* THIS IS ALL NAVBAR STUFF; I ONLY CHANGED THE COLOR BEHIND THE WORDS */
-/* Add a black background color to the top navigation */
+
+.navbar-purple
+{
+  background-color: #000000;
+}
+/* HEADER IMAGE FORMATTING */
+.brief-intro {
+	font-size: 15px;
+	margin: 0 0 10px;
+	padding: 0 50px 10px 50px;
+	position: relative;
+}
+
+	.brief-intro::after {
+		/*I think this is essentially making an empty box*/
+		background-color: white;
+		bottom: 0;
+		content: '';
+		display: block;
+		height: 10px;
+		left: 50%;
+		position: relative;
+		transform: translate(-50%, 0);
+		width: 200px;
+		/*border for the empty box*/
+		border-bottom: 3px solid black;
+	}
+
+  .text-container{
+  	/*
+  	padding: 20px 200px 0 200px;
+  	*/
+  	padding-top: 1%;
+  	padding-right: 10%;
+  	padding-left: 10%;
+  	width: 100%;
+  	height: auto;
+  	position: relative;
+  	text-align: left;
+  }
 nav a
     {
         color:black;
@@ -205,3 +239,6 @@ nav a
     height: 35px;
     padding-left: 5px;
 }
+* {
+    box-sizing: border-box;
+  }

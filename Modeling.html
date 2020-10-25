@@ -78,89 +78,62 @@
                 </li>
             </ul>
         </nav>
-        <header class="main-header">
-          <h1 class="h1" style="font-size: 70px; color: black;"> Modeling </h1>
+        <header class="header-container">
+            <img src="assets/images/staller.jpeg" alt="" style="width:100%;height:auto;opacity:0.5;">
+            <!--CSS for the loading page -->
+            <div class="centered"> Modeling </div>
+            <!--<h1 class="h1">Team Member</h1>-->
         </header>
-<br>
-<br>
-<br>
-     <div class="container">
-          <h2 class="h2"> GROMACS </h2>
-          <hr class="hr">
+              <br>
+
+              <div class="brief-intro">
+                  <p style="text-align:center">
+                    Our modeling team worked to establish simulations in order to observe which modifications would be necessary to optimize our COP1-UVR8 system. We hope that these simulations provide a clearer picture for the specific protein-protein interactions that work to make our system elegant and efficient.
+                  </div>
+
+      <div class="container">
+           <p style="font-size: 35px;"> GROMACS </p>
+           <hr class="hr">
+        <p style="font-size: 18px;">
+         Simulative modeling allows researchers to determine the prospective effects of their proposed system(s) without having to conduct live wet lab experiments. Throughout the course of the summer, we looked into modeling molecular dynamics (MD) to observe how the different components of our proposed kill switch would interact with one another. One program that  allowed us to go through with MD is called GROMACS. Mainly designed for biochemical molecules like proteins, lipids, and nucleic acids that are often involved in a series of complex  interactions, GROMACS allowed us to simulate and determine the interaction kinetics of the COP1-UVR8 system in both the active and inactive states. The main idea of these simulations was to observe what changes occurred in our model and gauge whether they would actually occur in a wet lab setting.
+       </p>
+       <p style="font-size: 20px;"> <b> UVR8 dimer in water </b> </p>
        <p style="font-size: 18px;">
-        Simulative modeling allows researchers to determine the prospective effects of their proposed system(s) without having to conduct live wet lab experiments. Throughout the course of the summer, we looked into modeling molecular dynamics (MD) to observe how the different components of our proposed kill switch would interact with one another. One program that  allowed us to go through with MD is called GROMACS. Mainly designed for biochemical molecules like proteins, lipids, and nucleic acids that are often involved in a series of complex  interactions, GROMACS allowed us to simulate and determine the interaction kinetics of the COP1-UVR8 system in both the active and inactive states. The main idea of these simulations was to observe what changes occurred in our model and gauge whether they would actually occur in a wet lab setting.
-      </p>
-      <h3 class="h3"> UVR8 dimer in water </h3>
-      <p style="font-size: 18px;">
-        When first starting out, we decided that the best approach to MD was to simulate a UVR8 dimer alone in water. Furthermore, we set off to simulate some important amino acid residues, specifically Trp233/285. These two residues play important roles in dimer dissociation.
-      </p>
-      </div>
-      </div>
+   When first starting out, we decided that the best approach to MD was to simulate a UVR8 dimer alone in water. Furthermore, we set off to simulate some important amino acid residues, specifically Trp233/285. These two residues play important roles in dimer dissociation.
+       </p>
+
+       <p style="font-size: 20px;"> <b> COP1 Mutagenesis </b> </p>
+       <p style="font-size: 18px;">
+         It was necessary to produce a UVR8-COP1 pair that did not interact with existing components of UV-B signaling pathways. To mitigate these interactions, a truncated COP1 was employed. This truncated COP1 contains only the WD40 domain critical for interaction with components of the UV-B signaling pathway, including UVR8. This abolishes the E3 ubiquitin ligase activity of COP1 and with it a portion of its downstream signalling capacity. Further modifications were attempted to be investigated through this program.
+              </p>
+       </div>
+       </div>
 
 <br>
-<br>
-<br>
 
-   <div class="container">
-          <h2 class="h2"> I-TASSER </h2>
-          <hr class="hr">
-          <p style="font-size: 18px;">
-           To reinforce our predictive modeling approach, we began using a server for protein structure known as I-TASSER. Provided to us by the Zhang Lab from the University of Michigan, I-TASSER allows users to input primary structure strings of their proteins of interest and predicts both a secondary and tertiary structure for them.
-          </p>
-          <h3 class="h3"> Monomeric UVR8 </h3>
-          <p style="font-size: 18px;">
-We found that, surprisingly, there have been a lack of full length crystal structures of UVR8. So, homology models of the full length UVR8 were produced on I-TASSER. These homology models will be employed to examine how key motifs, namely the VP motif on the C27 extension and the corresponding residues on COP1, may be manipulated to preclude interaction with further components of the UV-B signaling pathway.
-          </p>
-          <br>
-          <div align="center">
-            <img src="assets/images/uvr8.png" class="img-fluid" alt="" style="width: 30%;">
-            <img src="assets/images/monomericuvr8.png" class="img-fluid" alt="" style="width: 30%;">
-            <img src="assets/images/uvr8_2.png" class="img-fluid" alt="" style="width: 30%;">
-         </div>
-      </div>
-      </div>
+    <div class="container">
+           <p style="font-size: 35px;"> I-TASSER </p>
+           <hr class="hr">
+           <p style="font-size: 18px;">
+            To reinforce our predictive modeling approach, we began using a server for protein structure known as I-TASSER. Provided to us by the Zhang Lab from the University of Michigan, I-TASSER allows users to input primary structure strings of their proteins of interest and predicts both a secondary and tertiary structure for them.
+           </p>
+           <p style="font-size: 20px;"> <b>Monomeric UVR8 </b></p>
+           <p style="font-size: 18px;">
+             We found that, surprisingly, there have been a lack of full length crystal structures of UVR8. So, homology models of the full length UVR8 were produced on I-TASSER. These homology models will be employed to examine how key motifs, namely the VP motif on the C27 extension and the corresponding residues on COP1, may be manipulated to preclude interaction with further components of the UV-B signaling pathway.
+           </p>
+           <br>
+           <div align="center">
+             <img src="assets/images/uvr8.png" class="img-fluid" alt="" style="width: 30%;">
+             <img src="assets/images/monomericuvr8.png" class="img-fluid" alt="" style="width: 30%;">
+             <img src="assets/images/uvr8_2.png" class="img-fluid" alt="" style="width: 30%;">
+          </div>
+       </div>
+       </div>
+<br>
+       </div>
+       </div>
 <br>
 <br>
-<br>
-      <div class="container">
-          <h2 class="h2"> MEGAx </h2>
-          <hr class="hr">
-            <p style="font-size: 18px;">
-              Another question we wanted to answer: how well conserved is the WUS gene in organisms other than Arabidopsis thaliana? To answer this question, we decided to use MEGAx, a free downloadable software that allows users to create phylogenetic trees based on the FASTA files  they have downloaded. After recording the DNA sequences of the WUS orthologs found in the Brassicaceae, Solanaceae, and Cereal family targets, we determined that [ what did we determine, pictures of the tree pls].
-            </p>
-      </div>
-      </div>
-<br>
-<br>
-<br>
-      <div class="container">
-          <h2 class="h2"> BagelBot </h2>
-          <hr class="hr">
-            <p style="font-size: 18px;">
-              Our iGEM team communicates primarily through an application known as Discord which allows users to implement bots, programs that allow users in a server to maximize productivity, obtain data, moderate conversations, or whatever the users would like! Our team member, Justin, established a python-based Discord bot that allows its users to do a myriad of fundamental biological analyses and tasks. To date, BagelBot is capable of the following:
-              <ul>
-                <li style="margin-left: 40px;font-size: 18px;"> Telling us rudimentary data about our FASTA file </li>
-                <li style="margin-left: 40px;font-size: 18px;"> Determining the percentage of GC content in a DNA strand </li>
-                <li style="margin-left: 40px;font-size: 18px;"> Pair-Alignment </li>
-                <li style="margin-left: 40px;font-size: 18px;"> Make a phylogenetic tree based on a downloaded file and Pair-Alignment </li>
-                <li style="margin-left: 40px;font-size: 18px;"> Find reverse complement of a DNA strand </li>
-                <li style="margin-left: 40px;font-size: 18px;"> Find the complementary strand of a DNA strand </li>
-                <li style="margin-left: 40px;font-size: 18px;"> Print RNA and DNA standard codon tables </li>
-                <li style="margin-left: 40px;font-size: 18px;"> Download files from Discord </li>
-                <li style="margin-left: 40px;font-size: 18px;"> Error reporting to improve user experience </li>
-                <li style="margin-left: 40px;font-size: 18px;"> Mathematical calculations such as exponents and logarithmic functions </li>
-               </ul>
-               <p style="font-size: 18px;">
-              BagelBot’s capabilities are constantly being improved with hopes to make it live and allow future iGEM teams to make use of its many functions! Users can download their own files and have dedicated folders, which allows BagelBot to be multifaceted!
-            </p>
-          </p>
-      </div>
-      </div>
-      </div>
-<br>
-<br>
-<br>
-
 
         <div class = "Social_Media">
         </br>

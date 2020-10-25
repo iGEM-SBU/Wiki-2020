@@ -100,54 +100,75 @@ hr {
 input, select {
     vertical-align:middle;
 }
-/* HEADER IMAGE FORMATTING */
-.main-header {
-  background-image: url(https://cdn.shopify.com/s/files/1/0150/6262/articles/blog_the-sill_arrowhead.jpg?v=1565209292);
-  background-size: cover;
-  padding: 100px;
-}
-/* SETTING BACKGROUND COLOR SO IT GETS DARKER AS YOU MOVE DOWN */
-.body{
-  height: 2500px; /* Used to enable scrolling */
-  background: linear-gradient(0deg, #ba8cd7 0%, #d2b2e5 51%, #e9d8f2 85%);
-                                    /* DARKEST COLOR       LIGHTEST COLOR */
-}
-/* NAVBAR FORMATTING */
-/* Add a black background color to the top navigation */
-.navbar {
-    overflow: hidden;
-    background-color: white;
-    font-family: arial;
-    padding-left: 30%;
-}
-/* links in the navbar */
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: black;
-    text-align: center;
-    padding: 16px 16px; /* first number is vertical padding, second is padding between words */
-    text-decoration: none;
 
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1); */
+nav a
+{
+    color:black;
 }
-/* style the dropdown container*/
-.dropdown {
-    float: left;
-    overflow: hidden;
+
+nav a
+{
+  color: white;
 }
-/* style the dropdown buttons themselves*/
-.dropdown .dropbtn {
-    transition: transform .2s;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 0px 0px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0; /* the last 3 lines are important for smartphone viewing, apparently */
+
+nav a:hover
+{
+    color: #FF00FF;
 }
+/* HEADER IMAGE FORMATTING */
+.header-container {
+	position: relative;
+	text-align: center;
+	font-size: 90px;
+	color: black;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.navbar-purple
+{
+  background-color: #760E73;
+}
+/* HEADER IMAGE FORMATTING */
+.brief-intro {
+	font-size: 15px;
+	margin: 0 0 10px;
+	padding: 0 50px 10px 50px;
+	position: relative;
+}
+
+	.brief-intro::after {
+		/*I think this is essentially making an empty box*/
+		background-color: white;
+		bottom: 0;
+		content: '';
+		display: block;
+		height: 10px;
+		left: 50%;
+		position: relative;
+		transform: translate(-50%, 0);
+		width: 200px;
+		/*border for the empty box*/
+		border-bottom: 3px solid black;
+	}
+
+  .text-container{
+  	/*
+  	padding: 20px 200px 0 200px;
+  	*/
+  	padding-top: 1%;
+  	padding-right: 10%;
+  	padding-left: 10%;
+  	width: 100%;
+  	height: auto;
+  	position: relative;
+  	text-align: left;
+  }
 .navbar a:hover, .dropdown:hover .dropbtn {
     color: rgb(23, 235, 23);
     transform: scale(1.15);
@@ -235,10 +256,18 @@ input, select {
   border: 1px solid black;
 }
 .Social_Media {
-
     background-color: rgb(51, 50, 50);
     font-size: 20px;
     text-align: right;
     color: white;
     padding-right: 25%;
 }
+.social-padding {
+    vertical-align: right;
+    width: 40px;
+    height: 35px;
+    padding-left: 5px;
+}
+* {
+    box-sizing: border-box;
+  }

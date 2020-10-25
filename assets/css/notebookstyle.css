@@ -92,23 +92,59 @@ hr {
 input, select {
     vertical-align:middle;
 }
-.main-header {
-  /*background-color: #d8bfd8;*/
-  background-image: url(https://images.squarespace-cdn.com/content/v1/59765fd317bffcafaf5ff75c/1589553727915-M0T5PUC6U9HZ8QCZGC9O/ke17ZwdGBToddI8pDm48kAA_Xg0IF0vU5FupoGFu3qEUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2djQs_mO6ssrCEXbjwAmxr-R8SAOuHbWK-zccN56U3HOiH3bqxw7fF48mhrq5Ulr0Hg/vertical+farming);
-  background-size: cover;
-  padding: 100px;
-}
-* {
-  box-sizing: border-box;
+.header-container {
+	position: relative;
+	text-align: center;
+	font-size: 90px;
+	color: black;
 }
 
-/* SETTING BACKGROUND COLOR SO IT GETS DARKER AS YOU MOVE DOWN */
-.body{
-  height: 4500px; /* Used to enable scrolling */
-  background: linear-gradient(0deg, #ba8cd7 , #d2b2e5 , #e9d8f2 );
-                                    /* DARKEST COLOR       LIGHTEST COLOR */
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
-/* THIS IS ALL NAVBAR STUFF; I ONLY CHANGED THE COLOR BEHIND THE WORDS */
+
+.navbar-purple
+{
+  background-color: #000000;
+}
+/* HEADER IMAGE FORMATTING */
+.brief-intro {
+	font-size: 15px;
+	margin: 0 0 10px;
+	padding: 0 50px 10px 50px;
+	position: relative;
+}
+
+	.brief-intro::after {
+		/*I think this is essentially making an empty box*/
+		background-color: white;
+		bottom: 0;
+		content: '';
+		display: block;
+		height: 10px;
+		left: 50%;
+		position: relative;
+		transform: translate(-50%, 0);
+		width: 200px;
+		/*border for the empty box*/
+		border-bottom: 3px solid black;
+	}
+
+  .text-container{
+  	/*
+  	padding: 20px 200px 0 200px;
+  	*/
+  	padding-top: 1%;
+  	padding-right: 10%;
+  	padding-left: 10%;
+  	width: 100%;
+  	height: auto;
+  	position: relative;
+  	text-align: left;
+  }
 /* Add a black background color to the top navigation */
 nav a
     {
@@ -132,7 +168,7 @@ nav a
 
 /* THIS MAKES A HORIZONTAL LINE UNDER THE MONTHS */
 .hr {
-  border: 1px solid #a67b5c;
+  border: 1px solid black;
 }
 /* HEADER FORMATTING */
 .h1 {
@@ -173,12 +209,13 @@ nav a
   font-family: sans-serif;
   font-size: 20px;
 }
+
 .td {
   border: 1px;
   border-collapse: collapse;
   padding: 10px;
   font-family: sans-serif;
-  font-size: 15px;
+  font-size: 18px;
 }
 .li {
   padding: 5px;
@@ -189,11 +226,18 @@ nav a
     font-size: 20px;
     text-align: right;
     color: white;
-    padding-right: 25%;
+    padding-right: 9%;
+
 }
+
 .social-padding {
     vertical-align: right;
     width: 40px;
     height: 35px;
     padding-left: 5px;
+
 }
+
+* {
+    box-sizing: border-box;
+  }
