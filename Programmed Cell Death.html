@@ -2,9 +2,9 @@
 <html>
     <head>
         <title>
-            Team:Stony_Brook/Programmed Cell Death - 2020.igem.org
+            Team:Stony_Brook/Plant - 2020.igem.org
         </title>
-        <link rel = "stylesheet" href="assets/css/style.css">
+        <link rel = "stylesheet" href="assets/css/plant.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -13,7 +13,7 @@
   <nav class = "navbar navbar-purple navbar-expand-md py-4" style = "margin-bottom: 0px; border-radius: 0px;">
 
       <a class = "navbar-brand">Light Switch</a>
-      
+
       <ul class = "nav navbar-nav navbar-right" style = "padding-right: 15px; font-size: large;">
           <li><a href = "index.html">Home</a></li>
           <li class = "nav-item dropdown">
@@ -78,32 +78,116 @@
           </li>
       </ul>
   </nav>
-        
-               
-          
-        <div class = "heading">
-            </br>
-            </br>   
-            <h1> Programmed Cell Death </h1>
-            </br>
-            </br>
+
+
+
+  <header class="header-container">
+      <img src="assets/images/wang.jpg" alt="" style="width:100%;height:auto;opacity:0.5;">
+      <!--CSS for the loading page -->
+      <div class="centered"> Best Plant Synthetic Biology </div>
+      <!--<h1 class="h1">Team Member</h1>-->
+  </header>
+        <br>
+
+        <div class="brief-intro">
+            <p style="text-align:center">
+              Our team was unable to conduct wet lab experiments due to safety precautions initiated by Stony Brook University due to the pandemic. However, we strove to improve our design, strengthen our simulative modeling, and reinforce our outreach initiatives. All three of these subareas contributed to making LightSwitch what it is today!
+          </p>
         </div>
+
+
+          <div class="text-container" style="display: inline-block;">
+              <p style="font-size: 35px;">
+                  Research and Design
+              </p>
+              <hr class="hr">
+               <p style="font-size: 20px;">
+                 <b>Overview</b>
+               </p>
+               <p style="font-size: 18px;">
+                 Genetically modified crops have seen widespread adoption in large-scale agriculture due to their ability to improve commercial farming yields and mitigate crop losses from pests and pathogens. With their widespread adoption, genetically modified crops could also increase the risk of gene flow from transgenic to wild crops and threaten biodiversity. Hence, we proposed a solution wherein an optogenetic killswitch, introduced in <i>Nicotiana benthamiana</i>, could prevent plant development upon exposure to UV-B light (~311 nm). In our design, the optogenetic pair comprised of ULTRAVIOLET RESPONSE LOCUS 8 (UVR8) with attached tetracycline repressor domain (TetR) and CONSTITUTIVE PHOTOMORPHOGENIC1 (COP1) with attached VP16 transactivation domain, the transcription of synthetic trans-acting small interfering RNAs (syn-tasiRNAs) could be controlled. These syn-tasiRNAs would disrupt the CLAVATA-WUSCHEL signaling pathway through the knockdown of the WUSCHEL (WUS) gene. This would cause stem cells in the shoot apical meristem (SAM) to differentiate, the stem cell to deplete, and further plant growth to be prevented. For more detailed information on our design, please visit the <a href = "Design.html"> Design</a> page!
+               </p>
+               <p style="font-size: 20px;">
+                 <b>Parts</b>
+               </p>
+               <p style="font-size: 18px;">
+                 Our team introduced several new parts to the iGEM Registry for use by future researchers and iGEM teams! Located on our <a href = "Contributions.html"> Contributions</a> page, these parts are optimized for <i>N. benthamiana</i>, but could potentially be used in other staple crops as well due to the highly conserved nature of the CLAVATA-WUSCHEL pathway.
+               </p>
+               <p style="font-size: 20px;">
+                 <b>Experiments</b>
+               </p>
+               <p style="font-size: 18px;">
+                 As previously mentioned, we were unable to conduct any experiments ourselves. However, to promote transparency between the scientific community and educate those interested in LightSwitch, we established a Wet Lab Protocol Guide. This guide outlines all of the experiments we would have done if we were able to conduct laboratory work. Our guide can be found on our <a href = "Experiments.html"> Experiments</a> page.
+               </p>
+               <br>
+               <br>
+
+               <p style="font-size: 35px;">
+                   Modeling
+               </p>
+               <hr class="hr">
+                <p style="font-size: 20px;">
+                  <b>Overview</b>
+                </p>
+                <p style="font-size: 18px;">
+                  It was necessary to produce a UVR8-COP1 pair that did not interact with existing components of UV-B signaling pathways. To mitigate these interactions, we employed a truncated COP1. This truncated COP1 contains only the WD40 domain critical for interaction with components of the UV-B signaling pathway, including UVR8. This abolishes the E3 ubiquitin ligase activity of COP1 and, with it, a portion of its downstream signalling capacity. Further modifications were investigated but, due to a lack of full length crystal structures of UVR8, had been confounded. To that end, we produced homology models of the full length UVR8 on I-TASSER. These homology models were employed to examine how key motifs, namely the VP motif on the C27 extension and the corresponding residues on COP1, may be manipulated to preclude interaction with further components of the UV-B signaling pathway.
+                </p>
+                <p style="font-size: 20px;">
+                  <b>Mutagenesis</b>
+                </p>
+                <p style="font-size: 18px;">
+                  cop1 mutants told us this________
+                </p>
+                <p style="font-size: 20px;">
+                  <b>Troubleshooting Guide</b>
+                </p>
+                <p style="font-size: 18px;">
+                  GROMACS is an extremely helpful resource when it comes to simulative modeling. Since GROMACS played a big role in helping us understand the role COP1 mutants could potentially play in our system, we established documentation on how to mediate issues when it comes to loading things onto the program. We hope this documentation allows those interested in conducting simulative modeling themselves to able to use this as a guide to help better understand their projects. This guide can be found on our <a href="Modeling.html">Modeling</a> page.
+                </p>
+                <br>
+                <br>
+
+                <p style="font-size: 35px;">
+                    Outreach
+                </p>
+                <hr class="hr">
+                 <p style="font-size: 20px;">
+                   <b>Overview</b>
+                 </p>
+                 <p style="font-size: 18px;">
+                   From the very beginning of our project, we aimed to talk to farmers and scientists to gain their perspective on our project and the problem we hope to solve. By meeting with them, we were able to understand how to improve aspects of our design as well as improve our platform to bring awareness of the benefits of synthetic biology. Additionally, iGEM strives to make science more accessible to the people. With the divide between academia the general public increasing, the Stony Brook 2020 iGEM team has continued to take on the challenge to educate the public on synthetic biology in an honest and transparent manner.
+                 </p>
+                 <p style="font-size: 20px;">
+                   <b>Education</b>
+                 </p>
+                 <p style="font-size: 18px;">
+                   Education and engagement are very important aspects of iGEM. To paraphrase a student we spoke with during one of our presentations, research may come and go but the interactions you have with the community lasts. Throughout our Education initatives, we reached out to both high school and freshman students. In total, we presented to four groups: Shoreham-Wading River High School, the Collegiate Science and Technology Entry Program (CSTEP), the Lang Science Program, and Stony Brook Undergraduate colleges, SSO and ITS. Our presentations, which were all held through Zoom, related to our experience in undergraduate research. We also discussed the iGEM competition, and answered students’ questions regarding our project and other research opportunities. There were even several students interesting in getting involved with iGEM! For more information, please visit our <a href="Education and Engagement.html">Education</a> page
+                 </p>
+                 <p style="font-size: 20px;">
+                   <b>Integrated Human Practices</b>
+                 </p>
+                 <p style="font-size: 18px;">
+                   Founder and President of the Grow More Foundation, Dr. Creasey became a very useful asset to our team and gave us advice that significantly changed our project. Firstly, we discussed whether our BphP1 system would actually lead to the end goal we wanted: cell death. Upon reading our overview, Dr. Creasey advised us that in order to achieve our end goal, we would have to issue a more targeted approach. She advised us that we should focus on exposing a particular light pathway from the leaves that would induce the expression of a gene target that is specifically needed for plant stem cells: RAM, SAM, and FAM. These cells are responsible for making new plant material (i.e. leaves, roots, flowers), so targeting one of these would guarantee killing the plant. Dr. Creasey proposed we look into a more elegant, efficient approach: have our light inducible system lead to the expression of a small RNA molecule. In light of the problems we were facing with our current BphP1-Q-PAS1 system and Dr. Creasey’s advice, we decided to settle on our UVR8-COP1 system. For more information on our discussion with Dr. Creasey, please visit our <a href="Human Practices.html"> Human Practices</a> page.
+                 </p>
+              </div>
+              <br>
+              <br>
 
         <div class = "Social_Media">
         </br>
         </br>
         </br>
-        <h1> 
+        <h1>
             <u>
                 Stony Brook iGEM 2020
-            </u> 
+            </u>
         </h1>
         </br>
-            
+
         <a href = "https://www.instagram.com/igem.stonybrook/?hl=en" target = "_blank">
             <img src = "assets/images/logos/instagram.png" class = "social-padding"/>
             </a>
-            
+
             <a href = "https://www.facebook.com/iGEMatstonybrook/" target = "_blank">
             <img src = "assets/images/logos/face.png" class = "social-padding" />
             </a>
@@ -115,7 +199,7 @@
             </a>
 
 
-           
+
         </br>
         </br>
         </br>

@@ -79,242 +79,276 @@
                 </li>
             </ul>
         </nav>
-        <header class="main-header">
-          <div>
-          <h1 class="h1" style="font-size: 70px; color: black"> Engineering Success </h1>
-        </div>
+        <header class="header-container">
+            <img src="assets/images/melville.jpg" alt="" style="width:100%;height:auto;opacity:0.5;">
+            <!--CSS for the loading page -->
+            <div class="centered"> Engineering Success </div>
+            <!--<h1 class="h1">Team Member</h1>-->
         </header>
+              <br>
 
-        <div class="container">
-        <h2 class="h2"> Plant Growth </h2>
+              <div class="brief-intro">
+                  <p style="text-align:center">
+                    Our team has modeled our design process after iGEM's Engineering Success Cycle. Throughout the summer, our team constantly strove to establish a system that not only led us to our end goal of suppressing plant development, but achieved it in the most efficient way possible. As we were relatively new to the field of plant biology, we decided to meet with professors to gauge their opinions on our project design and see whether the path we were taking was the best for our project. Because we were not able to conduct live wet lab experiments, we had a bit more time to change the direction of our project, constantly improving and refining it until we settled upon our current UVR8-COP1 light inducible system. We would like to thank all of the scientists that have assisted us in refining our project. For a more detailed summary of their advice, feel free to visit our <a href = "Human Practices.html">Human Practices</a> page!
+                  </p>
+                </div>
+
+                <div class="text-container" style="display: inline-block;">
+                    <p style="font-size: 35px;"> bReakdown: Light-induced cell death through the depletion of ATP </p>
         <hr class="hr">
-        <br>
-        <ul>
-        <li class="h3"> Growing Arabidopsis </li>
-        <div class="sublist">
-        <ul>
-          <li> <a href="https://www.arabidopsis.org/download_files/Protocols/nasc_plant_growth.pdf"> Here </a> is a protocol outlined by NASC on how to grow Arabidopsis </li>
-          <li> <a href="https://www.arabidopsis.org/download_files/Protocols/abrc_plant_growth.pdf"> Here </a> is a protocol outlined by TAIR on how to grow Arabidopsis </li>
-          <li> <a href+"https://plantmethods.biomedcentral.com/articles/10.1186/s13007-015-0088-0"> This </a> source discusses chamber effects </li>
-        </ul>
-        </div>
-        </div>
+        <div class="container2">
+        <h4 class="h4">
+          <b style="font-size: 20px;"> Research </b>
+        </h4>
+      <p style="font-size: 18px;">
+        We initially planned to achieve cell death by targeting ATP production. This would be best done by disrupting the process of oxidative phosphorylation which, for many organisms, occurs in the mitochondria. This process pumps protons from the inner space, or the matrix of the mitochondria, into the intermembrane space.  With more protons in the intermembrane space and less in the matrix, protons can flow back down through a biochemical motor called ATP synthase which, when active, makes the energy depleted ADP molecule into ATP -- usable energy. If we could reverse ATP synthesis, causing it to break down ATP into ADP and inorganic phosphate, we could essentially deplete the energy source of the cell and make it a lot harder for our chassis to survive.
+      </p>
+      <p style="font-size: 18px;">
+        We hoped to achieve this through the use of Bacteriorhodopsin (bR), a transmembrane, light sensitive protein capable of pumping protons from one side of the membrane to another in the presence of green light (Goodsell, 2002). This protein, produced by the expression of the bop gene, is naturally present in halobacteria and capable of capturing light in the chromophore composed of retinal molecules. Through a conformational change in the protein, it can behave as a proton pump.
+      </p>
+      <p style="font-size: 18px;">
+        We needed a way to incorporate bR into the mitochondrial membrane, and thought to use TIM and TOM. TOM, “translocase outer membrane,” and TIM, “translocase inner membrane,” handle the import of any proteins made for the mitochondria from the cytosol. TIM and TOM recognize polypeptides, fold them, and either move them (in TOM’s case) or integrate them into their membranes (in TIM’s case). TIM and TOM would be useful to us because we could use them to integrate our bR into the inner membrane.
+      </p>
+      </p>
+      </div>
+      <br>
 
-        <div class="container">
-        <h2 class="h2"> Stable Transformation in Arabidopsis </h2>
+      <div class="container2">
+      <h4 class="h4">
+      <b style="font-size: 20px;"> Imagine and Design </b>
+      </h4>
+      <p style="font-size: 18px;">
+      The main focus of our project was to use light in order to drive cell death. We would accomplish this by inserting bR into the inner mitochondrial membrane of our chassis using TIM and TOM. The bR would have to be inserted in such a manner that the protons get pumped into the matrix and down the proton concentration gradient. This could accomplish two things: inducible ATP hydrolysis through the reversal of F0/F1 ATP synthase function and, potentially, the disruption of ion balance by interfering with ion transporters -- such as H+/K+, K+/Cl- antiporters -- leading to matrix swelling. We believe that accomplishing one or both of these things would have been sufficient enough to cause cell death.
+      </p>
+      <p style="font-size: 18px;">
+      Algae (<i>Chlamydomonas reinhardtii</i>) would have been our ideal chassis because we would want to grow a photosynthetic organism in a controlled environment with the red and blue light. But, in the context of COVID-19, we knew we would have very little access to labs, if any at all. With this in mind, we started to consider using <i>Schizosaccharomyces pombe</i> as an alternative chassis.
+      </p>
+      <p style="font-size: 18px;">
+        <i>S. pombe</i> is a species of yeast with an average doubling time of 222 minutes (3-4 hours). We would use <i>S. pombe</i> to test the efficacy of our methods and assess any problems before we implement it in our main chassis, <i>Chlamydomonas reinhardtii</i>. We could have easily gained access to this yeast because there are Stony Brook faculty that use this yeast so, in the unlikely event that we did not end up with enough resources to pursue the ideal algae approach, we could use <i>S. pombe</i> as a “dry run” for our algae experiments.
+      </p>
+      <p style="font-size: 18px;">
+      In terms of activation, bR’s dependence on green light (500-650 nm) would mean that the system is activated solely under natural sunlight, giving rise to our proposed implementation of our system in indoor farms. Since indoor farms utilize predominantly red and blue light to grow plants, a plant with this system incorporated into it would continue to develop in an indoor setting but die when exposed to sunlight, as exposure would cause the bR system to become activated, initiating the proposed mechanism and causing cell death through ATP depletion.
+      </p>
+      </p>
+      </div>
+      <br>
+
+      <div class="container2">
+      <p>
+      <h4 class="h4">
+      <b style="font-size: 20px;">Build + Test</b>
+      </h4>
+      <p style="font-size: 18px;">
+        Although we did not begin to establish constructs with this design, we knew that the orientation of bR in the mitochondria would be one of the most important factors for the success of our project. If placed into the outer membrane facing out, bR would pump protons into the cytosol. This method would disrupt the proton gradient but may cause some ATP to remain in our chassis, allowing it to still live. If placed into the inner membrane, bR may be able to effectively “flip” the proton concentration gradient, causing ATP synthase to break down ATP into ADP and inorganic phosphate. pH changes would remain negligible within physiological ranges.
+      </p>
+      <p style="font-size: 18px;">
+      To insure the proper insertion of bR into the mitochondria, TIM would be used. By appending the same N-terminal signal sequence as that of ATP synthase to the bop gene, we could manipulate TIM to integrate the expressed bR into the mitochondrial membrane.
+      </p>
+      <p style="font-size: 18px;">
+        Testing our system proved to be impossible due to the absence of wet lab, but further research brought about some issues with our approach. Firstly, bR insertion into the mitochondrial membrane would be difficult, as the translocase mechanism is currently not well understood. Secondly, adding on a sequence to the N-terminus would greatly impact bR functionality, which would make orientation control nearly impossible.
+      </p>
+      </p>
+      </div>
+      <br>
+
+      <div class="container2">
+      <p>
+      <h4 class="h4">
+      <b style="font-size: 20px;">Learn + Improve</b>
+      </h4>
+      <p style="font-size: 18px;">
+        After coming up with a potential design we presented an overview to our advisors, who helped us uncover unanticipated drawbacks. We quickly found that inserting a non-native protein into the mitochondrial membrane would be a challenge in itself. Firstly, Dr. Rest explained to us that manipulating bR insertion would influence strong selective pressure for mutations to remove that function. Even if we introduce this system, we may have a difficult time making sure that this construct remains in the organism. Additionally, we would have to ensure that we implement a way to prevent mutations during the propagation that removes it. This would be done by including some part that is absolutely necessary for the organism to survive so it does not undergo mutations to remove our construct.
+      </p>
+      <p style="font-size: 18px;">
+        From another perspective, Dr. Glynn suggested that it may be difficult to take the N-terminus signal and attach it to the C-terminus. Additionally, overexpressing mitochondrial proteins in bacteria is almost impossible due to the fact that the lipid composition of the inner membrane is different from that of the plasma membrane, having a signal sequence followed by another short native domain followed by bR may mitigate this issue.
+      </p>
+      <p style="font-size: 18px;">
+        Dr. Balázsi followed up by mentioning that mitochondria are not static. They constantly replicate at a rapid pace, fusing and splitting. Because of this, they have evolved membrane curvature to increase their surface area meaning that even if we have the right signal sequence, bR may still have a difficult time being inserted. To improve our design, Dr. Balázsi suggested an alternative method that we could follow: using proapoptotic proteins such as Bax which would depolarize the mitochondria for us. Dr. Gergen added upon that idea by explaining how a light inducible promoter could be used to provide strong expression, and would be the best way to activate Bax, since we were interested in optogenetic control anyways.
+      </p>
+      </p>
+      </div>
+      </div>
+      <br>
+
+      <div class="text-container" style="display: inline-block;">
+          <p style="font-size: 35px;"> bReakdown 2.0: Light-induced plant cell death through upregulation of Bax </p>
         <hr class="hr">
-        <br>
-        <ul>
-        <li class="h3"> Plant Growth </li>
-        <div class="sublist">
-        <ol>
-          <li> Arabidopsis ecotype Col-0, marked with rps2-201 allele of resistance gene RPS2, grown to inflorescence flowering stage -- with primary bolts clipped, and secondary bolts about 2-10cm with few flowers open -- in a shaded greenhouse, 24℃ day/ 20℃ at night with high pressure sodium lighting activated 18 h days </li>
-          <li> Planted 1-2 per 25 cm2 pot or 6-20 per 64cm2 pot moistened potting soil (SunshineMix#1; Sun Gro Horticulture Inc. Bellevue, WA, USA) </li>
-          <li> Soil is mounded slightly above rim, to prevent soil from large pots falling into inoculation medium, and covered with nylon window screen or tulle fabric and secured by rubber band </li>
-        </ul>
-        </div>
-        </div>
+      <div class="container2">
+      <h4 class="h4">
+        <b style="font-size: 20px;"> Research </b>
+      </h4>
+      <p style="font-size: 18px;">
+        Our second idea was to upregulate the pro-apoptotic protein, Bax, to depolarize the mitochondria of plant cells. This idea was suggested to us by Dr. Balázsi, but we had much to research. Throughout our search, we learned that Bax is a member of the Bcl2 family of proteins. Among many other processes, these proteins regulate pathways associated with apoptosis. Bcl2 proteins can either be pro-apoptotic and work to induce apoptosis (like Bax) or anti-apoptotic and work to inhibit it (like Bcl2). Bax is crucial for the assembly of a structure called the mitochondrial apoptosis-induced channel (MAC) (Hughes et al., 2015). This structure, as the name would imply, is a channel in the outer membrane of the mitochondria that releases proteins that reside in the intermembrane space. The MAC can be made entirely out of Bax or a combination of Bax and Bak (another pro-apoptotic protein). Upon apoptotic stimulus, Bax may be recruited to the outer membrane of the mitochondria, where it forms the MAC, and subsequently releases cytochrome c, triggering the activation of caspase cascade, a key event in committing the cell to undergoing apoptosis through intrinsic pathways. In plants, Bax could initiate the Hypersensitive Response (HR). HR is one among many tools plants employ to fight pathogens and is essentially a part of plant immune systems. Plants use HR to limit the spread of a pathogen when they’ve been infected such that, if the leaves of a plant are infected with pathogenic microbe X (PMX), the plant will recognise some virulence factor (encoded in the pathogen as the avr gene) associated with PMX with an NLR (NOD-like receptor). Encoded by the R-gene, NLRs can directly or indirectly bind to virulence factors, and begin the HR. HR itself is not a fully characterized response, and can vary from plant to plant when it comes to the actual response.
+      </p>
+      <p style="font-size: 18px;">
+      The best way to upregulate Bax, in our case, would be to use photosensitive activators to transcribe it upon exposure to excitatory light. One well characterized option was UVR8, but its reliance on UVB wavelengths meant it would have a difficult time penetrating more than just a few layers of cells located deep within the tissues. Alternatives, such as BphP1-PpsR2, were deemed to be more apt.
+      </p>
+      <p style="font-size: 18px;">
+      BphP1 is a bacterial phytochrome from Rhodopseudomonas palustris. It has a light sensing domain and can bind to a partner, PpsR2, or its shortened version, QPAS1, to allow for light induced transcription of any gene (Redchuck et al., 2017). Phytochromes are photoreceptors sensitive to red and far red light. The bacterial phytochrome BphP1 employs a biliverdin IXα (BV) chromophore that is sensitive to near-infrared frequencies. Bacterial phytochromes consist of a photosensory core module and an output effector module. Within the chromophore-binding pocket, BV can adopt two conformational states, Pr (active) and Pfr (inactive), which absorb far-red and near infra-red (NIR) light respectively (Kabernuik et al., 2016). NIR light is much more effective at penetrating deeper into tissues.
+      </p>
+      <p style="font-size: 18px;">
+        A system controlled by BphP1-PpsR2 would be expressed globally within the plant, inducing Bax expression and subsequently, cell death, in whichever part of the plant that was exposed to sunlight. One foreseeable drawback that was immediately present, however, was this pair’s susceptibility to unwanted activation by incandescent light.
+      </p>
+      </div>
+      <br>
 
-        <div class="container">
-        <ul>
-        <li class="h3"> Standard protocols for culture of Agrobacterium tumefaciens and inoculation of plants </li>
-        <div class="sublist">
-          <ol>
-            <li> Agrobacterium tumefaciens strain GV3101(pM90) carrying the binary plasmid pBINm-gfp5-ER was used in this experiment </li>
-            <li> Bacteria were grown to the stationary phase in liquid culture at 25-28℃, 250 rpm in sterilized LB( 10 g tryptone, 5 g yeast extract, 5 gNaCL per liter waterP carrying added kanamycin (25 micrograms per ml) </li>
-            <li> Vultures started from 1:100 dilution of smaller overnight cultures and grew for roughly 18-24 h </li>
-            <li> Cells harvested by centrifugation for 20 min at room temp. At 5500 g and then resuspended in infiltration medium to a final OD600 of approximately 0.80 prior to use </li>
-            <li> Floral dip inoculation medium contained 5.0% sucrose and 0.05% (500 microliters per liter) Silwet L-77 </li>
-            <li> Floral dip, the inoculum was added to a beaker, the plants were inverted into this suspension so the aboveground tissues were submerged, and plants were then removed after 3-5 sec of gentle agitation </li>
-            <li> Plants were removed from the beaker, placed in a plastic tray and covered with a tall clear-plastic dome to maintain humidity </li>
-            <li> Plants were left in low light or dark location overnight and returned to greenhouse the next day and kept out of sunlight in transport </li>
-            <li> Domes were removed approximately 12-24 h after treatment </li>
-            <li> Plants grown for 3-5 weeks until siliques were brown and dry and neighboring pots separated with tape </li>
-            <li> Seeds were harvested by gentle pulling of grouped inflorescences through fingers over a piece of clean paper </li>
-            <li> Gently blow to remove stem and pod material and store seed in microfuge tubes at 4℃ under desiccation </li>
-          </ul>
-        </div>
-        </div>
+      <div class="container2">
+      <h4 class="h4">
+      <b style="font-size: 20px;"> Imagine and Design </b>
+      </h4>
+      <p style="font-size: 18px;">
+        In terms of a chassis, yeast or algae could not be used since we wanted to characterize how Bax expression led to the Hypersensitive Response (HR), since neither of them have HR pathways. A good alternative we came up with were to make protoplast cultures, calluses of <i>Arabidopsis</i>, or a comparable model plant.
+      </p>
+      <p style="font-size: 18px;">
+        We hoped to achieve this through BphP1 and QPAS1. In darkness, or outside of the infrared activating wavelength, BphP1 would exist in the cytoplasm in its inactive (Pfr) state. In this state, BphP1 would not be able to associate with its binding partner, QPAS1, leading to no Bax expression. Around simulation of NIR light (740 nm), BphP1 would be activated due to its light sensing domain that is sensitive at that wavelength. Once BphP1 is able to sense this wavelength, it would photoconvert from the Pfr (inactive) state to the Pr (activated) state which means it’s activated. Once activated, BphP1 will bind to QPAS1. This complex would translocate from the cytoplasm to the nucleus where it would be able to interact with a reporter gene.
+      </p>
+      </div>
+      <br>
 
-        <div class="container">
-        <ul>
-        <li class="h3"> Plant Selection </li>
-        <div class="sublist">
-          <ol>
-            <li> Sterilize seed surface by immersion in 70% (v.v) ethanol for 2 min </li>
-            <li> Immersion of seeds in 10%(v/v) sodium hypochlorite solution containing 8% available chlorine for 10 min </li>
-            <li> Seeds washed 4 times with sterile distilled water and sown onto 1% agar containing MS medium and kanamycin monosulphate at a concentration of 50 μg/ml </li>
-            <li> Excess surface liquid is drained from the plates by briefly opening the plates and shaking moisture off the lid </li>
-            <li> Seeds stratified for 2d in the dark at 4℃ </li>
-            <li> Seeds were transferred to growth chamber and incubated for 4-6 h at 22℃ in continuous white light to stimulate germination (120μmol/m2s) </li>
-            <li> The final 24-48 h light incubation does not need to be required, but at least 24 hr of light is required (Intensities 80 μmol/m2s; 120 μmol/m2s; and 200 μmol/m2s work successfully in growth cabinet and growth room environments </li>
-            <li> Chlorophyll presence will be the major distinction between transformants and non-transformants </li>
-            <li> Where tested, genomic DNA from kanamycin‐resistant plants was digested with Hin dIII restriction enzyme, electrophoretically separated, blotted and then probed with a 1.9 kb Pst I fragment of the nptII gene from pBINm‐gfp5‐ER </li>
-          </ul>
-        </div>
-        </div>
+      <div class="container2">
+      <p>
+      <h4 class="h4">
+      <b style="font-size: 20px;">Build + Test</b>
+      </h4>
+      <p style="font-size: 18px;">
+        In our system, BphP1 would be fused with VP16dNLS, which means it lacks a nuclear localization signal (NLS), while QPAS1 would be fused with GAL4 and a nuclear localization signal (NLS). Upon exposure to near-infrared light, a conformational change in BphP1 transitions it from its homodimer form into its heterodimer form where it would bind to its QPAS1 partner. The BphP1-QPAS1 complex would translocate to the nucleus, where the GAL4 component of the fusion protein would bind to the gal4 UAS upstream activating sequence(CGG-N11-CCG). The VP16 component of the NLS fusion protein would act as a transactivator, recruiting the basal transcription factors for transcription of the bax gene. In a plant chassis, expression of Bax is shown to cause a hypersensitive-like response, this system would allow for control of the growth conditions of the plants.
+      </p>
+      <br>
+      <div align="center">
+      <img src="assets/images/bax1.png" style="width:45%; padding-right:10px; padding-bottom:10px;">
+      <img src="assets/images/bax2.png" style="width:45%; padding-right:10px; padding-bottom:10px;">
+      </div>
+      <br>
+      <p style="font-size: 18px;">
+        This led to the construction of two constructs since we hoped to express three genes of interest in our model organism <i> A. thaliana</i>: BphP1, QPAS1, and Bax. Our first plasmid, pBphP1_Q-PAS1, contained the genes of interest BphP1 fused to VP16 (in pink) and QPAS 1 fused to GAL4 (in yellow). In this plasmid, our promoter was cauliflower mosaic virus (in green), CaMV, which is a constitutive promoter that would promote the transcription of BphP1-QPAS1. We did have an issue with finding a way to express both genes in a high enough concentration because, oftentimes, if two genes are placed in a plasmid, then there is a risk of one gene being expressed more than the gene located downstream. To combat this, we discovered T2A peptide which is placed in between BphP1, located upstream, and Q-PAS1 which is located downstream. This peptide would allow for polyprotein expression based on the unique ribosome skipping mechanism of the peptide that operates cotranslationally. It essentially cleaves the two proteins that are flanked on both sides. This way we would get a fair amount of expression of both proteins because, once activated by near infrared light, BphP1 and QPAS1 bind to each other to initiate transcription of Bax. Our Bax construct was responsible for producing Bax in our model organism once transcription was activated by our plasmid. The promoter in use was Heat Shock Protein (HSP) which allows for the promotion of a gene when the cell is put under stress of some kind.
+      </p>
+      <br>
+      <div align="center">
+      <img src="assets/images/baxconstructs.png" style="width:100%; padding-right:10px; padding-bottom:10px;">
+      </div>
+      </div>
+      <br>
 
-        <div class="container">
-        <h2 class="h2"> Transient Transformation in Arabidopsis </h2>
+      <div class="container2">
+      <p>
+      <h4 class="h4">
+      <b style="font-size: 20px;">Learn + Improve</b>
+      </h4>
+      <p style="font-size: 18px;">
+      One immediate drawback we saw with our new design idea was that our proteins of interest and the mechanism of intrinsic apoptosis was best understood and biologically conserved in animals, not plants. In plants, the best understood analogue was the Hypersensitive Response (HR). Although not endogenous to any plants, bax can be expressed (and overexpressed) in plant tissues, ultimately resulting in HR-like cell death. It has been suggested that this is due to the integration of Bax into the mitochondrial membrane, as deletion mutants without the domains needed for integration do not result in HR-like cell death. Further, in deletion mutants lacking the domains needed for homodimerization of Bax, HR-like cell death was observed, but took a much longer time to occur (Kawai-Yamada et al., 2001). Due to this mechanism being not well characterized, it would be difficult to ensure that we would get our desired result of plant death.
+      </p>
+      <p style="font-size: 18px;">
+        Upon meeting with Dr. Vlad Verkhusha, who has worked extensively with the BphP1 system, we discussed a few more problems with the BphP1-based approach. Firstly, BphP1, when expressed in plants, is deprived of its chromophore, biliverdin. When it’s not bound to biliverdin, BphP1 has a really high affinity for Q-PAS/PpsR2. This would mean that a lot, if not all, of our BphP1 would be “active” at all times, making light-based control practically impossible. While plants do produce a compound that’s similar to the BphP1 chromophore, it can’t bind covalently to the PAS domain of BphP1. If it associates with BphP1, it would be through “unreliable” intermolecular forces like hydrogen-bonding meaning it can freely disassociate from BphP1.
+      </p>
+      <p style="font-size: 18px;">
+        Further, our meeting with Dr. Kate Creasey gave rise to more flaws in our design. When we discussed our project, Dr. Creasey advised that we focus on a more targeted approach. In sum, rapid death to the leaves in plants, which would be induced by Bax in our design, would cause rapid flowering. As plants evolved, they developed mechanisms that would cause them to reproduce as quickly as possible even if a part of them (such as a leaf) had been damaged through either a herbivore or the integration of a system like ours. This would result in the opposite effect as what we would want in terms of preventing gene flow. Additionally, the need for exogenous biliverdin by BphP1 in our system would serve a problem if we were to implement it in a real life setting, as we would not be able to supply biliverdin to every plant we integrate our system with.
+      </p>
+      <p style="font-size: 18px;">
+      In light of the problems we were facing with our current BphP1-Q-PAS1 system and the need for  a more targeted approach, we decided to settle on our current UVR8-COP1 system, which would target the stem cell population of the plants we hope to integrate our system in. This was a significant turning point in our project, as we redirected our focus from inducing cell death to suppressing further plant development.
+      </p>
+      </div>
+      </div>
+
+      <div class="text-container" style="display: inline-block;">
+          <p style="font-size: 35px;"> LightSwitch: Optogenetic knockdown of WUSCHEL to suppress plant development </p>
         <hr class="hr">
-        <br>
-        <ul>
-        <li class="h3"> Plant Growth for 4 week old Arabidopsis NahG plants </li>
-        <div class="sublist">
-        <ol>
-          <li> Sow seeds in water-soaked soil mix in a plant pot. Cover the pot with cling film and place it in a growth chamber with 8 h light/16 h dark cycle at 21 °C </li>
-          <li> Grow until the seedlings have two true leaves (around 7-10 days) </li>
-          <li> Carefully transplant seedlings to the final destination in seed trays with 40 cavities </li>
-          <li> Grow plants for approximately 3 more weeks inside the growth chamber with 8 h light/16 h dark cycle at 21 °C </li>
-          <li> Plants are ready for infiltration when they have a robust rosette of 10-12 leaves and have not started flowering </li>
-        </ul>
+        <div class="container2">
+      <h4 class="h4">
+        <b style="font-size: 20px;"> Research </b>
+      </h4>
+      <p style="font-size: 18px;">
+        Our final project idea revolves around the manipulation of the shoot apical meristem (SAM) to issue direct control of plant growth. SAMs are the source of above-ground organs and are usually classified into different zones based on cytology (Somssich et al. 2016). The central zone (CZ) contains a pool of pluripotent stem cells which divide slowly and replace the daughter cells in the peripheral zone (PZ). These daughter cells, which have a higher rate of cell division, form the organ primordia on the flanks of the SAM. A small group of cells underneath the CZ, the organizing center (OC), expresses the transcription factor WUSCHEL (WUS).
+      </p>
+      <p style="font-size: 18px;">
+        The CLAVATA-WUSCHEL signaling pathway is responsible for maintaining the meristematic stem cell population in the SAM. In <i>Arabidopsis thaliana</i>, the coordination of cell proliferation and differentiation is achieved through an autoregulatory negative feedback loop composed of the genes WUSCHEL (WUS) and CLAVATA3 (CLV3). CLV3 encodes a signaling peptide that interacts with plasma-membrane localized receptor-like kinases (RLKs) such as CLV1 and CLV2. This triggers a signalling cascade that ultimately downregulates WUS transcription (Adibi et al. 2016). Throughout our search, we could not find a specific paper that accurately characterized the CLAVATA-WUSCHEL pathway in <i>N. benthamiana</i>, but the conservation of the negative feedback loop in plant species such as <i>Arabidopsis</i>, <i>Solanum lycopersicum</i> (tomato), <i>Oryza sativa</i> (rice), and <i>Zea mays</i> (maize) suggest that it is relatively conserved in <i>N. benthamiana</i> (Fletcher 2018).
+      </p>
+      <p style="font-size: 18px;">
+        Regarding our gene of interest, we decided to choose the WUS gene. When WUS expression is reduced, stem cell differentiation is promoted and the SAM stem cell population is depleted. This allows for stem cells to differentiate but prevents them from being replaced, preventing growth of the whole plant. Knockdown of the WUS gene is accomplished through the production and proliferation of synthetic trans-acting small interfering RNAs (syn-tasiRNAs). Syn-tasiRNA biogenesis begins with the transcription of a syn-tasiRNA precursor with RNA Polymerase II. This single-stranded precursor undergoes Argonaute 1 (AGO1)-mediated cleavage guided by a co-expressed miRNA, miR173. The cleaved syn-tasiRNA is then acted upon by RNA-dependent RNA polymerase 6 (RDR6), forming a double-stranded RNA which is cleaved by Dicer-like 4 (DCL4). This results in the formation of a mature, double stranded, 21-nt long syn-tasiRNA (Allen et al. 2010). This mature syn-tasiRNA is then loaded into Argonaute 2 (AGO2), which cleaves the syntasi-RNA passenger strand. The complex of the guide strand and AGO2 then forms the RNA-Induced Silencing Complex (RISC) with the guide strand and mRNA. Within the RISC, the guide strand is used for Watson-Crick base pairing to target mRNA transcript and AGO2 functions as a riboendonuclease that cleaves target mRNA (Carthew et al. 2009). Cleavage of the mRNA transcript obstructs translation, “silencing” the gene. Syn-tasiRNAs are highly mobile and can affect gene silencing in distal plant tissues through movement via the phloem.
+      </p>
+      <p style="font-size: 18px;">
+        To promote the production of these syn-tasiRNAs, we hope to use UVR8 (ULTRAVIOLET RESPONSE LOCUS 8) and its binding partner COP1 (CONSTITUTIVELY PHOTOMORPHOGENIC1), which is a central regulator of photo-morphogenesis. UVR8 is a plant photoreceptor responsible for regulating expression of genes involved in photo-morphogenisis, photosynthesis, and cardiac rhythm modulation of plants. The role of UVR8 in photo-morphogenesis is supported by the association between UVR8 and COP1.
+      </p>
+      </div>
+      <br>
 
-        <ul>
-        <li class="h3"> Agrobacterium cultures for strains LBA4404, GV3101, and C58C1 </li>
-        <div class="sublist">
-        <ol>
-          <li> Using a glycerol stock and a sterile toothpick, streak the Agrobacterium clone(s) to be used in LB solid plates supplemented with the appropriate antibiotics. Place the plates inside a 28 °C incubator for 48 h to obtain fresh and single colonies </li>
-          <li> The day before starting the infiltration, start liquid Agrobacterium cultures in LB liquid medium using the fresh colonies on the plates. Pick Agrobacterium biomass from a single colony, using a sterile toothpick, place it inside a sterile Erlenmeyer flask with 20 ml LB liquid media supplemented with the appropriate antibiotics, and culture them at 28 °C and 180 rpm overnight </li>
-        </ul>
+      <div class="container2">
+      <h4 class="h4">
+      <b style="font-size: 20px;"> Imagine and Design </b>
+      </h4>
+      <p style="font-size: 18px;">
+        Our initial model organism was <i> A. thaliana</i>. However, our team decided to switch to <i> N. benthamiana </i> due to the fact that, if we were in a lab setting, it would be much more time-efficient to integrate our constructs through <i>Agrobacterium</i>- mediated transformation, which would take a few weeks, than methods such as floral dip, which can take upto a year.
+      </p>
+      <p style="font-size: 18px;">
+        With regards to our gene circuit, UVR8 exists as a homodimer in the dark. Since UVR8 cannot interact with any binding partners when it is in a homodimer form, it is often regarded as being in the “closed state.” As such, it is unable to bind to COP1. Upon UV-B irradiation (about 311 nm), the UVR8 homodimer undergoes a conformational change and then completely dissociates. Now, the optogenetic protein is able to bind to a partner and undergo rapid nuclear translocation. The binding of COP1 allows UVR8 to assume its “open state” form.
+      </p>
+      </div>
+      <br>
 
-        <ul>
-        <li class="h3"> Infiltration </li>
-        <div class="sublist">
-        <ul>
-          <b> Agrobacterium preparation </b>
-          <ol>
-            <li style="margin-left: 40px"> Pour saturated cultures into 50 ml Falcon tubes. Spin down cells at 4,000 x g for 10 min </li>
-            <li style="margin-left: 40px"> Discard LB medium supernatant by decanting. Eliminate as much supernatant as possible </li>
-            <li style="margin-left: 40px"> Resuspend with vortex the cell pellets using 1 volume of freshly prepared infiltration buffer </li>
-            <li style="margin-left: 40px"> After resuspension, leave cultures for 2-4 h in darkness at room temperature. e. Prepare a 1/20 dilution of the saturated culture, measure OD600 and calculate necessary volume to have a final OD600 of 0.05. Dilute using infiltration buffer </li>
-            <br>
+      <div class="container2">
+      <p>
+      <h4 class="h4">
+      <b style="font-size: 20px;">Build + Test</b>
+      </h4>
+      <p style="font-size: 18px;">
+        In our design, UVR8 is fused to TetR, otherwise known as the tetracycline repressor domain, which remains bound to the tetO consensus sequence. Though UVR8-TetR is constitutively bound to the tetO site, no transcription occurs while the UVR8-COP1 pair is unbound. The VP16 activation domain, which functions as an activating domain in our design, is fused to COP1. Dissociation in response to UV irradiation exposes the C-terminal 27 (C27) residues. The exposed UVR8 homodimer interface, and more specifically C27, then acts as an available site for the WD40 domain of COP1 to bind to. This results in the recruitment of COP1-VP16 to the nucleus, where it binds to the CaMV core promoter, and induces transcription of the ta-siRNA precursor by RNA polymerase II. The WD40 domain is also capable of binding to the full-length of UVR8, but only in its monomeric form.
+      </p>
+      <br>
+      <div align="center">
+      <img src="assets/images/circuit.png" style="width:50%; padding-right:10px; padding-bottom:10px;">
+      </div>
+      <br>
+      <p style="font-size: 18px;">
+        For this design we designed two constructs, both of which used the pFG815 backbone. This backbone was chosen because it was built for agrobacterium-mediated transformation (Yang et al., 2014). It contains 25 bp LB and RB T-DNA repeats which could be recognized by the <i>vir</i> gene on the helper plasmid in <i>Agrobacterium</i> to help facilitate transfer of our construct into the plant’s cells. There is a 69-bp MCS which contains 12 unique restriction enzyme sites to insert our construct into. There is also an origin of replication for both E. coli and Agrobacterium, allowing the plasmid to stably exist in both organisms. The KanR gene confers resistance to kanamycin, which was used to select for transformed XL1 blue competent E. coli and Agrobacterium strain EHA105. We linearized this vector with XmnI and HindIII-HF. Cutting with two restriction enzymes minimizes the chance of spontaneous re-ligation and removes the CaMV poly(A) signal from the original backbone.
+      </p>
+      <p style="font-size: 18px;">
+        Since our vector did not contain a promoter or terminator, we put the genes for the COP1-VP16 and mphR(A)-UVR8 fusion proteins under the control of a 35S CaMV promoter and 35S CaMV terminator in our first construct, pAtTASI-HiFi. These regulatory elements are commonly used in plant synthetic biology and would allow for strong expression of our genes in <i>N. benthamiana</i> leaves. Transcription of the ta-siRNA targeting the WUSCHEL gene is under the control of a light-inducible promoter, which consists of the mphR(A) DNA-binding site, (etr)<sub>8</sub>, followed by the 35S CaMV core promoter. Additionally, we inserted a neomycin resistance cassette into the UVR8-COP1 containing plasmid and a hygromycin resistance cassette in the ta-siRNA containing plasmid near the LB-T-DNA repeats, so that we could select for the final transformed plant in the end.
+      </p>
+      <p style="font-size: 18px;">
+        For pCOP1-UVR8, a total of 3 inserts were cloned into a pFGL815 vector: a neomycin resistance cassette, a 35S CaMV promoter-COP1(WD40)-L-VP16-T2A insert, and TetR-L-UVR8-35S CaMV terminator insert. The COP1-VP16 and TetR-UVR8 fusion proteins were interrupted by a self-cleaving T2A peptide, allowing both fusion proteins to be translated from a single transcript. In an attempt to improve expression of these recombinant proteins, the coding sequences were codon optimized for <i>N. benthamiana</i>. The inserts were oriented such that the 35S promoter was away from the LB T-DNA repeat to prevent degradation of our construct inside the plant tissue; the LB T-DNA repeat is prone to deletion. Furthermore, the neomycin resistance cassette was reversed to control against the possibility of transcription errors.
+      </p>
+      <br>
+      <div align="center">
+      <img src="assets/images/tasi.png" style="width:100%; padding-right:10px; padding-bottom:10px;">
+      </div>
+      </div>
+      <br>
 
-            <b> Infiltration procedure </b>
-            <ol>
-              <li style="margin-left: 40px"> Fill a 1 or 2 ml needleless syringe with the resuspended culture at a final OD600 of 0.05. Perform the infiltration by pressing the syringe (without needle) on the abaxial side of the leaf while exerting counter-pressure with a fingertip on the adaxial side. Observe how the liquid spreads within the leaf if the infiltration is successful. Infiltrate whole leaves (ca. 100 µl of bacterial suspension/leave) </li>
-              <li style="margin-left: 40px"> Dry the excess of culture from the leaf surface using tissue paper (Figure 1, Video 1) </li>
-              <li style="margin-left: 40px"> Two to four days after infiltration, observe fluorescence of infiltrated proteins or harvest infiltrated leaves to do a protein extraction </li>
-        </div>
-        </div>
+      <div class="container2">
+      <p>
+      <h4 class="h4">
+      <b style="font-size: 20px;">Learn + Improve</b>
+      </h4>
+      <p style="font-size: 18px;">
+        Much like our other design ideas, we do foresee potential drawbacks with this design which could be improved upon through further research. Firstly, the absence of a wet lab prevented us from determining whether there are additional protein-protein interactions (PPIs) that could be minimized by modified key residues in, UVR8 and COP1, since both are native to <i> N. benthamiana</i>. However, we were able to observe some COP1 mutants by modeling molecular dynamics through GROMACS. Information on these mutants is located on our <a href = "Modeling.html"> Modeling</a> page.
+      </p>
+      </div>
+      </div>
+      </div>
+      <br>
 
-        <div class="container">
-        <h2 class="h2"> Transient Transformation in Tobacco </h2>
-        <hr class="hr">
-        <br>
-        <ul>
-        <li class="h3"> Time Frame </li>
-        <div class="sublist">
-        <ul>
-          <li> Day 1: Agrobacterium transformation with binary vectors </li>
-          <li> Day 3: Start Agrobacterium culture (including Agrobacterium containing p19 strain) </li>
-          <ul>
-            <li style="margin-left: 50px"> p19 is a suppressor of gene silencing from the tomato bushy stunt virus and must be infiltrated for proper gene expression </li>
-            <li style="margin-left: 50px"> Water tobacco plants </li>
-          </ul>
-          <li> Day 4: Infiltration of transformed Agrobacteria in N. benthamiana leaves </li>
-          <li> Day 6-10: Imaging of results </li>
-        </ul>
-        </ul>
-        <ul>
-        <li class="h3"> Infiltration </li>
-        <div class="sublist">
-        <ol>
-          <li> Prepare activation buffer </li>
-          <li> Measure the OD600 of overnight cultures </li>
-          <li> N. benthamiana will be infiltrated with a solution containing OD600 = 0.3 of each experimental Agro containing construct and OD600 = 0.1 of p19 </li>
-          <ul>
-            <li style="margin-left: 50px"> N. benthamiana will be infiltrated with a solution containing OD600 = 0.3 of each experimental Agro containing construct and OD600 = 0.1 of p19 </li>
-          </ul>
-          <li> Mix calculated volumes of constructs and p19 cultures into a 1.5 ml Eppendorf tube </li>
-          <li> Immediately centrifuge the mixtures at maximum speed for 30 seconds at room temperature </li>
-          <li> Discard the supernatant and resuspend the mixtures in Vfinal of activation buffer </li>
-          <li> Incubate the mixtures for at least 30 minutes at room temperature in dark </li>
-          <li> Infiltrate the mixtures using a 1 ml syringe without a needle into the abaxial side of N. benthamiana leaves </li>
-          <ul>
-            <li style="margin-left: 50px"> Trace the infiltrated area with a marker </li>
-            <li style="margin-left: 50px"> Incubate the plants in the greenhouse for 2-6 days, depending on the level of protein expression. Two days of expression is often maximal </li>
-          </ul>
-        </ul>
-        </div>
-        </div>
+      <div class="text-container" style="display: inline-block;">
+          <p style="font-size: 35px;">
+              References
+          </p>
+          <hr class="hr">
+      <div style="padding-left: 4em; text-indent: -4em;">
+        <p> Adibi, M., Yoshida, S., Weijers, D., & Fleck, C. (2016). Centering the Organizing Center in the Arabidopsis thaliana Shoot Apical Meristem by a Combination of Cytokinin Signaling and Self-Organization. Plos One, 11(2). doi:10.1371/journal.pone.0147830 </p>
+        <p> Allen, E., & Howell, M. D. (2010). MiRNAs in the biogenesis of trans-acting siRNAs in higher plants. Seminars in Cell & Developmental Biology, 21(8), 798-804. doi:10.1016/j.semcdb.2010.03.008 </p>
+        <p> Carthew, R. W., & Sontheimer, E. J. (2009). Origins and Mechanisms of miRNAs and siRNAs. Cell, 136(4), 642-655. doi:10.1016/j.cell.2009.01.035 </p>
+        <p> Fletcher J. C. (2018). The CLV-WUS Stem Cell Signaling Pathway: A Roadmap to Crop Yield Optimization. Plants (Basel, Switzerland), 7(4), 87. https://doi.org/10.3390/plants7040087 </p>
+        <p> Goodsell, D. (2002). Bacteriorhodopsin. RCSB Protein Data Bank. doi:10.2210/rcsb_pdb/mom_2002_3 </p>
+        <p> Hughes, R. M., Freeman, D. J., Lamb, K. N., Pollet, R. M., Smith, W. J., & Lawrence, D. S. (2015). Optogenetic apoptosis: light-triggered cell death. Angewandte Chemie (International ed. in English), 54(41), 12064–12068. https://doi.org/10.1002/anie.201506346 </p>
+        <p> Kaberniuk, A. A., Shemetov, A. A., & Verkhusha, V. V. (2016). A bacterial phytochrome-based optogenetic system controllable with near-infrared light. Nature methods, 13(7), 591–597. https://doi.org/10.1038/nmeth.3864 </p>
+        <p> Kawai-Yamada, M., Jin, L., Yoshinaga, K., Hirata, A., & Uchimiya, H. (2001). Mammalian Bax-induced plant cell death can be down-regulated by overexpression of Arabidopsis Bax Inhibitor-1 (AtBI-1). Proceedings of the National Academy of Sciences of the United States of America, 98(21), 12295–12300. https://doi.org/10.1073/pnas.211423998 </p>
+        <p> Redchuk, T. A., Omelina, E. S., Chernov, K. G., & Verkhusha, V. V. (2017). Near-infrared optogenetic pair for protein regulation and spectral multiplexing. Nature chemical biology, 13(6), 633–639. https://doi.org/10.1038/nchembio.2343 </p>
+        <p> Somssich, M., Je, B. I., Simon, R., &; Jackson, D. (2016). CLAVATA-WUSCHEL signaling in the shoot meristem. Development, 143(18), 3238-3248. doi:10.1242/dev.133645 </p>
+        <p> Yang, F., & Naqvi, N. I. (2014). Sulfonylurea resistance reconstitution as a novel strategy for ILV2-specific integration in Magnaporthe oryzae. Fungal Genetics and Biology, 68, 71-76. doi:10.1016/j.fgb.2014.04.00 </p>
+        <p> Yang, X., Montano, S., & Ren, Z. (2015). How Does Photoreceptor UVR8 Perceive a UV-B Signal?. Photochemistry and photobiology, 91(5), 993–1003. https://doi.org/10.1111/php.12470 </p>
+      </div>
+      </div>
 
-        <div class="container">
-        <h2 class="h2"> Cloning </h2>
-        <hr class="hr">
-        <br>
-        <ul>
-        <li class="h3"> HiFi </li>
-        <div class="sublist">
-        <ul>
-          <li> <a href="https://drive.google.com/file/d/1F8hH2t-SgealYEHAPWhM7X7VNNJYqMIn/view"> Here </a> is the protocol for Hifi, provided to us by New England Biolabs </li>
-        </ul>
-        </div>
-        </div>
-
-        <div class="container">
-        <h2 class="h2"> Genotyping </h2>
-        <hr class="hr">
-        <br>
-        <ul>
-        <li class="h3"> Colony PCR </li>
-        <div class="sublist">
-        <ul>
-          <li> <a href="https://www.neb.com/-/media/nebus/files/application-notes/appnotem0486.pdf?rev=9fa011f69d4d45899438008abb93fe49"> E. coli </a> provided to us by New England Biolabs </li>
-          <li> <a href="https://sciencetania.blogspot.com/2015/09/how-to-do-colony-pcr-with-agrobacterium.html"> Agrobacterium </a> provided to us by Sciencetania </li>
-          <ol>
-            <li style="margin-left: 50px"> Pick a multiple Agro colonies from an LB agar selection plate, re-streak most of it onto a fresh LB agar selection plate (so I keep the clone) and swirl the rest of the cells into a microcentrifuge tube with 50 uL of sterile ddH2O </li>
-            <li style="margin-left: 50px"> Heat the cells at 95C for 30 minutes, then place on ice to cool </li>
-            <li style="margin-left: 50px"> Meanwhile, prepare 25 uL PCR reactions as usual </li>
-            <li style="margin-left: 50px"> Add 1 uL of the cells+water mix into the PCR reaction as DNA template </li>
-            <li style="margin-left: 50px"> Run the colony PCR program. I still leave the 10 minute lysis step in my program, but it should no longer be necessary </li>
-            <li style="margin-left: 50px"> Run samples on an agarose gel </li>
-          </ol>
-        </ul>
-        </ul>
-
-        <ul>
-        <li class="h3"> Analytical PCR </li>
-        <div class="sublist">
-        <ol>
-          <li> </li>
-        </ul>
-
-        <ul>
-        <li class="h3"> RT-PCR of WUS mRNA </li>
-        <div class="sublist">
-        <ol>
-          <li> </li>
-        </ul>
-        </div>
-        </div>
-
-        <div class="container">
-        <h2 class="h2"> Phenotyping </h2>
-        <hr class="hr">
-        <br>
-        <ul>
-        <li class="h3"> Response to Antibiotics </li>
-        <div class="sublist">
-        <ol>
-          <li> </li>
-        </ul>
-
-        <ul>
-        <li class="h3"> Western blot </li>
-        <div class="sublist">
-        <ul>
-          <li> <a href="https://www.neb.com/protocols/2016/03/23/western-blot"> Here </a> is a NEB protocol which would be used for COP1/UVR8 </li>
-        </ul>
-        </ul>
-        <ul>
-        <li class="h3"> Northern blot </li>
-        <div class="sublist">
-        <ul>
-          <li> <a href="https://www.thermofisher.com/us/en/home/life-science/dna-rna-purification-analysis/nucleic-acid-gel-electrophoresis/northern-blotting.html"> Here </a> is a Thermofisher protocol that would be used for WUS mRNA</li>
-        </ul>
-        </ul>
-        </div>
-        </div>
+      <br>
+      <br>
 
         <div class = "Social_Media">
         </br>

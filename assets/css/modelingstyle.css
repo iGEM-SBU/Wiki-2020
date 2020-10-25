@@ -101,17 +101,59 @@ input, select {
     vertical-align:middle;
 }
 /* HEADER IMAGE FORMATTING */
-.main-header {
-  background-image: url(https://images.squarespace-cdn.com/content/v1/5bfb50a87106999abcd2f7f2/1550174257677-LXQ00OHIS94Q0NWEMSRM/ke17ZwdGBToddI8pDm48kIgKsZfsxacz8qHBzbiXgId7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0lCYWGxfdB_uf1_ERfebHZ6ax5kLxgs6gJ2wTCJfOuEPVc9HbgMAZW1ERPUnd9CDhw/vertical-farming-banner.jpg?format=2500w);
-  background-size: cover;
-  padding: 100px;
+.header-container {
+	position: relative;
+	text-align: center;
+	font-size: 90px;
+	color: black;
 }
-/* SETTING BACKGROUND COLOR SO IT GETS DARKER AS YOU MOVE DOWN */
-.body{
-  height: 2500px; /* Used to enable scrolling */
-  background: linear-gradient(0deg, #ba8cd7 0%, #d2b2e5 51%, #e9d8f2 85%);
-                                    /* DARKEST COLOR       LIGHTEST COLOR */
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
+
+.navbar-purple
+{
+  background-color: #760E73;
+}
+/* HEADER IMAGE FORMATTING */
+.brief-intro {
+	font-size: 15px;
+	margin: 0 0 10px;
+	padding: 0 50px 10px 50px;
+	position: relative;
+}
+
+	.brief-intro::after {
+		/*I think this is essentially making an empty box*/
+		background-color: white;
+		bottom: 0;
+		content: '';
+		display: block;
+		height: 10px;
+		left: 50%;
+		position: relative;
+		transform: translate(-50%, 0);
+		width: 200px;
+		/*border for the empty box*/
+		border-bottom: 3px solid black;
+	}
+
+  .text-container{
+  	/*
+  	padding: 20px 200px 0 200px;
+  	*/
+  	padding-top: 1%;
+  	padding-right: 10%;
+  	padding-left: 10%;
+  	width: 100%;
+  	height: auto;
+  	position: relative;
+  	text-align: left;
+  }
 
     nav a
     {
@@ -176,7 +218,6 @@ input, select {
   position: relative;
   background-color: inherit;
   width: 50%;
-  border: 3px solid #000000;
 }
 /*column and row stuff*/
 .column{
@@ -195,7 +236,6 @@ input, select {
   display: table;
   clear: both;
 }
-
 
 .Social_Media {
 
