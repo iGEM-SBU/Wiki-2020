@@ -221,19 +221,15 @@ input, select {
 
     }
 
-   .Writing_size {
-        padding-left: 25%;
-        padding-right: 25%;
-        line-height: 30px;
-        font-size: 18px;
-        color: white;
-        text-shadow: /* adds drop shadow-like thing to text */
-        -1px -1px 0 #8f1a8f,
-        1px -1px 0 #8f1a8f,
-        -1px 1px 0 #8f1a8f,
-        1px 1px 0 #8f1a8f;
-      
-    }
+.Writing_size {
+    padding-left: 25%;
+    padding-right: 25%;
+    line-height: 30px;
+    font-size: 18px;
+ 
+    /* adds drop shadow-like thing to text */
+    /* text-shadow: -1px -1px 0 #8f1a8f, 1px -1px 0 #8f1a8f, -1px 1px 0 #8f1a8f, 1px 1px 0 #8f1a8f; */
+}
 
     .Writing_header {
 
@@ -303,8 +299,7 @@ input, select {
 
 
 /* CSS for base slideshow */
-
-* {box-sizing:border-box}
+* {box-sizing:border-box;}
 
 /* Slideshow container */
 .slideshow-container {
@@ -500,10 +495,10 @@ input, select {
 }
 
 .wrapper_two {
-	position: relative;
+    position: relative;
 	bottom: 0;
-  width:100%;
-  height: 100%;
+    width:100%;
+    height: 100%;
 }
 
 .wrapper_three {
@@ -518,9 +513,6 @@ input, select {
 	position: relative;
 	margin:auto;
 	display:block;
-	margin-top:8%;
-  height: 100%;
-  width: 100%;
   background:none;
  
  
