@@ -74,8 +74,7 @@
     <header class="header-container">
         <img src="assets/images/simons.jpeg" alt="" style="width:100%;height:auto;opacity:0.5;">
         <!--CSS for the loading page -->
-        <div class="centered"> Contribution </div>
-        <!--<h1 class="h1">Team Member</h1>-->
+        <div class="centered"> Contributions </div>
     </header>
         <br>
 
@@ -92,6 +91,76 @@
 
   <div class="container left">
     <div class="content">
+        
+        <p style = "font-size: 35px;">Parts Overview</p>
+        <table class = "table" style = "width: 100%;">
+            <tr>
+                <th class = "th">Part Name</th>
+                <th class = "th">Type</th>
+                <th class = "th">Short Description</th>
+                <th class = "th">Length</th>
+            </tr>
+            <tr>
+                <td class = "td"><a href="http://parts.igem.org/Part:BBa_K3428000">BBa_K3428000</a></td>
+                <td class = "td">Coding</td>
+                <td class = "td">UV RESISTANCE LOCUS 8 (UVR8)</td>
+                <td class = "td">1323 bp</td>
+            </tr>
+            <tr>
+                <td class = "td"><a href="http://parts.igem.org/Part:BBa_K3428002">BBa_K3428002</a></td>
+                <td class = "td">Regulatory</td>
+                <td class = "td">TetR-UVR8 fusion protein</td>
+                <td class = "td">1989 bp</td>
+            </tr>
+            <tr>
+                <td class = "td"><a href="http://parts.igem.org/Part:BBa_K3428003">BBa_K3428003</a></td>
+                <td class = "td">Coding</td>
+                <td class = "td">UV-B light responsive promoter</td>
+                <td class = "td">230 bp</td>
+            </tr>
+            <tr>
+                <td class = "td"><a href="http://parts.igem.org/Part:BBa_K3428004">BBa_K3428004</a></td>
+                <td class = "td">Coding</td>
+                <td class = "td">COP1(WD40-VP16) fusion protein</td>
+                <td class = "td">1440 bp</td>
+            </tr>
+        </table>
+
+        <div class = "text-container" style = "display: inline-block;">
+            <div class="container2">
+                <h4 class="h4">
+                <b style="font-size: 24px;">Functional Proteins</b>
+                </h4>
+                <hr class="hr">
+                <p style = "font-size: 18px;"><i>UV Resistance Locus 8 (UVR8)</i></p>
+                <p style="font-size: 18px;">
+                UV RESISTANCE LOCUS 8 (UVR8) is a photoreceptor derived from <i>Arabidopsis thaliana</i> that is able to perceive light in the 280-315nm range. UVR8 plays an important role in photomorphogenesis and the UV-B hypersensitivity response in plants. In the absence of UV-B light, UVR8 exists as a homodimer. However, exposure to UV-B light triggers the monomerization of UVR8. UVR8 does not employ an exogenous chromophore and instead uses intrinsic tryptophan residues, specifically Trp-285 and Trp-233, as chromophores. Upon monomerization, C-terminal and N-terminal tails are released from the core of UVR8. The N-terminal tail of UVR8 contains a NLS responsible for its recruitment to the nucleus upon UV-B irradiation. The C-terminal tail (C27) facilitates interactions between UVR8 and its binding partner, COP1 [1]. These two proteins rapidly accumulate in the nucleus where they can regulate the expression of genes that provide UV-B protection.
+                </p>
+                <br>
+                
+                <p style = "font-size: 18px;"><i>TetR-UVR8 fusion protein</i></p>
+                <p style="font-size: 18px;">
+                TetR-UVR8 is a fusion protein consisting of UV RESISTANCE LOCUS 8 (UVR8) photoreceptor from <i>Arabidopsis thaliana</i> joined to a tetracycline repressor domain, abbreviated TetR, by 3X Gly-4-Ser linker. Upon nuclear import, the TetR portion of the UVR8-VP16 fusion protein is constitutively bound to the tetO operator sequence [2]. Upon UV-B irradiation (~311 nm), the UVR8 homodimer undergoes a conformational change and dissociates [3]. Upon monomerization, the C-terminal tail of UVR8 adopts an extended conformation which facilitates binding to the WD40 domain of COP1 [1]. Upon the association of COP1-VP16 with UVR8-TetR, the downstream gene becomes activated. For the purposes of the 2020 Stony Brook iGEM team, this system will be used to facilitate the transcription of a synthetic ta-siRNA which knocks down expression of the WUSCHEL gene governing stem cell maintenance in the shoot apical meristem of N. benthamiana.</p>
+                <br>
+
+                <p style = "font-size: 18px;"><i>COP1(WD40)-VP16 fusion protein</i></p>
+                <p style="font-size: 18px;">
+                COP1(WD40)-L-VP16 is a fusion protein which consists of CONSTITUTIVE PHOTOMORPHOGENIC 1 (COP1) binding domain fused to a VP16 activation domain via a 3x Gly-4-Ser3 linker. E3-ubiquitin ligase COP1 (from <i>Arabidopsis thaliana</i>) is the binding partner for the photoreceptor UV-B resistance locus 8 (UVR8). The ubiquitin ligase activity was removed from COP1 so that only the WD40 domain remains  [1]. Upon stimulation of UV-B light (~300 nm), UVR8 undergoes a conformational change allowing it to exit from its homodimer state. The monomeric UVR8 can then interact with COP1 and the complex accumulates in the nucleus, where it can regulate the expression of a particular gene. A flexible (Gly4Ser)3 peptide linker was used to connect these two proteins Viral protein 16 (VP16) from Herpes simplex virus-1 (HSV-1) is a transcriptional activation domain. Stony Brook 2020 took advantage of the UVR8_COP1 system’s ability to activate gene expression to induce transcription of a siRNA molecule.
+                </p>
+
+                <br><br>
+                <h4 class="h4">
+                <b style="font-size: 24px;">Promoters</b>
+                </h4>
+                <hr class="hr">
+                <p style = "font-size: 18px;"><i>UV-B light responsive promoter</i></p>
+                <p style="font-size: 18px;">
+                    The light responsive promoter is a gene promoter which drives expression of a downstream gene in the presence of a light-responsive activator. It consists of four tetO operator sequences downstream of the core of the 35s CaMV promoter. This promoter is designed to be employed along with a UVR8-TetR/COP1-VP16 optogenetic pair to induce transcription of a synthetic tasiRNA which knocks down expression of the WUSCHEL gene, a key gene responsible for stem cell maintenance in the shoot apical meristem of N. benthamiana.
+                </p>
+                <br>
+            </div>
+        </div>
+
 
       <p style="font-size: 35px;"> Basic Parts </p>
       <table class="table" style="width:100%">
@@ -214,6 +283,19 @@
     </table>
     </div>
   </div>
+
+  <div class="text-container" style="display: inline-block;">
+    <p style="font-size: 35px;">
+        References
+    </p>
+    <hr class="hr">
+<div style="padding-left: 4em; text-indent: -4em;">
+  <p>[1] Yang, X., Montano, S., & Ren, Z. (2015). How Does Photoreceptor UVR8 Perceive a UV-B Signal?. Photochemistry and photobiology, 91(5), 993–1003. https://doi.org/10.1111/php.12470 </p>
+  <p>[2] Müller, K., Engesser, R., Schulz, S., Steinberg, T., Tomakidi, P., Weber, C. C., Ulm, R., Timmer, J., Zurbriggen, M. D., & Weber, W. (2013). Multi-chromatic control of mammalian gene expression and signaling. Nucleic acids research, 41(12), e124. https://doi.org/10.1093/nar/gkt340</p>
+  <p>[3] Wu, M., Eriksson, L.A. & Strid, Å. Theoretical prediction of the protein–protein interaction between Arabidopsis thaliana COP1 and UVR8. Theor Chem Acc 132, 1371 (2013). https://doi.org/10.1007/s00214-013-1371-7</p>
+  <p>[4] Motta-Mena, L., Reade, A., Mallory, M. et al. An optogenetic gene expression system with rapid activation and deactivation kinetics. Nat Chem Biol 10, 196–202 (2014). https://doi.org/10.1038/nchembio.1430</p>
+</div>
+</div>
 
         </br>
         </br>
