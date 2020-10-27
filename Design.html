@@ -66,98 +66,128 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="Programmed Cell Death.html">Programmed Cell Death</a></li>
-                        <li><a href="Wiki.html">Wiki</a></li>
+                        <li><a href="Plant.html">Plant</a></li>
+                        <li><a href="Medals.html">Medals</a></li>
+<li><a href="Excellence.html">Excellence</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
 
         <header class="header-container">
-            <img src="assets/images/frey.jpg" alt="" style="width:100%;height:auto;opacity:0.5;">
+            <img src="assets/images/design.jpg" alt="" style="width:100%;height:auto;opacity:0.5;">
             <!--CSS for the loading page -->
             <div class="centered"> Design </div>
         </header>
               <br>
 
               <div class="text-container" style="display: inline-block;">
-                  <p style="font-size: 35px;"> Overview </p>
+                  <p style="font-size: 35px;"> <b>Overview</b> </p>
                   <hr class="hr">
                    <p style="font-size: 18px;">
-                        For many decades, the agricultural industry has sought to improve crop yields and mitigate crop losses due to pests and pathogens by utilizing GM crops. However, an increased use of GM crops can negatively impact biodiversity through gene flow, potentially allowing GM crops to out compete their wild-type counterparts[1].To address this concern, we have created an optogenetic kill-switch capable of initiating programmed cell death (PCD) if a plant were to escape from its controlled indoor setting to the outdoor environment. A light-mediated solution offers an unprecedented way to control cellular behavior with precise spatial and temporal resolution; this is difficult with alternative methods, which often utilize toxic chemical inducers. Our proposed system would allow farmers to reap the benefits of GM crops without worrying about their harmful ecological implications.
+                        For many decades, the agricultural industry has sought to improve crop yields and mitigate crop losses due to pests and pathogens by utilizing GM crops. However, an increased use of GM crops can negatively impact biodiversity through gene flow, potentially allowing GM crops to out compete their wild-type counterparts (Carpenter).To address this concern, we have created an optogenetic kill-switch capable of initiating programmed cell death (PCD) if a plant were to escape from its controlled indoor setting to the outdoor environment. A light-mediated solution offers an unprecedented way to control cellular behavior with precise spatial and temporal resolution; this is difficult with alternative methods, which often utilize toxic chemical inducers. Our proposed system would allow farmers to reap the benefits of GM crops without worrying about their harmful ecological implications.
                    </p>
                    <p style = "font-size: 18px;">
-                    We plan to employ an optogenetic protein, BphP1, with its binding partner Q-PAS1, in our model organism, Arabidopsis thaliana, to induce the expression of the mammalian pro-apoptotic protein Bax upon stimulation by near-infrared light (NIR)[2,3].The optogenetic protein would allow us to utilize wavelengths outside of the visible spectrum, minimizing any chance of interfering with light associated with photosynthesis activity. When overexpressed in plants, Bax induces PCD with hallmarks reminiscent of mammalian apoptosis[4]. Bax monomers move freely in cytosol and translocate to the outer mitochondrial membrane, forming the mitochondrial apoptosis-induced channel (MAC). MAC formation will lead to the release of a heme protein known as cytochrome c. Cytochrome c loss prevents electron exchange between complexes III and IV of the electron transport chain. This causes the accumulation of ubiquinone radicals at complex III, and ultimately, the accumulation of reactive oxygen species (ROS) which lead to necrosis of plant tissue. By inhibiting plant development outside the controlled environment, the killswitch mechanism aims to arrest gene flow.
+                    Currently, indoor farming works to mitigate the risk of gene flow by providing some degree of control over the plants being grown. However, it has no inherent mechanism preventing the escape of transgenes. In order to issue direct control of plant growth, manipulation of the shoot apical meristem (SAM) may be desired. SAMs are the source of above-ground organs and can be classified into different zones based on cytology (Somssich et al. 2016). The central zone (CZ) contains a pool of pluripotent stem cells which divide slowly and replace the daughter cells in the peripheral zone (PZ) (Figure 1). These daughter cells, which have a higher rate of cell division, form the organ primordia on the flanks of the SAM. A small group of cells underneath the CZ, the organizing center (OC), expresses the transcription factor WUSCHEL (WUS).
+                </p>
+                <br>
+                <div align="center">
+                    <figure>
+                        <img src="assets/images/design_figure_1.jpg" style="width:50%; padding-right:10px; padding-bottom:10px;">
+                        <figcaption>Figure 1: Structure and composition of the shoot apical meristem (SAM).
+                        </figcaption>
+                    </figure>
+                </div>
+                <br>
+
+              </div>
+              <div class = "text-container" style = "display: inline-block;">
+                   <p style="font-size: 35px;">
+                     <b> CLAVATA-WUSCHEL Pathway and syn-tasiRNA</b>
                    </p>
-                   <p style="font-size: 20px;">
-                     <b> Optogenetic Kill-switch to Prevent the Effects of Gene Flow</b>
-                   </p>
+                   <hr class = "hr">
                    <p style="font-size: 18px;">
-                     We hope to minimize the deleterious effects of gene flow by incorporating our optogenetic killswitch in a variety of plants. Given that the core signaling component of the CLV-WUS pathway is relatively conserved in a diversity of plants such as tomato (<i>Solanum lycopersicum</i>), maize (<i>Zea mays</i>), and rice (<i>Oryza sativa</i>), we anticipate our system to function in other major crops as well, especially those grown in farms.
-                   </p>
+                    The CLAVATA-WUSCHEL signaling pathway is responsible for maintaining the meristematic stem cell population in the SAM. In Arabidopsis thaliana, the coordination of cell proliferation and differentiation is achieved through an autoregulatory negative feedback loop composed of the genes WUSCHEL (WUS) and CLAVATA3 (CLV3) (Figure 2). CLV3 encodes a signaling peptide that interacts with plasma-membrane localized receptor-like kinases (RLKs) such as CLV1 and CLV2. This triggers a signalling cascade that ultimately downregulates WUS transcription (Adibi et al. 2016). Further research is necessary to accurately characterize the CLAVATA-WUSCHEL pathway in N. benthamiana, but the conservation of the negative feedback loop in plant species such as Arabidopsis, Solanum lycopersicum (tomato), Oryza sativa (rice), and Zea mays (maize) suggest that it is relatively conserved in N. benthamiana (Fletcher 2018).
+                    </p>
+                <div align = "center">
+                    <br>
+                    <figure>
+                        <img src="assets/images/design_figure_2.jpg" style="width:50%; padding-right:10px; padding-bottom:10px;">
+                        <figcaption>Figure 2: Representation of the CLV-WUS pathway.
+                        </figcaption>
+                    </figure>
+                    <br>
+                </div>
+                    <p style = "font-size: 18px;">
+                        When WUS expression is reduced, stem cell differentiation is promoted and the SAM stem cell population is depleted. This allows for stem cells to differentiate but prevents them from being replaced, preventing growth of the whole plant. Knockdown of the WUS gene is accomplished through the production and proliferation of synthetic trans-acting small interfering RNAs (syn-tasiRNAs). Syn-tasiRNA biogenesis begins with the transcription of a syn-tasiRNA precursor with RNA Polymerase II. This single-stranded precursor undergoes Argonaute 1 (AGO1)-mediated cleavage guided by a co-expressed miRNA, miR173. The cleaved syntasi-RNA is then acted upon by RNA-dependent RNA polymerase 6 (RDR6), forming a double-stranded RNA which is cleaved by Dicer-like 4 (DCL4). This results in the formation of a mature, double stranded, 21-nt long syntasi-RNA (Allen et al. 2010). This mature syntasi-RNA is then loaded into Argonaute 2 (AGO2), which cleaves the syntasi-RNA passenger strand. The complex of the guide strand and AGO2 then forms the RNA-Induced Silencing Complex (RISC) with the guide strand and mRNA. Within the RISC, the guide strand is used for Watson-Crick base pairing to target mRNA transcript and AGO2 functions as a riboendonuclease that cleaves target mRNA (Carthew et al. 2009). Cleavage of the mRNA transcript obstructs translation, “silencing” the gene. This silencing is not isolated to the cells which produce interfering RNAs. Ta-siRNAs, si-RNAs, and mi-RNAs are highly mobile and can affect gene silencing in distal plant tissues through movement via the phloem.
+                    </p>
+
+                    <p style = "font-size: 18px;">
+                        The transcription of the WUS syn-tasiRNA is controlled by a light-inducible promoter activated by a UVR8-COP1 optogenetic pair. UVR8 is a plant photoreceptor responsible for regulating UV-B-triggered signalling pathways (Yang et al, 2015). Its binding partner, COP1, is a key regulator of photomorphogenesis. UVR8 perceives light in the UV-B region using tryptophan residues (Trp 233/285) as chromophores. Upon UV-B irradiation UVR8 undergoes a conformational change and completely dissociates, exposing a 27 residue C-terminal extension (C27), facilitating UVR8-COP1 interaction (Figure 3). 
+                    </p>
+
+                    <p style = "font-size: 18px;">
+                        pCOP1-UVR8 and pAtTASI were produced from pFGL815, an empty backbone designed for Agrobacterium-mediated transformation (Yang et al. 2014). pCOP1-UVR8, and pAtTASI inserts encode the optogenetic transcription control system and a syn-tasiRNA directed against WUS mRNA, respectively. N. benthamiana is then transformed through Agrobacterium-mediated infiltration. Upon controlled UV-B exposure, the UVR8-COP1 pair associates, activating expression of syn-tasiRNA.
+                    </p>
+
+                    <div align = "center">
+                    <br>
+                    <figure>
+                        <img src="assets/images/design_figure_3.jpg" style="width:50%; padding-right:10px; padding-bottom:10px;">
+                        <figcaption>Figure 3: UV-B light inducible gene expression system. UV-B light-induced monomerization of UVR8 recruits COP1-VP16 to the CaMV core promoter, thus activating the expression of the tasi-RNA precursor.</figcaption>
+                    </figure>
                    <br>
+
+                    </div>
                  </div>
-                   <div class="text-container" style="display: inline-block;">
-                       <p style="font-size: 35px;"> Potential Users </p>
-                       <hr class="hr">
-                        <p style="font-size: 20px;">
-                          <b>Farmers</b>
-                        </p>
-                        <p style="font-size: 18px;">
-                          Indoor farming, which includes both vertical farms and greenhouses, allows farmers to grow their products in a controlled environment. With the indoor farming industry projected to reach upwards of 22 billion USD by 2026 (Pulindindi et al., 2018), this growth scenario is growing more common every year.
-                        </p>
-                        <p style="font-size: 18px;">
-                          Conveniently, UV-B light is absent in these environments, allowing us to utilize indoor farms as part of the solution. Our UV-B light-activated killswitch would be implemented in GM crops cultivated in these controlled environments. If these plants do somehow find a way to escape to the natural environment, this killswitch would be able to prevent further growth by exploiting RNAi to silence the WUSCHEL gene, a key player in plant development. Combining the controlled environment of indoor farms with our optogenetic killswitch that prevents crops growing inside from being grown outdoors, the net risk of gene flow is decreased. Indoor farmers would be at greater liberty to modify their crops without worrying about the deleterious ecological effects of gene flow.
-                        </p>
-                        <p style="font-size: 20px;">
-                          <b>Human Practices</b>
-                        </p>
-                        <p style="font-size: 18px;">
-                          We are thankful that we were able to talk to many farmers to gain their perspective of what they thought about LightSwitch. Jennifer Ross (HeartBeet Farms), David Lopez (Babylon Farms), Maxwell Carmack (Square Roots Farms), and Mike Axelrod (Stony Brook University) all helped us gain a better understanding of how farmers would perceieve our system and what their attitudes would be if we were to implement it in their farms. We asked them two questions that related to the integration of our system in indoor farms.
-                        </p>
-                          <p style="font-size: 18px;">
-                            Firstly, we wanted to know that if there was a way to prevent GMOs from spreading transgenic traits to other crops, such as through the implementation of our kill-switch, would it be beneficial for their work. From talking to farmers, we learned that our kill-switch is something they can see being implemented, but it would be difficult to gain support from the general public. We would have to first diminish the negative stigma surrounding the word “genetically modified.” Because of this, we issued educational initiatives, which are outlined in our Education page. Additionally, to promote transparency between the scientific community and the public, we established a wet lab protocol outlining what procedures we would have done in order to integrate our system in N. benthamiana. These protocols are outlined on our Experiments page. We hope that our efforts to make our project as clear and understandable as possible would aid in its future implementation in the natural environment.
-                          </p>
-                          <p style="font-size: 18px;">
-                        </p>
-                        <p style="font-size: 18px;">
-                          Secondly, we asked if they could anticipate any potential drawbacks of using our system in farms. One farmer inquired about how our system would impact the nutritional value of the crops that had our system. Through the help of Dr. Creasey, we learned that there is no evidence that genetically modified food has less nutritional value than their “natural” counterparts. In actuality, genetically modified food usually has increased nutritional value. Once more, we were told that the biggest drawback of our system would be the reluctance of consumers from accepting it solely because genetically modified products are deemed to be “unnatural,” or inherently bad. This reinforced the need for our team to promote transparency between our project and society.</p>
-                        <br>
-                      </div>
+
+                 <div class="text-container">
+                    <p style="font-size: 35px;">
+                        <b>Constructs</b>
+                    </p>
+                    <hr class = "hr">
+                    <p style="font-size: 18px;">
+                      In our design, UVR8 is fused to TetR, otherwise known as the tetracycline repressor domain, which remains bound to the tetO consensus sequence. Though UVR8-TetR is constitutively bound to the tetO site, no transcription occurs while the UVR8-COP1 pair is unbound. The VP16 activation domain, which functions as an activating domain in our design, is fused to COP1. Dissociation in response to UV irradiation exposes the C-terminal 27 (C27) residues. The exposed UVR8 homodimer interface, and more specifically C27, then acts as an available site for the WD40 domain of COP1 to bind to. This results in the recruitment of COP1-VP16 to the nucleus, where it binds to the CaMV core promoter, and induces transcription of the ta-siRNA precursor by RNA polymerase II. The WD40 domain is also capable of binding to the full-length of UVR8, but only in its monomeric form.
+                    </p>
+                    <br>
+                    <div align="center">
+                    <img src="assets/images/circuit.png" style="width:50%; padding-right:10px; padding-bottom:10px;">
+                    </div>
+                    <br>
+                    <p style="font-size: 18px;">
+                      For this design we designed two constructs, both of which used the pFG815 backbone. This backbone was chosen because it was built for agrobacterium-mediated transformation (Yang et al., 2014). It contains 25 bp LB and RB T-DNA repeats which could be recognized by the <i>vir</i> gene on the helper plasmid in <i>Agrobacterium</i> to help facilitate transfer of our construct into the plant’s cells. There is a 69-bp MCS which contains 12 unique restriction enzyme sites to insert our construct into. There is also an origin of replication for both E. coli and Agrobacterium, allowing the plasmid to stably exist in both organisms. The KanR gene confers resistance to kanamycin, which was used to select for transformed XL1 blue competent E. coli and Agrobacterium strain EHA105. We linearized this vector with XmnI and HindIII-HF. Cutting with two restriction enzymes minimizes the chance of spontaneous re-ligation and removes the CaMV poly(A) signal from the original backbone.
+                    </p>
+                    <p style="font-size: 18px;">
+                      Since our vector did not contain a promoter or terminator, we put the genes for the COP1-VP16 and mphR(A)-UVR8 fusion proteins under the control of a 35S CaMV promoter and 35S CaMV terminator in our first construct, pAtTASI-HiFi. These regulatory elements are commonly used in plant synthetic biology and would allow for strong expression of our genes in <i>N. benthamiana</i> leaves. Transcription of the ta-siRNA targeting the WUSCHEL gene is under the control of a light-inducible promoter, which consists of the mphR(A) DNA-binding site, (etr)<sub>8</sub>, followed by the 35S CaMV core promoter. Additionally, we inserted a neomycin resistance cassette into the UVR8-COP1 containing plasmid and a hygromycin resistance cassette in the ta-siRNA containing plasmid near the LB-T-DNA repeats, so that we could select for the final transformed plant in the end.
+                    </p>
+                    <p style="font-size: 18px;">
+                      For pCOP1-UVR8, a total of 3 inserts were cloned into a pFGL815 vector: a neomycin resistance cassette, a 35S CaMV promoter-COP1(WD40)-L-VP16-T2A insert, and TetR-L-UVR8-35S CaMV terminator insert. The COP1-VP16 and TetR-UVR8 fusion proteins were interrupted by a self-cleaving T2A peptide, allowing both fusion proteins to be translated from a single transcript. In an attempt to improve expression of these recombinant proteins, the coding sequences were codon optimized for <i>N. benthamiana</i>. The inserts were oriented such that the 35S promoter was away from the LB T-DNA repeat to prevent degradation of our construct inside the plant tissue; the LB T-DNA repeat is prone to deletion. Furthermore, the neomycin resistance cassette was reversed to control against the possibility of transcription errors.
+                    </p>
+                    <br>
+                    <div align="center">
+                    <img src="assets/images/tasi.png" style="width:100%; padding-right:10px; padding-bottom:10px;">
+                    </div>
+                    </div>
+
                     <div class="text-container" style="display: inline-block;">
-                            <p style="font-size: 35px;"> Potential Challenges </p>
-                            <hr class="hr">
-                             <p style="font-size: 20px;">
-                               <b>Fear of GMOs</b>
-                             </p>
-                             <p style="font-size: 18px;">
-                               As mentioned before, the current negative stigma around the use of GMOs has unfortunately been increasing, as there has been less openness between the scientific community and the general public. We believe that the implementation of our system can only occur if the public is fully aware of the potential harms of gene flow and how it can be contained with the issuance of our kill switch. When people hear “genetically modified,” they automatically correlate that to being the opposite of what is “natural” and thus, deem it bad. However, many products that are commonly enjoyed by consumers such as corn, cotton, soybeans, and even potatoes, are USDA approved, genetically modified crops grown right here in the United States (Digital, 2020)! There is a need for scientists to effectively communicate their work to the general public. We hope that our team, and many others in iGEM, are one of the few that do.
-                             </p>
-                             <p style="font-size: 20px;">
-                               <b>Lack of Results</b>
-                             </p>
-                             <p style="font-size: 18px;">
-                               Our team was one of the few iGEM teams around the world that were unable to conduct any wet lab experiments. Because of this, we were unable to determine the true effectiveness of our system in our model organism. We hope for future research to establish a proof of concept model in <i>N. benthamiana</i> through transient expression of UVR8-COP1 induced transcription of our syn-tasiRNA to demonstrate the efficiency of this optogenetic system.
-                             </p>
-                             <br>
-                           </div>
-
-                           <div class="text-container" style="display: inline-block;">
-                               <p style="font-size: 35px;">
-                                   References
-                               </p>
-                               <hr class="hr">
-                            <div style="padding-left: 4em; text-indent: -4em;">
-                                <p>[1] ​Carpenter, J. E. (2011). Impact of GM crops on biodiversity. GM Crops, 2(1), 7–23. doi: 10.4161/gmcr.2.1.15086 </p>
-                                <p>[2] Kaberniuk AA, Shemetov AA, Verkhusha VV. A bacterial phytochrome-based optogenetic system controllable with near-infrared light. Nat Methods. 2016;13(7):591‐597. doi:10.1038/nmeth.3864</p>
-                                <p>[3] Hughes RM, Freeman DJ, Lamb KN, Pollet RM, Smith WJ, Lawrence DS. Optogenetic apoptosis: light-triggered cell death. Angew Chem Int Ed Engl. 2015;54(41):12064‐12068. doi:10.1002/anie.201506346</p>
-                                <p>[4] Lacomme, C., & Cruz, S. S. (1999). Bax-induced cell death in tobacco is similar to the hypersensitive response. Proceedings of the National Academy of Sciences, 96(14), 7956–7961. doi: 10.1073/pnas.96.14.7956</p>
-                                
-                            </div>
-
-                 </div>
-                 <br>
-                 <br>
+                        <p style="font-size: 35px;">
+                            References
+                        </p>
+                        <hr class="hr">
+                    <div style="padding-left: 4em; text-indent: -4em;">
+                        <p> Adibi, M., Yoshida, S., Weijers, D., & Fleck, C. (2016). Centering the Organizing Center in the Arabidopsis thaliana Shoot Apical Meristem by a Combination of Cytokinin Signaling and Self-Organization. Plos One, 11(2). doi:10.1371/journal.pone.0147830 </p>
+                        <p> Allen, E., & Howell, M. D. (2010). MiRNAs in the biogenesis of trans-acting siRNAs in higher plants. Seminars in Cell & Developmental Biology, 21(8), 798-804. doi:10.1016/j.semcdb.2010.03.008 </p>
+                        <p> Carpenter, J. E. (2011). Impact of GM crops on biodiversity. GM Crops, 2(1), 7–23. doi: 10.4161/gmcr.2.1.15086 </p>
+                        <p> Carthew, R. W., & Sontheimer, E. J. (2009). Origins and Mechanisms of miRNAs and siRNAs. Cell, 136(4), 642-655. doi:10.1016/j.cell.2009.01.035 </p>
+                        <p> Fletcher J. C. (2018). The CLV-WUS Stem Cell Signaling Pathway: A Roadmap to Crop Yield Optimization. Plants (Basel, Switzerland), 7(4), 87. https://doi.org/10.3390/plants7040087 </p>
+                        <p> Ochoa-Fernandez, R., Abel, N. B., Wieland, F.-G., Schlegel, J., Koch, L.-A., Miller, J. B., Engesser, R., Giuriani, G., Brandl, S. M., Timmer, J., Weber, W., Ott, T., Simon, R., & Zurbriggen, M. D. (2020). Optogenetic control of gene expression in plants in the presence of ambient white light. Nature Methods, 17(7), 717–725. https://doi.org/10.1038/s41592-020-0868-y </p>
+                        <p> Somssich, M., Je, B. I., Simon, R., &; Jackson, D. (2016). CLAVATA-WUSCHEL signaling in the shoot meristem. Development, 143(18), 3238-3248. doi:10.1242/dev.133645</p>
+                        <p> Yang, F., & Naqvi, N. I. (2014). Sulfonylurea resistance reconstitution as a novel strategy for ILV2-specific integration in Magnaporthe oryzae. Fungal Genetics and Biology, 68, 71-76. doi:10.1016/j.fgb.2014.04.00 </p>
+                        <p> Yang, X., Montano, S., & Ren, Z. (2015). How Does Photoreceptor UVR8 Perceive a UV-B Signal?. Photochemistry and photobiology, 91(5), 993–1003. https://doi.org/10.1111/php.12470 </p>
+                    </div>
+                    </div>
+                    <br>
+                    <br>
 
         <div class = "Social_Media">
         </br>
