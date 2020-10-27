@@ -4,7 +4,7 @@
         <title>
             Team:Stony_Brook/Design - 2020.igem.org
         </title>
-        <link rel = "stylesheet" href="assets/css/style.css">
+        <link rel = "stylesheet" href="assets/css/implementation.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -16,11 +16,11 @@
         <nav class="navbar navbar-purple navbar-expand-md py-4" style="margin-bottom: 0px; border-radius: 0px;">
 
             <a class="navbar-brand">Light Switch</a>
-
+    
             <ul class="nav navbar-nav navbar-right" style="padding-right: 15px; font-size: large;">
                 <li><a href="index.html">Home</a></li>
                 <li class="nav-item dropdown">
-                    <a href="Team.html" role="button" aria-haspopup="true">
+                    <a href="#" role="button" aria-haspopup="true">
                         Team
                         <span class="caret"></span>
                     </a>
@@ -30,9 +30,9 @@
                         <li><a href="Attributions.html">Attributions</a></li>
                     </ul>
                 </li>
-
+    
                 <li class="nav-item dropdown">
-                    <a href="Project.html" role="button" aria-haspopup="true">
+                    <a href="#" role="button" aria-haspopup="true">
                         Project
                         <span class="caret"></span>
                     </a>
@@ -44,22 +44,11 @@
                         <li><a href="Modeling.html"> Modeling</a></li>
                         <li><a href="Engineering.html">Engineering</a></li>
                         <li><a href="Implementation.html">Implementation</a></li>
-                        <li><a href="Contributions.html">Contribution</a></li>
+                        <li><a href="Contributions.html">Contributions</a></li>
                     </ul>
                 </li>
-
-                <li class="nav-item dropdown">
-                    <a href="Parts.html" role="button" aria-haspopup="true">
-                        Parts
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="Basic Parts.html">Basic Parts</a></li>
-                    </ul>
-                </li>
-
                 <li><a href="Safety.html">Safety</a></li>
-
+    
                 <li class="nav-item dropdown">
                     <a href="Human Practices.html" role="button" aria-haspopup="true">
                         Human Practices
@@ -70,7 +59,7 @@
                         <li><a href="Integrated.html">Integrated Human Practices</a></li>
                     </ul>
                 </li>
-
+    
                 <li class="nav-item dropdown">
                     <a href="Awards.html" role="button" aria-haspopup="true">
                         Awards
@@ -83,7 +72,92 @@
                 </li>
             </ul>
         </nav>
-        <h1> The Design </h1>
+
+        <header class="header-container">
+            <img src="assets/images/frey.jpg" alt="" style="width:100%;height:auto;opacity:0.5;">
+            <!--CSS for the loading page -->
+            <div class="centered"> Design </div>
+        </header>
+              <br>
+
+              <div class="text-container" style="display: inline-block;">
+                  <p style="font-size: 35px;"> Overview </p>
+                  <hr class="hr">
+                   <p style="font-size: 18px;">
+                        For many decades, the agricultural industry has sought to improve crop yields and mitigate crop losses due to pests and pathogens by utilizing GM crops. However, an increased use of GM crops can negatively impact biodiversity through gene flow, potentially allowing GM crops to out compete their wild-type counterparts[1].To address this concern, we have created an optogenetic kill-switch capable of initiating programmed cell death (PCD) if a plant were to escape from its controlled indoor setting to the outdoor environment. A light-mediated solution offers an unprecedented way to control cellular behavior with precise spatial and temporal resolution; this is difficult with alternative methods, which often utilize toxic chemical inducers. Our proposed system would allow farmers to reap the benefits of GM crops without worrying about their harmful ecological implications.
+                   </p>
+                   <p style = "font-size: 18px;">
+                    We plan to employ an optogenetic protein, BphP1, with its binding partner Q-PAS1, in our model organism, Arabidopsis thaliana, to induce the expression of the mammalian pro-apoptotic protein Bax upon stimulation by near-infrared light (NIR)[2,3].The optogenetic protein would allow us to utilize wavelengths outside of the visible spectrum, minimizing any chance of interfering with light associated with photosynthesis activity. When overexpressed in plants, Bax induces PCD with hallmarks reminiscent of mammalian apoptosis[4]. Bax monomers move freely in cytosol and translocate to the outer mitochondrial membrane, forming the mitochondrial apoptosis-induced channel (MAC). MAC formation will lead to the release of a heme protein known as cytochrome c. Cytochrome c loss prevents electron exchange between complexes III and IV of the electron transport chain. This causes the accumulation of ubiquinone radicals at complex III, and ultimately, the accumulation of reactive oxygen species (ROS) which lead to necrosis of plant tissue. By inhibiting plant development outside the controlled environment, the killswitch mechanism aims to arrest gene flow.
+                   </p>
+                   <p style="font-size: 20px;">
+                     <b> Optogenetic Kill-switch to Prevent the Effects of Gene Flow</b>
+                   </p>
+                   <p style="font-size: 18px;">
+                     We hope to minimize the deleterious effects of gene flow by incorporating our optogenetic killswitch in a variety of plants. Given that the core signaling component of the CLV-WUS pathway is relatively conserved in a diversity of plants such as tomato (<i>Solanum lycopersicum</i>), maize (<i>Zea mays</i>), and rice (<i>Oryza sativa</i>), we anticipate our system to function in other major crops as well, especially those grown in farms.
+                   </p>
+                   <br>
+                 </div>
+                   <div class="text-container" style="display: inline-block;">
+                       <p style="font-size: 35px;"> Potential Users </p>
+                       <hr class="hr">
+                        <p style="font-size: 20px;">
+                          <b>Farmers</b>
+                        </p>
+                        <p style="font-size: 18px;">
+                          Indoor farming, which includes both vertical farms and greenhouses, allows farmers to grow their products in a controlled environment. With the indoor farming industry projected to reach upwards of 22 billion USD by 2026 (Pulindindi et al., 2018), this growth scenario is growing more common every year.
+                        </p>
+                        <p style="font-size: 18px;">
+                          Conveniently, UV-B light is absent in these environments, allowing us to utilize indoor farms as part of the solution. Our UV-B light-activated killswitch would be implemented in GM crops cultivated in these controlled environments. If these plants do somehow find a way to escape to the natural environment, this killswitch would be able to prevent further growth by exploiting RNAi to silence the WUSCHEL gene, a key player in plant development. Combining the controlled environment of indoor farms with our optogenetic killswitch that prevents crops growing inside from being grown outdoors, the net risk of gene flow is decreased. Indoor farmers would be at greater liberty to modify their crops without worrying about the deleterious ecological effects of gene flow.
+                        </p>
+                        <p style="font-size: 20px;">
+                          <b>Human Practices</b>
+                        </p>
+                        <p style="font-size: 18px;">
+                          We are thankful that we were able to talk to many farmers to gain their perspective of what they thought about LightSwitch. Jennifer Ross (HeartBeet Farms), David Lopez (Babylon Farms), Maxwell Carmack (Square Roots Farms), and Mike Axelrod (Stony Brook University) all helped us gain a better understanding of how farmers would perceieve our system and what their attitudes would be if we were to implement it in their farms. We asked them two questions that related to the integration of our system in indoor farms.
+                        </p>
+                          <p style="font-size: 18px;">
+                            Firstly, we wanted to know that if there was a way to prevent GMOs from spreading transgenic traits to other crops, such as through the implementation of our kill-switch, would it be beneficial for their work. From talking to farmers, we learned that our kill-switch is something they can see being implemented, but it would be difficult to gain support from the general public. We would have to first diminish the negative stigma surrounding the word “genetically modified.” Because of this, we issued educational initiatives, which are outlined in our Education page. Additionally, to promote transparency between the scientific community and the public, we established a wet lab protocol outlining what procedures we would have done in order to integrate our system in N. benthamiana. These protocols are outlined on our Experiments page. We hope that our efforts to make our project as clear and understandable as possible would aid in its future implementation in the natural environment.
+                          </p>
+                          <p style="font-size: 18px;">
+                        </p>
+                        <p style="font-size: 18px;">
+                          Secondly, we asked if they could anticipate any potential drawbacks of using our system in farms. One farmer inquired about how our system would impact the nutritional value of the crops that had our system. Through the help of Dr. Creasey, we learned that there is no evidence that genetically modified food has less nutritional value than their “natural” counterparts. In actuality, genetically modified food usually has increased nutritional value. Once more, we were told that the biggest drawback of our system would be the reluctance of consumers from accepting it solely because genetically modified products are deemed to be “unnatural,” or inherently bad. This reinforced the need for our team to promote transparency between our project and society.</p>
+                        <br>
+                      </div>
+                    <div class="text-container" style="display: inline-block;">
+                            <p style="font-size: 35px;"> Potential Challenges </p>
+                            <hr class="hr">
+                             <p style="font-size: 20px;">
+                               <b>Fear of GMOs</b>
+                             </p>
+                             <p style="font-size: 18px;">
+                               As mentioned before, the current negative stigma around the use of GMOs has unfortunately been increasing, as there has been less openness between the scientific community and the general public. We believe that the implementation of our system can only occur if the public is fully aware of the potential harms of gene flow and how it can be contained with the issuance of our kill switch. When people hear “genetically modified,” they automatically correlate that to being the opposite of what is “natural” and thus, deem it bad. However, many products that are commonly enjoyed by consumers such as corn, cotton, soybeans, and even potatoes, are USDA approved, genetically modified crops grown right here in the United States (Digital, 2020)! There is a need for scientists to effectively communicate their work to the general public. We hope that our team, and many others in iGEM, are one of the few that do.
+                             </p>
+                             <p style="font-size: 20px;">
+                               <b>Lack of Results</b>
+                             </p>
+                             <p style="font-size: 18px;">
+                               Our team was one of the few iGEM teams around the world that were unable to conduct any wet lab experiments. Because of this, we were unable to determine the true effectiveness of our system in our model organism. We hope for future research to establish a proof of concept model in <i>N. benthamiana</i> through transient expression of UVR8-COP1 induced transcription of our syn-tasiRNA to demonstrate the efficiency of this optogenetic system.
+                             </p>
+                             <br>
+                           </div>
+
+                           <div class="text-container" style="display: inline-block;">
+                               <p style="font-size: 35px;">
+                                   References
+                               </p>
+                               <hr class="hr">
+                            <div style="padding-left: 4em; text-indent: -4em;">
+                                <p>[1] ​Carpenter, J. E. (2011). Impact of GM crops on biodiversity. GM Crops, 2(1), 7–23. doi: 10.4161/gmcr.2.1.15086 </p>
+                                <p>[2] Kaberniuk AA, Shemetov AA, Verkhusha VV. A bacterial phytochrome-based optogenetic system controllable with near-infrared light. Nat Methods. 2016;13(7):591‐597. doi:10.1038/nmeth.3864</p>
+                                <p>[3] Hughes RM, Freeman DJ, Lamb KN, Pollet RM, Smith WJ, Lawrence DS. Optogenetic apoptosis: light-triggered cell death. Angew Chem Int Ed Engl. 2015;54(41):12064‐12068. doi:10.1002/anie.201506346</p>
+                                <p>[4] Lacomme, C., & Cruz, S. S. (1999). Bax-induced cell death in tobacco is similar to the hypersensitive response. Proceedings of the National Academy of Sciences, 96(14), 7956–7961. doi: 10.1073/pnas.96.14.7956</p>
+                                
+                            </div>
+
+                 </div>
+                 <br>
+                 <br>
 
         <div class = "Social_Media">
         </br>
