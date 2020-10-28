@@ -71,7 +71,7 @@
             </ul>
         </nav>
         <header class="header-container">
-            <img src="https://2020.igem.org/wiki/images/3/3d/T--Stony_Brook--staller.jpeg" alt="" style="width:100%;height:auto;opacity:0.5;">
+          <img src="https://2020.igem.org/wiki/images/3/3d/T--Stony_Brook--staller.jpeg" alt="" style="width:100%;height:auto;opacity:0.5;">
             <!--CSS for the loading page -->
             <div class="centered"> Modeling </div>
         </header>
@@ -79,49 +79,170 @@
 
               <div class="brief-intro">
                   <p style="text-align:center">
-                    Our modeling team worked to establish simulations in order to observe which modifications would be necessary to optimize our COP1-UVR8 system. We hope that these simulations provide a clearer picture for the specific protein-protein interactions that work to make our system elegant and efficient.
-                  </div>
-
+                    Simulative modeling allows researchers to determine the prospective effects of their proposed system(s) without having to conduct live wet lab experiments. Throughout the course of the summer, we looked into molecular dynamics (MD) to provide insights into how different components of our proposed kill switch would interact with one another. The main program that allowed us to go through with MD is called GROMACS. Mainly designed for biochemical molecules like proteins, lipids, and nucleic acids that are often involved in a series of complex interactions, GROMACS allowed us to simulate intermolecular interactions between COP1 and UVR8. The goal behind doing this was to determine if mutations performed on COP1 to abolish interactions with transcription factors other than UVR8 had any unintended effects on UVR8-COP1 binding.
+                 </p>
+                 <div>
       <div class="container">
-           <p style="font-size: 35px;"> GROMACS </p>
+           <p style="font-size: 35px;"> GEMini and Running Initial Simulations </p>
            <hr class="hr">
         <p style="font-size: 18px;">
-         Simulative modeling allows researchers to determine the prospective effects of their proposed system(s) without having to conduct live wet lab experiments. Throughout the course of the summer, we looked into modeling molecular dynamics (MD) to observe how the different components of our proposed kill switch would interact with one another. One program that  allowed us to go through with MD is called GROMACS. Mainly designed for biochemical molecules like proteins, lipids, and nucleic acids that are often involved in a series of complex  interactions, GROMACS allowed us to simulate and determine the interaction kinetics of the COP1-UVR8 system in both the active and inactive states. The main idea of these simulations was to observe what changes occurred in our model and gauge whether they would actually occur in a wet lab setting.
-       </p>
-       <p style="font-size: 20px;"> <b> UVR8 dimer in water </b> </p>
-       <p style="font-size: 18px;">
-   When first starting out, we decided that the best approach to MD was to simulate a UVR8 dimer alone in water. Furthermore, we set off to simulate some important amino acid residues, specifically Trp233/285. These two residues play important roles in dimer dissociation.
+          When first starting out, we decided that the best approach to learning GROMACS’ ropes was to simulate a UVR8 dimer alone in water. However, at the time, we did not have adequate computing power to accomplish this. To that end, one of our team members repurposed an old cryptocurrency mining computer to serve as a testbed for GROMACS.
        </p>
 
-       <p style="font-size: 20px;"> <b> COP1 Mutagenesis </b> </p>
+       <div align="center">
+         <img src="https://2020.igem.org/wiki/images/7/75/T--Stony_Brook--gemini.jpg" class="img-fluid" alt="" style="width: 30%;">
+      </div>
+      <br>
+
        <p style="font-size: 18px;">
-         It was necessary to produce a UVR8-COP1 pair that did not interact with existing components of UV-B signaling pathways. To mitigate these interactions, a truncated COP1 was employed. This truncated COP1 contains only the WD40 domain critical for interaction with components of the UV-B signaling pathway, including UVR8. This abolishes the E3 ubiquitin ligase activity of COP1 and with it a portion of its downstream signalling capacity. Further modifications were attempted to be investigated through this program.
-              </p>
+         While GEMini, as the computer came to be known, wasn’t much to look at, it provided an invaluable outlet for the team to learn the basics of MD with GROMACS. It also served as the means by which we encountered our first roadblock: existing or easily accessible UVR8 crystal structures were incomplete. More specifically, the crystal structures omitted intrinsically unstructured N-terminal and C-terminal tails, the latter of which facilitated UVR8’s interactions with COP1. After contacting a handful of researchers who previously made simulations on UVR8 (namely, Dr. Ake Strid, with respect to the research of Dr. Min Wu, of the University of Uppsala), we learned that our best bet at getting a complete, usable structure for UVR8 was to use a service called I-TASSER.
+       </p>
+
+       <p style="font-size: 35px;"> I-TASSER </p>
+       <hr class="hr">
+    <p style="font-size: 18px;">
+      Open to public use by the Zhang Lab from the University of Michigan, I-TASSER allows users to input the amino acid sequence of their proteins of interest as well as a template structure with which the software can predict a set of probable structures. This process, called homology modeling, gave us a set of probable structures of the full-length UVR8 monomer. Each of these predictions was assigned a confidence score, allowing us to choose the most likely full-length structure of the UVR8 monomer.
+    </p>
+
+    <div align="center">
+      <img src="https://2020.igem.org/wiki/images/2/23/T--Stony_Brook--model1.gif" class="img-fluid" alt="" style="width: 30%;">
+      <figcaption>
+        Image of the Predicted UVR8 Structure Used In Subsequent Simulations, Produced by I-TASSER
+      </figcaption>
+      <br>
+
+   </div>
+
+    <p style="font-size: 18px;">
+      This was a promising step in the right direction, but unfortunately, the limits of GEMini were becoming more and more obvious with every simulation. The full length monomer would lead to the GROMACS simulations “blowing-up,” or failing, on GEMini. In light of this, we set about the month-long process of getting access to Stony Brook University’s on-campus supercomputer, SeaWulf.
+    </p>
        </div>
 
-<br>
 
     <div class="container">
-           <p style="font-size: 35px;"> I-TASSER </p>
+           <p style="font-size: 35px;"> COP1 Mutagenesis </p>
            <hr class="hr">
            <p style="font-size: 18px;">
-            To reinforce our predictive modeling approach, we began using a server for protein structure known as I-TASSER. Provided to us by the Zhang Lab from the University of Michigan, I-TASSER allows users to input primary structure strings of their proteins of interest and predicts both a secondary and tertiary structure for them.
+             In the process of learning about Dr. Ake Strid’s previous simulations of UVR8-COP1 interactions, we learned that COP1 contained a number of residues which could be altered to abolish or weaken interactions of COP1 with various transcription factors as well as UVR8. Since COP1 sits at a crossroads between many different signalling and gene regulatory pathways, diminishing its interactions with other transcription factors is hypothesized to mitigate any off target effects caused by implementing the designed optogenetic switch in plants. It should be noted that these mutations are being performed in addition to truncating COP1 to only its WD40 domain to remove ubiquitin ligase activity, which likely prevents its signaling capacity in plants. Namely, residues W467 and R465 were identified as adequate targets for mutation. W467 is responsible for many hydrophobic interactions and R465 facilitates charge-charge interactions in the C-terminal tails of COP1’s binding partners <sub>[1]</sub>. It was shown that mutation of W467 to alanine entirely disrupts interactions between the transcription factors HY5, STO and STH<sub>[2]</sub>. It was also shown that mutation of R465 to glutamate abolished interaction of COP1 with STO/STH, as well as weakening interactions between COP1 and CRY1<sub>[2]</sub>.
            </p>
-           <p style="font-size: 20px;"> <b>Monomeric UVR8 </b></p>
            <p style="font-size: 18px;">
-             We found that, surprisingly, there have been a lack of full length crystal structures of UVR8. So, homology models of the full length UVR8 were produced on I-TASSER. These homology models will be employed to examine how key motifs, namely the VP motif on the C27 extension and the corresponding residues on COP1, may be manipulated to preclude interaction with further components of the UV-B signaling pathway.
+              Based on this evidence, it was hypothesized that a mutation of W467 to phenylalanine might weaken general binding of partners to COP1 though weakening or alteration of hydrophobic interactions. It is further hypothesized that mutation of R465 to glutamate will not significantly affect UVR8-COP1 interaction, despite putative abolition of STO/STH and weakening of the same for CRY1. Unfortunately, these hypotheses may not be examined in great detail, but at the very least these simulations show that, despite mutation of COP1, COP1-UVR8 interaction is preserved.
+           </p>
+
+           <p style="font-size: 18px;">
+            The mutagenesis of the truncated COP1 was performed on RCSB 6QTQ. First, a short polypeptide chain from UVR8 in contact with the WD40 domain was removed from the structure. Then, the WD40 domain of COP1 was loaded into ChimeraX, and the NIAID Mutagenesis tutorials were followed to mutate our desired residues <sub>[3,4]</sub>. This resulted in the production of three mutants: COP1-W467F, COP1-R465E and COP1-R465E/W467F.
            </p>
            <br>
-           <div align="center">
-             <img src="https://2020.igem.org/wiki/images/d/d1/T--Stony_Brook--uvr8.png" class="img-fluid" alt="" style="width: 30%;">
-             <img src="https://2020.igem.org/wiki/images/0/08/T--Stony_Brook--monomericuvr8.png" class="img-fluid" alt="" style="width: 30%;">
-             <img src="https://2020.igem.org/wiki/images/2/28/T--Stony_Brook--uvr8_2.png" class="img-fluid" alt="" style="width: 30%;">
-          </div>
-       </div>
-       </div>
-<br>
-       </div>
-       </div>
+          <div align="center">
+
+            <img src="https://2020.igem.org/wiki/images/2/28/T--Stony_Brook--unnamed.png" style="">
+            <figcaption>
+              COP1 - W467 (WT)
+            </figcaption>
+            <br>
+
+            <img src="https://2020.igem.org/wiki/images/9/9a/T--Stony_Brook--w467f.png" style="">
+            <figcaption>
+              COP1 - W467F
+            </figcaption>
+            <br>
+
+            <img src="https://2020.igem.org/wiki/images/7/75/T--Stony_Brook--r465.png" style="">
+            <figcaption>
+              COP1 - R465 (WT)
+            </figcaption>
+            <br>
+
+            <img src="https://2020.igem.org/wiki/images/a/ac/T--Stony_Brook--r465e.png" style="">
+            <figcaption>
+              COP1 - R465E
+            </figcaption>
+            <br>
+
+         </div>
+         </div>
+         <br>
+
+         <div class="container">
+                <p style="font-size: 35px;"> Simulating UVR8 and COP1, COP1 Mutants Together </p>
+                <hr class="hr">
+                <p style="font-size: 18px;">
+                  Once our models were produced, it was time to simulate them together. This was accomplished by opening both proteins into PyMOL with one another, orienting them such that COP1’s binding interface and the C-terminal extension of UVR8 were close to one another in space. The simulation then was run for 5ns simulation time at a 2 fs timestep. This issue that we encountered here was that the UVR8 C-terminal tail was not in its extended conformation (i.e., folded up onto the core of UVR8 as in the image in the I-TASSER section), meaning that the only interactions occurring were undesired, incidental salt bridges.
+                 </p>
+
+                  <p style="font-size: 18px;">
+                  It’s important to note that our time scales here were on the order of a nano-second and it is conceivable that we would observe the interactions desired on a longer timescale, unfortunately we do not currently have the computational wherewithal to confirm this hypothesis.
+                </p>
+
+                <p style="font-size: 18px;">
+                  This was remedied by employing PyMOL’s sculpting tool on the C-terminal tail of UVR8 to “manually” bring it into its extended conformation, no longer being affixed to the side of UVR8’s core.
+                </p>
+
+                <div align="center">
+                  <img src="https://2020.igem.org/wiki/images/0/0f/T--Stony_Brook--uvr8pymol.png" class="img-fluid" alt="" style="width: 30%;">
+                  <figcaption>
+                    UVR8 in its Extended Conformation As Produced with PyMOL’s Sculpt ToolR
+                  </figcaption>
+               </div>
+               <br>
+
+                <p style="font-size: 18px;">
+                  The extended UVR8 underwent solvation, minimization and equilibration in GROMACS, before being exported back to PyMOL for introduction to COP1. The two were imported back into GROMACS, and simulated.
+                </p>
+
+                <div align="center">
+                  <img src="https://2020.igem.org/wiki/images/4/4a/T--Stony_Brook--uvr8andcop1.png" class="img-fluid" alt="" style="width: 30%;">
+                  <figcaption>
+                    COP1 (Red) in Complex with UVR8 (Blue) via its C-terminal Tail
+                  </figcaption>
+               </div>
+               <br>
+
+              </div>
+
+
+              <div class="container">
+                     <p style="font-size: 35px;"> Limitations </p>
+                     <hr class="hr">
+                     <p style="font-size: 18px;">
+                       As mentioned previously, we had great technical difficulty while running the simulations. While attempting to overcome GROMACS’ steep learning curve, GEMini experienced numerous system failures, simulation blow-ups, and on one occasion, data loss. All of these issues were only compounded by GEMini’s fiendishly long simulation times. When we attempted to mitigate these technical problems by obtaining access to Stony Brook University’s computational resources, we encountered a new host of hurdles. The system architecture of Stony Brook University Seawulf Cluster was rather complex and took quite a bit of experimentation, advice, and failure to fully understand. Further, access to the system itself took almost a month to obtain, likely due to a high demand for computing resources during the COVID-19 pandemic. All told, the process of carrying out molecular dynamics simulations on our UVR8 model took three months.
+                     </p>
+
+                     <p style="font-size: 18px;">
+                       Working with GROMACS can be rather challenging as the documentation for the software is often insufficient. For example, the OPLSAA force field which provides a framework in which the MD simulation takes place did not have configuration for the CSO residue. We had to modify the existing CYS residue and change the configuration files of the force field. The workaround here is not perfect of course as we were unable to account for any modified bond angles etc (and indeed, one entire improper dihedral structure), however as the 4 CSO residues in the molecule aren’t really active in any bonding, this workaround is appropriate for this use case. To examine the specific modifications made to the OPLS force field, the patch can be found at our git repository (https://github.com/iGEM-SBU/modeling.git)</a>.
+                </p>
+
+                     <p style="font-size: 18px;">
+                       One of the issues we had was that this process involved a lot of time consuming trial and error, which meant that it took a long time before we actually got something working, and initially we were running simulations just to check if our configurations were ok, which meant that each trial would take days. This was resolved when we discovered IMD, an interactive simulation mode for GROMACS with VMD, which allowed us to debug a lot faster.
+                     </p>
+                   </div>
+
+                   <div class="container">
+                          <p style="font-size: 35px;"> Conclusion </p>
+                          <hr class="hr">
+                          <p style="font-size: 18px;">
+                            While we have encountered considerable difficulties in attempting to pursue these simulations, the process provided us with much information as to how we might prevent a COP1-UVR8 optogenetic switch from inducing off-target effects in a plant chassis. Much of the information we now know about how COP1 binds its substrates came not through our design and research endeavors, but through our attempts at modeling a system we thought we understood. As we view these simulations as integral to understanding the true function of our project, we aim to continue these simulations as we move through the jamboree and into phase II. While we were able to model definitively the interaction between wild-type COP1 and UVR8, limited computational resources and time prevented further exploration of the interactions between UVR8 and the various mutants -- this will be our greatest priority going forward. Specifically, we will aim not only to probe the interactions between COP1 and UVR8 alone, but also to understand how the two act with respect to interacting with one another when they are part of the COP1-VP16 and UVR8-TetR fusion proteins. Additionally, we also aim to find further means of preventing off-target interactions with our engineered COP1-UVR8 optogenetic switch and their endogenous counterparts <i>in planta</i>.
+                          </p>
+
+                          <p style="font-size: 18px;">
+                            As we endeavor to continue our modeling pursuits; updated data, new findings, and simulation runs will be published to our team’s GitHub repository at: https://github.com/iGEM-SBU/modeling.git
+                          </p>
+                        </div>
+
+                   <div class="text-container" style="display: inline-block;">
+                       <p style="font-size: 35px;">
+                           References
+                       </p>
+                       <hr class="hr">
+                   <div style="padding-left: 4em; text-indent: -4em;">
+                     <p> [1] Wu, Min & Eriksson, Leif & Strid, Åke. (2013). Theoretical prediction of the protein–protein interaction between Arabidopsis thaliana COP1 and UVR8. Theoretical Chemistry Accounts. 132. 1371. 10.1007/s00214-013-1371-7. </p>
+                     <p> [2] Holm, M., Hardtke, C. S., Gaudet, R., & Deng, X. W. (2001). Identification of a structural motif that confers specific interaction with the WD40 repeat domain of Arabidopsis COP1. The EMBO journal, 20(1-2), 118–127. https://doi.org/10.1093/emboj/20.1.118</p>
+                     <p> [3] Mutating a Residue in UCSF Chimera (Part 1) [Video file]. (2013, May 3). Retrieved  2020, from https://www.youtube.com/watch?v=bcXMexN6hjY</p>
+                     <p> [4] Mutating a Residue in UCSF Chimera (Part 2) [Video file]. (2013, May 3). Retrieved  2020, from https://www.youtube.com/watch?v=eJkrvr-xeXY</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
 <br>
 <br>
 
